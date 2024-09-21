@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://di5ani4h54gi3"]
+
+[ext_resource type="Script" path="res://practices/L2.P1.pop_the_ball/ball.gd" id="1_is6jn"]
+[ext_resource type="Texture2D" uid="uid://cswtclqvybbba" path="res://assets/practice_assets/ball.png" id="2_p0iun"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2jth3"]
+radius = 57.1402
+
+[node name="Ball" type="Area2D"]
+script = ExtResource("1_is6jn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_p0iun")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_2jth3")
