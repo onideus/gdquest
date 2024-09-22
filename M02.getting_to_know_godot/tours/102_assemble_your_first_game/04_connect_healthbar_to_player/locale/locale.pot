@@ -1,4 +1,6 @@
 # LANGUAGE translation for M2. Getting to Know Godot (Interactive Tours) for the following files:
+# res://tours/102_assemble_your_first_game/102_assemble_your_first_game.gd
+# res://addons/godot_tours/tour.gd
 # res://tours/102_assemble_your_first_game/04_connect_healthbar_to_player/04_connect_healthbar_to_player.gd
 #
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
@@ -10,6 +12,62 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
+
+#: tours/102_assemble_your_first_game/102_assemble_your_first_game.gd
+msgid "Open the start scene"
+msgstr ""
+
+#: tours/102_assemble_your_first_game/102_assemble_your_first_game.gd
+msgid "Let's start by opening the scene we will be working with."
+msgstr ""
+
+#: tours/102_assemble_your_first_game/102_assemble_your_first_game.gd
+msgid "In the [b]FileSystem Dock[/b] at the bottom-left, find and [b]double-click[/b] on the scene we will be working with: [b]%s[/b]."
+msgstr ""
+
+#: tours/102_assemble_your_first_game/102_assemble_your_first_game.gd
+msgid "Open the scene [b]%s[/b]."
+msgstr ""
+
+#: addons/godot_tours/tour.gd
+msgid "Press the [b]%s[/b] button."
+msgstr ""
+
+#: addons/godot_tours/tour.gd
+msgid "Turn the [b]%s[/b] button %s."
+msgstr ""
+
+#: addons/godot_tours/tour.gd
+msgid "Change to the [b]%s[/b] tab."
+msgstr ""
+
+#: addons/godot_tours/tour.gd
+msgid "Select the %s %s in the [b]Scene Dock[/b]."
+msgstr ""
+
+#: addons/godot_tours/tour.gd
+msgid "Set [b]%s[/b] to [code]%s[/code]"
+msgstr ""
+
+#: addons/godot_tours/tour.gd
+msgid "Set [b]%s[/b]'s [b]%s[/b] property to [b]%s[/b]"
+msgstr ""
+
+#: addons/godot_tours/tour.gd
+msgid "Open the scene [b]%s[/b]"
+msgstr ""
+
+#: addons/godot_tours/tour.gd
+msgid "Expand the property [b]%s[/b] in the [b]Inspector[/b]"
+msgstr ""
+
+#: addons/godot_tours/tour.gd
+msgid "Move [b]%s[/b] inside the guide box"
+msgstr ""
+
+#: addons/godot_tours/tour.gd
+msgid "Instantiate the [b]%s[/b] scene as a child of [b]%s[/b]"
+msgstr ""
 
 #: tours/102_assemble_your_first_game/04_connect_healthbar_to_player/04_connect_healthbar_to_player.gd
 msgid "Updating the health bar"
@@ -104,7 +162,7 @@ msgid "This window on the left is the [b]Connect a Signal to a Method[/b] window
 msgstr ""
 
 #: tours/102_assemble_your_first_game/04_connect_healthbar_to_player/04_connect_healthbar_to_player.gd
-msgid "Many nodes are greyed out. This is because we can only connect signals to a node that has a code file \" + bbcode_generate_icon_image_string(ICONS_MAP.script) + \" attached to it, like the [b]UIHealthBar[/b] node."
+msgid "Many nodes are greyed out. This is because we can only connect signals to a node that has a code file %s attached to it, like the [b]UIHealthBar[/b] node."
 msgstr ""
 
 #: tours/102_assemble_your_first_game/04_connect_healthbar_to_player/04_connect_healthbar_to_player.gd
@@ -168,7 +226,7 @@ msgid "Your signal is now connected to the function named [b]_on_player_health_c
 msgstr ""
 
 #: tours/102_assemble_your_first_game/04_connect_healthbar_to_player/04_connect_healthbar_to_player.gd
-msgid "Godot indicates the connection with the green icon \" + bbcode_generate_icon_image_string(ICONS_MAP.script_signal_connected) +  \" in the margin on the left."
+msgid "Godot indicates the connection with the green icon %s in the margin on the left."
 msgstr ""
 
 #: tours/102_assemble_your_first_game/04_connect_healthbar_to_player/04_connect_healthbar_to_player.gd
@@ -185,6 +243,10 @@ msgstr ""
 
 #: tours/102_assemble_your_first_game/04_connect_healthbar_to_player/04_connect_healthbar_to_player.gd
 msgid "When you touch an enemy and lose health, the health bar should now update accordingly."
+msgstr ""
+
+#: tours/102_assemble_your_first_game/04_connect_healthbar_to_player/04_connect_healthbar_to_player.gd
+msgid "Play Current Scene"
 msgstr ""
 
 #: tours/102_assemble_your_first_game/04_connect_healthbar_to_player/04_connect_healthbar_to_player.gd

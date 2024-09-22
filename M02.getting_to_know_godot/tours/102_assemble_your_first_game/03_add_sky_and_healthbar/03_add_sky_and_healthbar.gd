@@ -118,7 +118,7 @@ func part_020_adding_health_bar() -> void:
 	bubble_move_and_anchor(interface.inspector_dock, Bubble.At.CENTER_RIGHT)
 	bubble_set_avatar_at(Bubble.AvatarAt.LEFT)
 	bubble_add_text([
-		gtr("To add a node, click on the plus icon in the top-left of the [b]Scene Dock[/b], or press [b]%s A[/b] on your keyboard.") % shortcuts.ctrl,
+		gtr("To add a node, click on the plus icon in the top-left of the [b]Scene Dock[/b], or press [b]%s + A[/b] on your keyboard.") % shortcuts.ctrl,
 		gtr("This will open a popup window listing all the types of nodes built into Godot."),
 	])
 	bubble_add_task_press_button(interface.scene_dock_button_add)

@@ -1,34 +1,40 @@
-[gd_scene load_steps=6 format=3]
+[gd_scene load_steps=9 format=3]
 
-[ext_resource type="Script" path="res://practices/L6.P1.the_pinata/balloon_pinata.gd" id="1_6p6kr"]
-[ext_resource type="Material" path="res://practices/L6.P1.the_pinata/material.tres" id="2_tu17k"]
-[ext_resource type="Texture2D" path="res://practices/L6.P1.the_pinata/balloon_tail.png" id="3_a1td8"]
-[ext_resource type="Texture2D" path="res://practices/L6.P1.the_pinata/balloon_top.png" id="4_afppr"]
+[ext_resource type="Script" path="res://practices/L6.P1.the_pinata/balloon_pinata.gd" id="1_p2sam"]
+[ext_resource type="PackedScene" path="res://practices/L6.P1.the_pinata/candy/candy_blue.tscn" id="2_wgpgt"]
+[ext_resource type="PackedScene" path="res://practices/L6.P1.the_pinata/candy/candy_green.tscn" id="3_pwp8i"]
+[ext_resource type="PackedScene" path="res://practices/L6.P1.the_pinata/candy/candy_red.tscn" id="4_56he7"]
+[ext_resource type="Material" path="res://practices/L6.P1.the_pinata/material.tres" id="5_sp21y"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xb8xq"]
 radius = 47.0
 height = 166.0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dpdv6"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_e6jan"]
+
 [node name="BalloonPinata" type="Area2D"]
 position = Vector2(960, 540)
 collision_layer = 2
 collision_mask = 0
-script = ExtResource("1_6p6kr")
+script = ExtResource("1_p2sam")
+possible_candies = Array[PackedScene]([ExtResource("2_wgpgt"), ExtResource("3_pwp8i"), ExtResource("4_56he7")])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -16)
 shape = SubResource("CapsuleShape2D_xb8xq")
 
 [node name="CanvasGroup" type="CanvasGroup" parent="."]
-material = ExtResource("2_tu17k")
+material = ExtResource("5_sp21y")
 position = Vector2(0, 33)
 
 [node name="Bottom" type="Sprite2D" parent="CanvasGroup"]
 position = Vector2(0, -37)
-texture = ExtResource("3_a1td8")
+texture = SubResource("CompressedTexture2D_dpdv6")
 offset = Vector2(0, 34)
 
 [node name="Top" type="Sprite2D" parent="CanvasGroup"]
 position = Vector2(0, -79)
-texture = ExtResource("4_afppr")
+texture = SubResource("CompressedTexture2D_e6jan")
 offset = Vector2(0, 5)

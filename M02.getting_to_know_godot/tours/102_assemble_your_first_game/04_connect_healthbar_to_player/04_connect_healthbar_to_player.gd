@@ -1,6 +1,33 @@
 extends "../102_assemble_your_first_game.gd"
 
 
+func bubble_add_task_select_node_by_name(node_name: String, description_override := "") -> void:
+	var description := description_override
+	if description.is_empty():
+		description = gtr("Select the %s node in the [b]Scene Dock[/b].") % node_name
+	bubble_add_task(
+		description,
+		1,
+		func task_select_node(_task: Task) -> int:
+			var selected_nodes := EditorInterface.get_selection().get_selected_nodes()
+			if selected_nodes.size() == 0:
+				return 0
+
+			var scene_root := EditorInterface.get_edited_scene_root()
+			var found := scene_root.find_child(node_name)
+			if found == null:
+				# Allow passing the step if the node was renamed by the user
+				print_debug("Node not found: " + node_name)
+				return 1
+
+			for selected_node: Node in selected_nodes:
+				if selected_node == found:
+					return 1
+			return 0
+	)
+
+
+
 func _build() -> void:
 	# Set editor state according to the tour's needs.
 	queue_command(func reset_editor_state_for_tour():
@@ -43,7 +70,7 @@ func part_010_updating_health_bar() -> void:
 		gtr("To see and connect the signals of a node, we first need to select that node."),
 		gtr("So once again, select the [b]Player[/b] node in the [b]Scene Dock[/b]."),
 	])
-	bubble_add_task_select_nodes_by_path(["Start/Player"])
+	bubble_add_task_select_node_by_name("Player")
 	complete_step()
 
 	highlight_tabs_title(interface.inspector_tabs, "Node")
@@ -89,7 +116,7 @@ func part_010_updating_health_bar() -> void:
 	bubble_set_title(gtr("The connect signal window"))
 	bubble_add_text([
 		gtr("This window on the left is the [b]Connect a Signal to a Method[/b] window. It lists all the nodes in your scene."),
-		gtr("Many nodes are greyed out. This is because we can only connect signals to a node that has a code file " + bbcode_generate_icon_image_string(ICONS_MAP.script) + " attached to it, like the [b]UIHealthBar[/b] node."),
+		gtr("Many nodes are greyed out. This is because we can only connect signals to a node that has a code file %s attached to it, like the [b]UIHealthBar[/b] node.") % bbcode_generate_icon_image_string(ICONS_MAP.script),
 	])
 	complete_step()
 
@@ -115,6 +142,14 @@ func part_010_updating_health_bar() -> void:
 		1,
 		func(_task: Task) -> int:
 			var player_node: Node = get_scene_node_by_path("Start/Player")
+			if player_node == null:
+				var found_nodes := get_scene_nodes_by_prefix("Player")
+				if found_nodes.size() > 0:
+					player_node = found_nodes.front()
+			# Allow passing the step if the player node was renamed by the user
+			# and cannot be found.
+			if player_node == null:
+				return 1
 			return 0 if player_node.get_signal_connection_list("health_changed").is_empty() else 1,
 	)
 	complete_step()
@@ -132,7 +167,7 @@ func part_010_updating_health_bar() -> void:
 	bubble_set_title(gtr("The connected function"))
 	bubble_add_text([
 		gtr("Your signal is now connected to the function named [b]_on_player_health_changed[/b]."),
-		gtr("Godot indicates the connection with the green icon " + bbcode_generate_icon_image_string(ICONS_MAP.script_signal_connected) +  " in the margin on the left.")
+		gtr("Godot indicates the connection with the green icon %s in the margin on the left.") % bbcode_generate_icon_image_string(ICONS_MAP.script_signal_connected),
 	])
 	complete_step()
 
@@ -145,7 +180,7 @@ func part_010_updating_health_bar() -> void:
 		gtr("Click the [b]Play Current Scene[/b] button and go fight some baddies."),
 		gtr("When you touch an enemy and lose health, the health bar should now update accordingly."),
 	])
-	bubble_add_task_press_button(interface.run_bar_play_current_button, "Play Current Scene")
+	bubble_add_task_press_button(interface.run_bar_play_current_button, gtr("Play Current Scene"))
 	complete_step()
 
 	

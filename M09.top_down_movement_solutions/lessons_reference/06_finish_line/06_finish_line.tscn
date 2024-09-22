@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://bcu6qb6161mc"]
+
+[ext_resource type="Script" path="res://lessons_reference/06_finish_line/06_finish_line.gd" id="1_l7kaa"]
+[ext_resource type="PackedScene" uid="uid://v5fce63e7bob" path="res://lessons_reference/05_new_assets/05_runner.tscn" id="2_umw4n"]
+[ext_resource type="PackedScene" uid="uid://xl56q8amb611" path="res://assets/finish_line/finish_line.tscn" id="3_fq4dc"]
+[ext_resource type="Texture2D" uid="uid://5vl7p0xb7nd8" path="res://assets/circuit_background.png" id="4_omus2"]
+[ext_resource type="PackedScene" uid="uid://cwk136csprv66" path="res://lessons_reference/02_obstacles/02_circuit_obstacle.tscn" id="5_j5mdu"]
+
+[node name="WithFinishLine" type="Node2D"]
+y_sort_enabled = true
+script = ExtResource("1_l7kaa")
+
+[node name="Runner" parent="." instance=ExtResource("2_umw4n")]
+position = Vector2(1339, 517)
+collision_layer = 1
+
+[node name="FinishLine" parent="." instance=ExtResource("3_fq4dc")]
+unique_name_in_owner = true
+position = Vector2(576, 1152)
+width = 256.0
+
+[node name="CircuitBackground" type="Sprite2D" parent="."]
+texture = ExtResource("4_omus2")
+centered = false
+metadata/_edit_lock_ = true
+
+[node name="Circuit" parent="." instance=ExtResource("5_j5mdu")]
+metadata/_edit_lock_ = true

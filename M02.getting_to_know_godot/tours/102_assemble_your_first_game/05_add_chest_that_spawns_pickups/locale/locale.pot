@@ -1,4 +1,6 @@
 # LANGUAGE translation for M2. Getting to Know Godot (Interactive Tours) for the following files:
+# res://tours/102_assemble_your_first_game/102_assemble_your_first_game.gd
+# res://addons/godot_tours/tour.gd
 # res://tours/102_assemble_your_first_game/05_add_chest_that_spawns_pickups/05_add_chest_that_spawns_pickups.gd
 #
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
@@ -10,6 +12,63 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
+
+#: tours/102_assemble_your_first_game/102_assemble_your_first_game.gd
+msgid "Open the start scene"
+msgstr ""
+
+#: tours/102_assemble_your_first_game/102_assemble_your_first_game.gd
+msgid "Let's start by opening the scene we will be working with."
+msgstr ""
+
+#: tours/102_assemble_your_first_game/102_assemble_your_first_game.gd
+msgid "In the [b]FileSystem Dock[/b] at the bottom-left, find and [b]double-click[/b] on the scene we will be working with: [b]%s[/b]."
+msgstr ""
+
+#: tours/102_assemble_your_first_game/102_assemble_your_first_game.gd
+#: tours/102_assemble_your_first_game/05_add_chest_that_spawns_pickups/05_add_chest_that_spawns_pickups.gd
+msgid "Open the scene [b]%s[/b]."
+msgstr ""
+
+#: addons/godot_tours/tour.gd
+msgid "Press the [b]%s[/b] button."
+msgstr ""
+
+#: addons/godot_tours/tour.gd
+msgid "Turn the [b]%s[/b] button %s."
+msgstr ""
+
+#: addons/godot_tours/tour.gd
+msgid "Change to the [b]%s[/b] tab."
+msgstr ""
+
+#: addons/godot_tours/tour.gd
+msgid "Select the %s %s in the [b]Scene Dock[/b]."
+msgstr ""
+
+#: addons/godot_tours/tour.gd
+msgid "Set [b]%s[/b] to [code]%s[/code]"
+msgstr ""
+
+#: addons/godot_tours/tour.gd
+msgid "Set [b]%s[/b]'s [b]%s[/b] property to [b]%s[/b]"
+msgstr ""
+
+#: addons/godot_tours/tour.gd
+msgid "Open the scene [b]%s[/b]"
+msgstr ""
+
+#: addons/godot_tours/tour.gd
+msgid "Expand the property [b]%s[/b] in the [b]Inspector[/b]"
+msgstr ""
+
+#: addons/godot_tours/tour.gd
+msgid "Move [b]%s[/b] inside the guide box"
+msgstr ""
+
+#: addons/godot_tours/tour.gd
+msgid "Instantiate the [b]%s[/b] scene as a child of [b]%s[/b]"
+msgstr ""
 
 #: tours/102_assemble_your_first_game/05_add_chest_that_spawns_pickups/05_add_chest_that_spawns_pickups.gd
 msgid "Changing RoomA"
@@ -36,7 +95,7 @@ msgid "Let's give this a try. Open the [b]RoomA[/b] scene."
 msgstr ""
 
 #: tours/102_assemble_your_first_game/05_add_chest_that_spawns_pickups/05_add_chest_that_spawns_pickups.gd
-msgid "Double-click the file [b]\" + room_a_filename + \"[/b] in the [b]FileSystem dock[/b] in the bottom-left to open the scene."
+msgid "Double-click the file [b]%s[/b] in the [b]FileSystem dock[/b] in the bottom-left to open the scene."
 msgstr ""
 
 #: tours/102_assemble_your_first_game/05_add_chest_that_spawns_pickups/05_add_chest_that_spawns_pickups.gd
@@ -56,11 +115,11 @@ msgid "The chest"
 msgstr ""
 
 #: tours/102_assemble_your_first_game/05_add_chest_that_spawns_pickups/05_add_chest_that_spawns_pickups.gd
-msgid "In the project, we prepared a chest scene for you: [b]\" + scene_chest_filename + \"[/b]. You can see it in the [b]FileSystem Dock[/b] in the bottom-left."
+msgid "In the project, we prepared a chest scene for you: [b]%s[/b]. You can see it in the [b]FileSystem Dock[/b] in the bottom-left."
 msgstr ""
 
 #: tours/102_assemble_your_first_game/05_add_chest_that_spawns_pickups/05_add_chest_that_spawns_pickups.gd
-msgid "Drag and drop the [b]\" + scene_chest_filename + \"[/b] file onto the viewport to create an instance of it, and place it inside of the room."
+msgid "Drag and drop the [b]%s[/b] file onto the viewport to create an instance of it, and place it inside of the room."
 msgstr ""
 
 #: tours/102_assemble_your_first_game/05_add_chest_that_spawns_pickups/05_add_chest_that_spawns_pickups.gd
@@ -92,7 +151,7 @@ msgid "Let's now head back to the [b]Start[/b] scene where you can see the chest
 msgstr ""
 
 #: tours/102_assemble_your_first_game/05_add_chest_that_spawns_pickups/05_add_chest_that_spawns_pickups.gd
-msgid "Click on the scene tab that says \" + SCENE_START.get_file() + \" above the viewport."
+msgid "Click on the scene tab that says %s above the viewport."
 msgstr ""
 
 #: tours/102_assemble_your_first_game/05_add_chest_that_spawns_pickups/05_add_chest_that_spawns_pickups.gd
@@ -113,6 +172,10 @@ msgstr ""
 
 #: tours/102_assemble_your_first_game/05_add_chest_that_spawns_pickups/05_add_chest_that_spawns_pickups.gd
 msgid "Press [b]%s[/b] on your keyboard or close the game window to return to the editor."
+msgstr ""
+
+#: tours/102_assemble_your_first_game/05_add_chest_that_spawns_pickups/05_add_chest_that_spawns_pickups.gd
+msgid "Play Current Scene"
 msgstr ""
 
 #: tours/102_assemble_your_first_game/05_add_chest_that_spawns_pickups/05_add_chest_that_spawns_pickups.gd
@@ -160,11 +223,11 @@ msgid "In Godot, we write code in a text file that we attach to a node."
 msgstr ""
 
 #: tours/102_assemble_your_first_game/05_add_chest_that_spawns_pickups/05_add_chest_that_spawns_pickups.gd
-msgid "You can see that the chest node has a code file attached to it thanks to the script icon \" + bbcode_generate_icon_image_string(ICONS_MAP.script) +  \". We call a code file a [b]script[/b]."
+msgid "You can see that the chest node has a code file attached to it thanks to the script icon %s. We call a code file a [b]script[/b]."
 msgstr ""
 
 #: tours/102_assemble_your_first_game/05_add_chest_that_spawns_pickups/05_add_chest_that_spawns_pickups.gd
-msgid "Click the script icon \" + bbcode_generate_icon_image_string(ICONS_MAP.script) +  \" to open this file in the script view."
+msgid "Click the script icon %s to open this file in the script view."
 msgstr ""
 
 #: tours/102_assemble_your_first_game/05_add_chest_that_spawns_pickups/05_add_chest_that_spawns_pickups.gd
@@ -212,7 +275,7 @@ msgid "The loot function is [b]called[/b] from the [b]_on_body_entered[/b] funct
 msgstr ""
 
 #: tours/102_assemble_your_first_game/05_add_chest_that_spawns_pickups/05_add_chest_that_spawns_pickups.gd
-msgid "Notice the green icon \" + bbcode_generate_icon_image_string(ICONS_MAP.script_signal_connected) +  \" in the margin on the left. It tells us that [b]_on_body_entered[/b] is connected to a signal."
+msgid "Notice the green icon %s in the margin on the left. It tells us that [b]_on_body_entered[/b] is connected to a signal."
 msgstr ""
 
 #: tours/102_assemble_your_first_game/05_add_chest_that_spawns_pickups/05_add_chest_that_spawns_pickups.gd
@@ -268,7 +331,7 @@ msgid "The name \"create_pickup\" tells the computer which function we want to r
 msgstr ""
 
 #: tours/102_assemble_your_first_game/05_add_chest_that_spawns_pickups/05_add_chest_that_spawns_pickups.gd
-msgid "Also, make sure that there's a [b]tab character[/b] at the start of the line, just like on line 13: \" + bbcode_generate_icon_image_string(ICONS_MAP.script_indent) +  \". That's how Godot knows that the line belongs to the [b]loot[/b] function."
+msgid "Also, make sure that there's a [b]tab character[/b] at the start of the line, just like on line 13: %s. That's how Godot knows that the line belongs to the [b]loot[/b] function."
 msgstr ""
 
 #: tours/102_assemble_your_first_game/05_add_chest_that_spawns_pickups/05_add_chest_that_spawns_pickups.gd
@@ -305,4 +368,8 @@ msgstr ""
 
 #: tours/102_assemble_your_first_game/05_add_chest_that_spawns_pickups/05_add_chest_that_spawns_pickups.gd
 msgid "Congratulations on assembling your first game in Godot!"
+msgstr ""
+
+#: tours/102_assemble_your_first_game/05_add_chest_that_spawns_pickups/05_add_chest_that_spawns_pickups.gd
+msgid "[center]Head to the next module to keep learning how to code games![/center]"
 msgstr ""

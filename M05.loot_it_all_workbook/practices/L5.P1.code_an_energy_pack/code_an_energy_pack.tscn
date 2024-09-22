@@ -1,22 +1,28 @@
-[gd_scene load_steps=4 format=3 uid="uid://bnh27hu81l8wl"]
+[gd_scene load_steps=6 format=3]
 
-[ext_resource type="PackedScene" path="res://practices/L5.P1.code_an_energy_pack/ship_energy_pack.tscn" id="1_bes7y"]
-[ext_resource type="PackedScene" path="res://practices/L5.P1.code_an_energy_pack/energy_pack.tscn" id="3_anyjx"]
-[ext_resource type="PackedScene" path="res://practices/L5.P1.code_an_energy_pack/background.tscn" id="5_o66co"]
+[ext_resource type="PackedScene" path="res://practices/L5.P1.code_an_energy_pack/ship_energy_pack.tscn" id="1_qylcr"]
+[ext_resource type="Script" path="res://practices/L5.P1.code_an_energy_pack/ship_energy_pack.gd" id="2_evfgh"]
+[ext_resource type="PackedScene" path="res://practices/L5.P1.code_an_energy_pack/energy_pack.tscn" id="3_7eift"]
+[ext_resource type="Script" path="res://practices/L5.P1.code_an_energy_pack/energy_pack.gd" id="4_poldr"]
+[ext_resource type="PackedScene" path="res://practices/L5.P1.code_an_energy_pack/background.tscn" id="5_ebw4v"]
 
 [node name="CodeAnEnergyPack" type="Node2D"]
 position = Vector2(960, 540)
 
-[node name="ShipEnergyPack" parent="." instance=ExtResource("1_bes7y")]
+[node name="ShipEnergyPack" type="Area2D" parent="." instance=ExtResource("1_qylcr")]
 position = Vector2(-556, 0)
+script = ExtResource("2_evfgh")
 
-[node name="EnergyPack" parent="." instance=ExtResource("3_anyjx")]
+[node name="EnergyPack" type="Area2D" parent="." instance=ExtResource("3_7eift")]
 position = Vector2(-221, -1)
+script = ExtResource("4_poldr")
 
-[node name="EnergyPack2" parent="." instance=ExtResource("3_anyjx")]
+[node name="EnergyPack2" type="Area2D" parent="." instance=ExtResource("3_7eift")]
 position = Vector2(2, -1)
+script = ExtResource("4_poldr")
 
-[node name="EnergyPack3" parent="." instance=ExtResource("3_anyjx")]
+[node name="EnergyPack3" type="Area2D" parent="." instance=ExtResource("3_7eift")]
 position = Vector2(197, -1)
+script = ExtResource("4_poldr")
 
-[node name="Background" parent="." instance=ExtResource("5_o66co")]
+[node name="Background" type="Node" parent="." instance=ExtResource("5_ebw4v")]

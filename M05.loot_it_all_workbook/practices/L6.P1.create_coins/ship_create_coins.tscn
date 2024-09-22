@@ -1,9 +1,9 @@
 [gd_scene load_steps=10 format=3]
 
-[ext_resource type="Script" path="res://practices/L6.P1.create_coins/ship_create_coins.gd" id="1_sbdu3"]
-[ext_resource type="Texture2D" path="res://assets/practice_assets/ellipse_white.png" id="2_cb7ra"]
-[ext_resource type="Texture2D" path="res://assets/practice_assets/shape_ship.png" id="3_kjsbn"]
-[ext_resource type="Texture2D" path="res://assets/practice_assets/coin.png" id="4_6t8li"]
+[ext_resource type="Script" path="res://practices/L6.P1.create_coins/ship_create_coins.gd" id="1_hxqa6"]
+[ext_resource type="Texture2D" path="res://assets/practice_assets/ellipse_white.png" id="2_o6y5p"]
+[ext_resource type="Texture2D" path="res://assets/practice_assets/shape_ship.png" id="3_tt1rv"]
+[ext_resource type="Texture2D" path="res://assets/practice_assets/coin.png" id="4_2atgc"]
 
 [sub_resource type="Curve" id="Curve_f7g5y"]
 _data = [Vector2(0, 0.663194), 0.0, 0.0, 0, 0, Vector2(1, 0), -0.0319997, 0.0, 0, 0]
@@ -27,21 +27,21 @@ outline_size = 12
 outline_color = Color(0, 0, 0, 1)
 
 [node name="Ship" type="Area2D"]
-script = ExtResource("1_sbdu3")
+script = ExtResource("1_hxqa6")
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
 modulate = Color(0.584314, 0.380392, 0.933333, 1)
 show_behind_parent = true
 z_index = -2
 process_material = SubResource("ParticleProcessMaterial_8umco")
-texture = ExtResource("2_cb7ra")
+texture = ExtResource("2_o6y5p")
 visibility_rect = Rect2(-4000, -4000, 4000, 4000)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_cwkdh")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("3_kjsbn")
+texture = ExtResource("3_tt1rv")
 
 [node name="UI" type="Control" parent="."]
 layout_mode = 3
@@ -52,7 +52,7 @@ offset_bottom = 40.0
 [node name="Sprite2D" type="Sprite2D" parent="UI"]
 position = Vector2(-39, -92)
 scale = Vector2(0.382609, 0.382609)
-texture = ExtResource("4_6t8li")
+texture = ExtResource("4_2atgc")
 
 [node name="CoinsCount" type="Label" parent="UI"]
 layout_mode = 0

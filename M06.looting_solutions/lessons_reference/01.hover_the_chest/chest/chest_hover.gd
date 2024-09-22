@@ -25,7 +25,9 @@ func _on_mouse_entered() -> void:
 #END:_on_mouse_entered_definition
 #ANCHOR:_on_mouse_entered_tween
 	var tween := create_tween()
+#ANCHOR:tween_grow_outline
 	tween.tween_method(set_outline_thickness, 3.0, 6.0, 0.08)
+#END:tween_grow_outline
 #END:_on_mouse_entered_tween
 
 #ANCHOR:_on_mouse_exited_definition

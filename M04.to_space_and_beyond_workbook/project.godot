@@ -3,7 +3,7 @@ config_version=5
 [application]
 
 config/name="M4. To Space and Beyond (Workbook)"
-config/features=PackedStringArray("4.2", "Forward Plus")
+config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://assets/ship.png"
 config/tags=PackedStringArray("workbook")
 

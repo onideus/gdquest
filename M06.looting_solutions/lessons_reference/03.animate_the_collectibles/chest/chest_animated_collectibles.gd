@@ -49,7 +49,7 @@ func open() -> void:
 
 
 func _spawn_random_item() -> void:
-	var loot_item: Node2D = possible_items.pick_random().instantiate()
+	var loot_item: Area2D = possible_items.pick_random().instantiate()
 	add_child(loot_item)
 
 

@@ -689,14 +689,17 @@ func bubble_add_task_node_to_guide(parameters: Guide3DTaskParameters) -> void:
 	)
 	bubble_add_task(parameters.description_override, 1, func node_to_guide(_task: Task) -> int:
 		var scene_root := EditorInterface.get_edited_scene_root()
-		var node: Node3D = null 
+		var node: Node3D = null
 		if parameters.node_name == scene_root.name:
 			node = scene_root
 		else:
 			node = scene_root.find_child(parameters.node_name)
-		var guide: Guide3D = guides.get(parameters.node_name, null)
 
+		var guide: Guide3D = guides.get(parameters.node_name, null)
 		var does_match := node != null and guide != null
+		if not does_match:
+			return 0
+
 		if parameters.check_mode == Guide3DCheckMode.POSITION:
 			does_match = does_match and node.global_position.distance_to(guide.global_position) < parameters.position_margin
 		elif parameters.check_mode == Guide3DCheckMode.IN_BOUNDING_BOX:

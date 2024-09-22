@@ -166,14 +166,14 @@ func part_010_adding_bridges() -> void:
 	bubble_set_title(gtr("Excellent! Time to play!"))
 	bubble_add_text([
 		gtr("Let's see if everything works as expected."),
-		gtr("The [b]Play[/b] button we used earlier is for running the [b]") +
-		SCENE_COMPLETED_PROJECT.get_file() + "[/b] scene.",
+		gtr("The [b]Play[/b] button we used earlier is for running the [b]%s[/b] scene.") %
+		SCENE_COMPLETED_PROJECT.get_file(),
 		gtr("To play the [b]current[/b] scene, click the [b]Play Edited Scene[/b] button to run the scene."),
 		gtr("Alternatively, you can press press [b]%s[/b] on your keyboard.") % shortcuts.run_current,
 		gtr("Then, press [b]%s[/b] or close the game window to stop the game.") % shortcuts.stop,
 		]
 	)
-	bubble_add_task_press_button(interface.run_bar_play_current_button, "Play Edited Scene")
+	bubble_add_task_press_button(interface.run_bar_play_current_button, gtr("Play Edited Scene"))
 	complete_step()
 
 	bubble_move_and_anchor(interface.canvas_item_editor, Bubble.At.CENTER)
@@ -236,7 +236,7 @@ func part_010_adding_bridges() -> void:
 		gtr("Click the [b]Play Edited Scene[/b] button in the top-right or press [b]%s[/b] to run the scene.") % shortcuts.run_current,
 		gtr("Press [b]%s[/b] to close the game window once you're done.") % shortcuts.stop,
 	])
-	bubble_add_task_press_button(interface.run_bar_play_current_button, "Play Edited Scene")
+	bubble_add_task_press_button(interface.run_bar_play_current_button, gtr("Play Edited Scene"))
 	complete_step()
 
 	bubble_set_title(gtr("Excellent!"))

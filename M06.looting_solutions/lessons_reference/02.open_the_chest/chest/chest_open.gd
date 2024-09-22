@@ -20,16 +20,20 @@ func _ready() -> void:
 func set_outline_thickness(new_thickness: float) -> void:
 	canvas_group.material.set_shader_parameter("line_thickness", new_thickness)
 
+#ANCHOR:func_on_mouse_entered_definition
 func _on_mouse_entered() -> void:
+#END:func_on_mouse_entered_definition
 	var tween := create_tween()
 	tween.tween_method(set_outline_thickness, 3.0, 6.0, 0.08)
 
+#ANCHOR:func_on_mouse_exited_definition
 func _on_mouse_exited() -> void:
+#END:func_on_mouse_exited_definition
 	var tween := create_tween()
 	tween.tween_method(set_outline_thickness, 6.0, 3.0, 0.08)
 
 #ANCHOR:_input_event_definition
-func _input_event(viewport: Node, event: InputEvent, shape_index: int):
+func _input_event(viewport: Viewport, event: InputEvent, shape_index: int):
 #END:_input_event_definition
 #ANCHOR:boolean_expression
 	var event_is_mouse_click: bool = (

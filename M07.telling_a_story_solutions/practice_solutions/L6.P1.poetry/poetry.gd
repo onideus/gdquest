@@ -2,10 +2,9 @@ extends ColorRect
 
 @onready var rich_text_label: RichTextLabel = %RichTextLabel
 
-var lines := """
-If you know
+var lines := """If you know
 that 6 Hours of debugging
-can save you 5 minutes 
+can save you 5 minutes
 of reading documentation
 
 If you try to automate
@@ -16,8 +15,7 @@ If you think, once again
 that you can finish in 1 hour
 a task that's always taken you 9
 
-You'll be a gamedev, my student
-"""
+You'll be a gamedev, my student"""
 var appearance_time := 10.0
 
 func _ready() -> void:

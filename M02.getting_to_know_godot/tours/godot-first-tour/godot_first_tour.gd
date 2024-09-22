@@ -121,7 +121,7 @@ func steps_020_first_look() -> void:
 	bubble_set_avatar_at(Bubble.AvatarAt.LEFT)
 	bubble_set_title(gtr("The viewport"))
 	bubble_add_text(
-		[gtr("The central part of the editor outlined in blue is the viewport. It's a view of the currently open [b]scene[/b]."),]
+		[gtr("The central part of the editor outlined in purple is the viewport. It's a view of the currently open [b]scene[/b]."),]
 	)
 	complete_step()
 

@@ -41,10 +41,10 @@ func part_010_adding_chest() -> void:
 	bubble_set_title(gtr("Open the RoomA scene"))
 	bubble_add_text([
 		gtr("Let's give this a try. Open the [b]RoomA[/b] scene."),
-		gtr("Double-click the file [b]" + room_a_filename + "[/b] in the [b]FileSystem dock[/b] in the bottom-left to open the scene."),
+		gtr("Double-click the file [b]%s[/b] in the [b]FileSystem dock[/b] in the bottom-left to open the scene.") % room_a_filename,
 	])
 	bubble_add_task(
-		("Open the scene [b]" + room_a_filename +"[/b]."),
+		gtr("Open the scene [b]%s[/b].") % room_a_filename,
 		1,
 		func task_open_start_scene(_task: Task) -> int:
 			var scene_root: Node = EditorInterface.get_edited_scene_root()
@@ -69,8 +69,8 @@ func part_010_adding_chest() -> void:
 	highlight_filesystem_paths([SCENE_CHEST])
 	bubble_set_title(gtr("The chest"))
 	bubble_add_text([
-		gtr("In the project, we prepared a chest scene for you: [b]" + scene_chest_filename + "[/b]. You can see it in the [b]FileSystem Dock[/b] in the bottom-left."),
-		gtr("Drag and drop the [b]" + scene_chest_filename + "[/b] file onto the viewport to create an instance of it, and place it inside of the room."),
+		gtr("In the project, we prepared a chest scene for you: [b]%s[/b]. You can see it in the [b]FileSystem Dock[/b] in the bottom-left.") % scene_chest_filename,
+		gtr("Drag and drop the [b]%s[/b] file onto the viewport to create an instance of it, and place it inside of the room.") % scene_chest_filename,
 	])
 	bubble_add_task(
 		gtr("Add the [b]Chest Scene[/b] to the [b]Scene[/b]."),
@@ -111,7 +111,7 @@ func part_010_adding_chest() -> void:
 	bubble_set_title(gtr("Head back to the start scene"))
 	bubble_add_text([
 		gtr("Let's now head back to the [b]Start[/b] scene where you can see the chest."),
-		gtr("Click on the scene tab that says " + SCENE_START.get_file() + " above the viewport."),
+		gtr("Click on the scene tab that says [b]start[/b] above the viewport."),
 	])
 	bubble_add_task(
 		gtr("Click the [b]Start[/b] scene tab."),
@@ -130,7 +130,7 @@ func part_010_adding_chest() -> void:
 		gtr("What do you observe?"),
 		gtr("Press [b]%s[/b] on your keyboard or close the game window to return to the editor.") % shortcuts.stop,
 	])
-	bubble_add_task_press_button(interface.run_bar_play_current_button, "Play Current Scene")
+	bubble_add_task_press_button(interface.run_bar_play_current_button, gtr("Play Current Scene"))
 	complete_step()
 
 
@@ -173,8 +173,8 @@ func part_020_first_line_of_code() -> void:
 	bubble_add_text([
 		gtr("To make nodes interactive, we need to tell the computer how they interact. We do that using code."),
 		gtr("In Godot, we write code in a text file that we attach to a node."),
-		gtr("You can see that the chest node has a code file attached to it thanks to the script icon " + bbcode_generate_icon_image_string(ICONS_MAP.script) +  ". We call a code file a [b]script[/b]."),
-		gtr("Click the script icon " + bbcode_generate_icon_image_string(ICONS_MAP.script) +  " to open this file in the script view."),
+		gtr("You can see that the chest node has a code file attached to it thanks to the script icon %s. We call a code file a [b]script[/b].") % bbcode_generate_icon_image_string(ICONS_MAP.script),
+		gtr("Click the script icon %s to open this file in the script view.") % bbcode_generate_icon_image_string(ICONS_MAP.script),
 	])
 	bubble_add_task(
 		gtr("Open the script attached to the [b]Chest[/b] node."),
@@ -211,7 +211,7 @@ func part_020_first_line_of_code() -> void:
 	bubble_set_title(gtr("Connected signal"))
 	bubble_add_text([
 		gtr("The loot function is [b]called[/b] from the [b]_on_body_entered[/b] function."),
-		gtr("Notice the green icon " + bbcode_generate_icon_image_string(ICONS_MAP.script_signal_connected) +  " in the margin on the left. It tells us that [b]_on_body_entered[/b] is connected to a signal."),
+		gtr("Notice the green icon %s in the margin on the left. It tells us that [b]_on_body_entered[/b] is connected to a signal.") % bbcode_generate_icon_image_string(ICONS_MAP.script_signal_connected),
 		gtr("This is why the chest opens when the player approaches it."),
 	])
 	complete_step()
@@ -240,7 +240,7 @@ func part_020_first_line_of_code() -> void:
 	bubble_add_text([
 		gtr("On line 14, type [b]create_pickup()[/b] to call the function. Be careful to type exactly what you see here, including the parentheses."),
 		gtr("The name \"create_pickup\" tells the computer which function we want to refer to, and the parentheses () run the function's lines of code."),
-		gtr("Also, make sure that there's a [b]tab character[/b] at the start of the line, just like on line 13: " + bbcode_generate_icon_image_string(ICONS_MAP.script_indent) +  ". That's how Godot knows that the line belongs to the [b]loot[/b] function."),
+		gtr("Also, make sure that there's a [b]tab character[/b] at the start of the line, just like on line 13: %s. That's how Godot knows that the line belongs to the [b]loot[/b] function.") % bbcode_generate_icon_image_string(ICONS_MAP.script_indent),
 		gtr("Press the [b]Tab[/b] key on your keyboard to write a tab character.")
 	])
 	bubble_add_task(
@@ -280,7 +280,7 @@ func part_020_first_line_of_code() -> void:
 		gtr("Feel free to explore the rest of the game and appreciate all you just learned."),
 		gtr("Once you're done, press [b]%s[/b] on your keyboard or close the game window to return to the editor.") % shortcuts.stop,
 	])
-	bubble_add_task_press_button(interface.run_bar_play_current_button, "Play Current Scene")
+	bubble_add_task_press_button(interface.run_bar_play_current_button, gtr("Play Current Scene"))
 	complete_step()
 
 
@@ -293,6 +293,6 @@ func part_xxxx_conclusion() -> void:
 	bubble_set_background(TEXTURE_BUBBLE_BACKGROUND)
 	bubble_add_texture(TEXTURE_GDQUEST_LOGO)
 	bubble_set_title(gtr("Congratulations on assembling your first game in Godot!"))
-	bubble_add_text([("[center]Head to the next module to keep learning how to code games![/center]")])
+	bubble_add_text([gtr("[center]Head to the next module to keep learning how to code games![/center]")])
 	bubble_set_footer((CREDITS_FOOTER_GDQUEST))
 	complete_step()

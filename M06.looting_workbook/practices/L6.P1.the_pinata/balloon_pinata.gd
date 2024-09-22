@@ -1,11 +1,18 @@
 extends Area2D
 
+@export var possible_candies: Array[PackedScene] = [
+	# Calling preload() like this is equivalent to adding the candies in the Inspector.
+	preload("./candy/candy_blue.tscn"),
+	preload("./candy/candy_green.tscn"),
+	preload("./candy/candy_red.tscn")
+]
+
 
 func _ready() -> void:
 	randomize()
 
 
-func _input_event(viewport: Node, event: InputEvent, shape_index: int):
+func _input_event(viewport: Viewport, event: InputEvent, shape_index: int):
 	var event_is_mouse_click: bool = (
 		event is InputEventMouseButton
 		and event.button_index == MOUSE_BUTTON_LEFT
@@ -13,20 +20,22 @@ func _input_event(viewport: Node, event: InputEvent, shape_index: int):
 	)
 
 	if event_is_mouse_click:
-		spawn_candy()
 		input_pickable = false
+		# Create three candies! Hint: change the for loop range to spawn multiple candies.
+		for current_index in range(0):
+			spawn_candy()
 
 
 func spawn_candy() -> void:
-	# You have to loop 3 times over the next lines of code!
-	for current_index in range(0):
-		# Complete the variables to calculate a random position in a circle using polar coordinates.
-		var radius := 0.0
-		var angle := 0.0
+	# Instantiate and add a random candy as a child of the piñata.
+	# Use the possible_candies.pick_random() function to pick a random candy.
+	var candy: Node2D = null
 
-		var random_direction := Vector2()
-		var random_position := Vector2()
 
-		# Instantiate and add the candy as a child of the piñata.
-		const CANDY_PACKED_SCENE := preload("candy/candy.tscn")
-		var candy: Node2D = null
+	# Complete the variables to calculate a random position in a circle using polar coordinates.
+	var random_angle := 0.0
+	var random_direction := Vector2()
+	# The random distance should be a random value between 0 and 100.
+	var random_distance := 0.0
+
+	# Finally, position the candy at the calculated random position.

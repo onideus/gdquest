@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=3]
 
-[ext_resource type="Script" path="res://practices/L2.P1.pop_the_ball/needle.gd" id="1_xa4rx"]
-[ext_resource type="Texture2D" path="res://assets/practice_assets/ellipse_white.png" id="2_g6a58"]
-[ext_resource type="Texture2D" path="res://assets/practice_assets/needle.png" id="3_kue10"]
+[ext_resource type="Script" path="res://practices/L2.P1.pop_the_ball/needle.gd" id="1_y71r4"]
+[ext_resource type="Texture2D" path="res://assets/practice_assets/ellipse_white.png" id="2_k5mfm"]
+[ext_resource type="Texture2D" path="res://assets/practice_assets/needle.png" id="3_upmrh"]
 
 [sub_resource type="Curve" id="Curve_f7g5y"]
 _data = [Vector2(0, 0.663194), 0.0, 0.0, 0, 0, Vector2(1, 0), -0.0319997, 0.0, 0, 0]
@@ -21,14 +21,14 @@ scale_curve = SubResource("CurveTexture_wu7u1")
 radius = 52.2398
 
 [node name="Needle" type="Area2D"]
-script = ExtResource("1_xa4rx")
+script = ExtResource("1_y71r4")
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
 modulate = Color(0.584314, 0.380392, 0.933333, 1)
 show_behind_parent = true
 z_index = -2
 process_material = SubResource("ParticleProcessMaterial_8umco")
-texture = ExtResource("2_g6a58")
+texture = ExtResource("2_k5mfm")
 visibility_rect = Rect2(-4000, -4000, 4000, 4000)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -37,4 +37,4 @@ shape = SubResource("CircleShape2D_cwkdh")
 
 [node name="Needle" type="Sprite2D" parent="."]
 position = Vector2(14, 0)
-texture = ExtResource("3_kue10")
+texture = ExtResource("3_upmrh")

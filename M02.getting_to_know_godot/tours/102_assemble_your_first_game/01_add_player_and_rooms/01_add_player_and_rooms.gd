@@ -152,7 +152,7 @@ func part_030_placing_rooms() -> void:
 	bubble_set_avatar_at(Bubble.AvatarAt.LEFT)
 	bubble_add_text([
 		gtr("The grid is too small. Let's make it bigger."),
-		gtr("Click the the three vertical dots in the toolbar to access the grid settings."),
+		gtr("Click the three vertical dots in the toolbar to access the grid settings."),
 		gtr("Then, click [b]Configure Snap...[/b], and change [b]Grid Step[/b] to [b]128px[/b] by [b]128px[/b]. Then, click [b]Ok[/b] to confirm."),
 	])
 	bubble_add_task_set_ranges({

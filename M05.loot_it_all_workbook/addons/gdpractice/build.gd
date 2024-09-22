@@ -56,7 +56,7 @@
 ##     var cell := Vector2(0, 0)
 ##     generate_one_gem(cell)
 ## [/codeblock]
-## 
+##
 ## [b]Note[/b] that:
 ##
 ## [b]Note[/b] that: [br]
@@ -83,8 +83,9 @@ const LOG_MESSAGE := "\t%s...%s"
 
 const ReturnCode = Utils.ReturnCode
 
-var regex_line := RegEx.create_from_string("^(\\h*)(.*)#\\h*(.*)$")
-var regex_shift := RegEx.create_from_string("^([<>]+)\\h*(.*)")
+var regex_line := RegEx.create_from_string(r"^(\h*)(.*)#\h*(.*)$")
+var regex_shift := RegEx.create_from_string(r"^([<>]+)\h*(.*)")
+var regex_uid := RegEx.create_from_string(r'\s*uid=".*?"')
 
 
 func _init() -> void:
@@ -117,7 +118,6 @@ func _init() -> void:
 		user_args = parsed.result.user_args
 		args = parsed.result.args
 		if args.is_empty():
-			print_rich(parsed.result.help_message)
 			quit()
 			return
 
@@ -165,6 +165,7 @@ func build_project(suffix: String, output_path: String, exclude_patterns: Array[
 		)
 
 	var addons_dir_path := Paths.RES.path_join("addons")
+	var addons_to_exclude := ["gd-plug", "gdpractice", "gdquest_theme_utils", "gdquest_sparkly_bag"]
 	var lessons_dir_path := Paths.RES.path_join("lessons/")
 	var lessons_reference_dir_path := Paths.RES.path_join("lessons_reference")
 	var script_templates_dir_path := Paths.RES.path_join("script_templates")
@@ -172,9 +173,12 @@ func build_project(suffix: String, output_path: String, exclude_patterns: Array[
 
 	# Finding files to copy.
 	var should_be_copied_predicate := func(path: String) -> bool:
+		var addons_folders_to_exclude := []
+		for addon_name: String in addons_to_exclude:
+			addons_folders_to_exclude.append(addons_dir_path.path_join(addon_name))
 		return not (
 			(path_starts_to_exclude + (
-				[addons_dir_path, lessons_dir_path] if suffix == "solutions"
+				addons_folders_to_exclude + [lessons_dir_path] if suffix == "solutions"
 				else [lessons_reference_dir_path] if suffix == "workbook"
 				else []
 			)).any(func(path_start: String) -> bool: return path.begins_with(path_start))
@@ -336,6 +340,8 @@ func build_practice(dir_name: StringName, is_forced := false) -> ReturnCode:
 			var contents := FileAccess.get_file_as_string(practice_file_path)
 			if extension == "gd":
 				contents = _process_gd(contents)
+			elif extension == "tscn":
+				contents = regex_uid.sub(contents, "", true)
 			contents = Paths.to_practice(contents)
 			FileAccess.open(practice_file_path, FileAccess.WRITE).store_string(contents)
 			print_rich(LOG_MESSAGE % [practice_file_path, "[color=yellow]PROCESS[/color]"])

@@ -1,16 +1,20 @@
-[gd_scene load_steps=4 format=3]
+[gd_scene load_steps=7 format=3]
 
-[ext_resource type="PackedScene" path="res://practices/L6.P1.the_pinata/balloon_pinata.tscn" id="1_r47vj"]
-[ext_resource type="Script" path="res://practices/L6.P1.the_pinata/balloon_pinata.gd" id="2_rf1gf"]
-[ext_resource type="PackedScene" path="res://practices/L6.P1.the_pinata/background.tscn" id="3_etxjy"]
+[ext_resource type="PackedScene" path="res://practices/L6.P1.the_pinata/balloon_pinata.tscn" id="1_hnryx"]
+[ext_resource type="Script" path="res://practices/L6.P1.the_pinata/balloon_pinata.gd" id="2_cyd6n"]
+[ext_resource type="PackedScene" path="res://practices/L6.P1.the_pinata/candy/candy_blue.tscn" id="3_wl70b"]
+[ext_resource type="PackedScene" path="res://practices/L6.P1.the_pinata/candy/candy_green.tscn" id="4_memhv"]
+[ext_resource type="PackedScene" path="res://practices/L6.P1.the_pinata/candy/candy_red.tscn" id="5_istcb"]
+[ext_resource type="PackedScene" path="res://practices/L6.P1.the_pinata/background.tscn" id="6_d2l56"]
 
 [node name="ThePiñata" type="Node2D"]
 metadata/_edit_horizontal_guides_ = []
 
-[node name="BalloonPinata" type="Area2D" parent="." instance=ExtResource("1_r47vj")]
+[node name="BalloonPinata" type="Area2D" parent="." instance=ExtResource("1_hnryx")]
 position = Vector2(960, 540)
 collision_layer = 2
 collision_mask = 0
-script = ExtResource("2_rf1gf")
+script = ExtResource("2_cyd6n")
+possible_candies = Array[PackedScene]([ExtResource("3_wl70b"), ExtResource("4_memhv"), ExtResource("5_istcb")])
 
-[node name="Background" type="Node" parent="." instance=ExtResource("3_etxjy")]
+[node name="Background" type="Node" parent="." instance=ExtResource("6_d2l56")]

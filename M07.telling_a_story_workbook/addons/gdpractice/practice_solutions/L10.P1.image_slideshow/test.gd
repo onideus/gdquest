@@ -73,7 +73,7 @@ func _build_checks() -> void:
 			var next_index: int = (index + 1) % _practice.items.size()
 			button.pressed.emit()
 			if _practice.item_index != next_index:
-				return tr("it doesn't seem like pressing the button increments the item_index variable.")
+				return tr("it doesn't seem like pressing the button runs the 'advance' function. Did you connect it?.")
 			if _practice.texture_rect.texture != _practice.items[next_index]:
 				return tr("It looks like 'show_image' isn't being called when pressing the button. Did you remember to call it?")
 		_practice.item_index = 0

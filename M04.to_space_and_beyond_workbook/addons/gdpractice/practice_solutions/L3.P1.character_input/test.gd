@@ -38,6 +38,18 @@ func _setup_populate_test_space() -> void:
 func _build_requirements() -> void:
 	_add_actions_requirement(Utils.flatten_unique(INPUTS_TO_TEST))
 
+	var requirement := Requirement.new()
+	requirement.description = tr("The direction property should be defined")
+	requirement.checker = func check_direction_property_defined() -> String:
+		if not "direction" in _practice:
+			return (
+				tr("The direction variable is not defined in the practice script. Did you remove the direction variable defined at the top of the script? Did you move it into the _process() function?") + "\n" +
+				tr("If so, please move it back to the top of the script. Otherwise, the practice system will not be able to test your code.") + "\n" +
+				tr("You can reset the practice in the dock if needed.")
+			)
+		return ""
+	requirements.append(requirement)
+
 
 func _build_checks() -> void:
 	_add_simple_check(tr("Direction vector matches simulated inputs"), _test_direction_vector_matches_simulated_inputs)

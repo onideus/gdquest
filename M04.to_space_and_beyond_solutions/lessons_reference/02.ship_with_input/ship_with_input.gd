@@ -9,6 +9,7 @@ var velocity := Vector2(0, 0)
 #END:velocity_definition
 
 
+#ANCHOR:_process
 func _process(delta: float) -> void:
 #ANCHOR:direction_definition
 	var direction := Vector2(0, 0)
@@ -32,7 +33,7 @@ func _process(delta: float) -> void:
 #ANCHOR:position_calculation
 	position += velocity * delta
 #END:position_calculation
-
+#END:_process
 #ANCHOR:rotation_calculation
 	if direction.length() > 0.0:
 		rotation = velocity.angle()
