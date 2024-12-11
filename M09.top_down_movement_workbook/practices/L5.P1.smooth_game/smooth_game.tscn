@@ -1,24 +1,24 @@
 [gd_scene load_steps=5 format=3]
 
-[ext_resource type="PackedScene" path="res://assets/practice_assets/practice_stage_2.tscn" id="1_ry7ji"]
-[ext_resource type="Script" path="res://practices/L5.P1.smooth_game/smooth_ship.gd" id="2_khswb"]
-[ext_resource type="Texture2D" path="res://assets/practice_assets/shape_ship.png" id="3_04hin"]
+[ext_resource type="PackedScene" path="res://assets/practice_assets/practice_stage_2.tscn" id="1_shybq"]
+[ext_resource type="Script" path="res://practices/L5.P1.smooth_game/smooth_ship.gd" id="2_b2k1s"]
+[ext_resource type="Texture2D" path="res://assets/practice_assets/shape_ship.png" id="3_p4jxt"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4hqje"]
 radius = 48.0937
 
 [node name="SmoothGame" type="Node2D"]
 
-[node name="PracticeStage2" type="StaticBody2D" parent="." instance=ExtResource("1_ry7ji")]
+[node name="PracticeStage2" type="StaticBody2D" parent="." instance=ExtResource("1_shybq")]
 
 [node name="SmoothShip" type="CharacterBody2D" parent="."]
 motion_mode = 1
-script = ExtResource("2_khswb")
+script = ExtResource("2_b2k1s")
 
 [node name="Sprite2D" type="Sprite2D" parent="SmoothShip"]
 unique_name_in_owner = true
 rotation = 1.5708
-texture = ExtResource("3_04hin")
+texture = ExtResource("3_p4jxt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SmoothShip"]
 unique_name_in_owner = true

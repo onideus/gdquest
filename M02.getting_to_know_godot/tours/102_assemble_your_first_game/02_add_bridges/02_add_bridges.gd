@@ -142,7 +142,7 @@ func part_010_adding_bridges() -> void:
 	bubble_move_and_anchor(interface.inspector_dock, Bubble.At.BOTTOM_RIGHT)
 	bubble_add_text([
 		gtr("[b]Left Click and drag[/b] on the map to draw bridges between rooms.", "[b]Right-click[/b] to erase bridges."),
-		gtr("Try to connect the openings in the rooms. The openings are located where there are red crosses around the perimeter of the room."),
+		gtr("Try to connect the openings in the rooms. The openings are located where there are gaps in the red crosses around the perimeter of the room."),
 		gtr("You are free to draw the bridges however you like.")
 	])
 	complete_step()

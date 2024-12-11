@@ -3,7 +3,7 @@ extends Area2D
 @export var possible_items: Array[PackedScene] = []
 
 @onready var canvas_group: CanvasGroup = $CanvasGroup
-
+@onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 func _ready() -> void:
 	mouse_entered.connect(_on_mouse_entered)
@@ -39,7 +39,7 @@ func _input_event(viewport: Node, event: InputEvent, shape_index: int):
 func open() -> void:
 	input_pickable = false
 
-	get_node("AnimationPlayer").play("open", 0.1)
+	animation_player.play("open", 0.1)
 
 	if possible_items.is_empty():
 		return

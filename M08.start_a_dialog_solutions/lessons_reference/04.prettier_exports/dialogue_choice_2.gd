@@ -1,11 +1,11 @@
 #ANCHOR:part_1
 ## This resource represents a choice inside a dialogue item.
 ##
-## DialogueChoice takes:
-##
-## [ul]A text
-## A target dialogue line index to go to when picked
-## Optionally, [member is_quit] can be set to [code]true[/code][/ul]
+## DialogueChoice takes:[br]
+## [br]
+## - A text.[br]
+## - A target dialogue line index to go to when picked.[br]
+## - Optionally, [member is_quit] can be set to [code]true[/code].[br]
 #ANCHOR:icon
 @icon("res://assets/dialogue_choice_icon.svg")
 #END:icon

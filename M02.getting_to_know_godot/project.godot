@@ -2,7 +2,7 @@ config_version=5
 
 [application]
 
-config/name="M2. Get to Know Godot (Interactive Tours)"
+config/name="M02. Get to Know Godot (Interactive Tours)"
 run/main_scene="res://completed_project.tscn"
 config/features=PackedStringArray("4.3")
 config/icon="res://icon.png"

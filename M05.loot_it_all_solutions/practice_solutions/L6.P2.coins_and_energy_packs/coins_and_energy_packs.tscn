@@ -11,21 +11,21 @@
 position = Vector2(962, 534)
 
 [node name="Coin" parent="." instance=ExtResource("2_3exbk")]
-position = Vector2(544, 336)
+position = Vector2(739, 403)
 
 [node name="EnergyPack" parent="." instance=ExtResource("3_rjo23")]
-position = Vector2(564, 707)
+position = Vector2(749, 651)
 
 [node name="Coin2" parent="." instance=ExtResource("2_3exbk")]
-position = Vector2(971, 862)
+position = Vector2(961, 754)
 
 [node name="EnergyPack2" parent="." instance=ExtResource("3_rjo23")]
-position = Vector2(1337, 631)
+position = Vector2(1155, 616)
 
 [node name="Coin3" parent="." instance=ExtResource("2_3exbk")]
-position = Vector2(1337, 284)
+position = Vector2(1164, 383)
 
 [node name="EnergyPack3" parent="." instance=ExtResource("3_rjo23")]
-position = Vector2(925, 168)
+position = Vector2(962, 262)
 
 [node name="Background" parent="." instance=ExtResource("4_3x52h")]

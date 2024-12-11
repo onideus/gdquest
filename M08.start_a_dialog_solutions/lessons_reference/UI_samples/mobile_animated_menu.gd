@@ -1,6 +1,6 @@
 extends Control
 
-@export_range(0.1, 10.0, 0.01, "or greater") var opening_speed := 0.4
+@export_range(0.1, 10.0, 0.01, "or_greater") var opening_speed := 0.4
 
 var _tween: Tween
 
@@ -39,9 +39,9 @@ func _ready() -> void:
 		if is_toggled:
 			_tween.tween_property(animated_screen, "position:x", drawer_width, speed)
 		# else, do the opposite
-		else: 
+		else:
 			_tween.tween_property(animated_screen, "position:x", 0, speed)
 	)
-	# and finally, we ensure the button is focused by default to enable immediate 
+	# and finally, we ensure the button is focused by default to enable immediate
 	# interaction with spacebar/enter:
 	drawer_button.grab_focus()

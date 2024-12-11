@@ -2,7 +2,7 @@ config_version=5
 
 [application]
 
-config/name="M6. Looting (Solutions)"
+config/name="M06. Looting (Solutions)"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon_looting.png"
 config/tags=PackedStringArray("solutions")

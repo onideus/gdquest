@@ -52,8 +52,10 @@ func _setup_populate_test_space() -> void:
 
 func _build_checks() -> void:
 	var ship: Area2D = _practice.find_child("Ship*")
-	var ship_coins_count: Label = _practice.find_child("CoinsCount")
-	var ship_energy_bar: ProgressBar = _practice.find_child("EnergyBar")
+	ship = ship.duplicate()
+	ship.position = Vector2(100000, 100000)
+	var ship_coins_count: Label = ship.find_child("CoinsCount")
+	var ship_energy_bar: ProgressBar = ship.find_child("EnergyBar")
 
 	var check_coin_group := Check.new()
 	check_coin_group.description = tr("The coin scene root node has the 'coin' group")

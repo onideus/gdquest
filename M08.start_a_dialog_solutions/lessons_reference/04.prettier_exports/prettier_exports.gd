@@ -23,7 +23,7 @@ extends Control
 ## The character
 @onready var body: TextureRect = %Body
 ## The Expression
-@onready var expression_texture_rect: TextureRect = %Expression
+@onready var expression: TextureRect = %Expression
 ## The container for buttons
 @onready var action_buttons_v_box_container: VBoxContainer = %ActionButtonsVBoxContainer
 #END:onreadies
@@ -56,7 +56,7 @@ func show_text(current_item_index: int) -> void:
 	# And we set the appropriate expression texture
 #ANCHOR:set_properties
 	rich_text_label.text = current_item.text
-	expression_texture_rect.texture = current_item.expression
+	expression.texture = current_item.expression
 	body.texture = current_item.character
 	create_buttons(current_item.choices)
 #END:set_properties
@@ -131,6 +131,7 @@ func _get_configuration_warnings() -> PackedStringArray:
 ## Setter for the [param dialogue_items] property. Ensures the dialogue items array 
 ## never has an empty element.
 #ANCHOR:handle_array
+#END:part_3
 func set_dialogue_items(new_dialog_items: Array[DialogueItem_step_2]) -> void:
 	for index in new_dialog_items.size():
 		if new_dialog_items[index] == null:
@@ -140,4 +141,3 @@ func set_dialogue_items(new_dialog_items: Array[DialogueItem_step_2]) -> void:
 #ANCHOR:update_warning
 	update_configuration_warnings()
 #END:update_warning
-#END:part_3

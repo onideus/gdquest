@@ -1,28 +1,28 @@
 [gd_scene load_steps=6 format=3]
 
-[ext_resource type="PackedScene" path="res://practices/L2.P1.pop_the_ball/ball.tscn" id="1_83p6u"]
-[ext_resource type="Script" path="res://practices/L2.P1.pop_the_ball/ball.gd" id="2_ypn3c"]
-[ext_resource type="PackedScene" path="res://practices/L2.P1.pop_the_ball/needle.tscn" id="3_54wb5"]
-[ext_resource type="Script" path="res://practices/L2.P1.pop_the_ball/needle.gd" id="4_h5f3b"]
-[ext_resource type="PackedScene" path="res://practices/L2.P1.pop_the_ball/background.tscn" id="5_egyrv"]
+[ext_resource type="PackedScene" path="res://practices/L2.P1.pop_the_ball/ball.tscn" id="1_yoejl"]
+[ext_resource type="Script" path="res://practices/L2.P1.pop_the_ball/ball.gd" id="2_ea8w7"]
+[ext_resource type="PackedScene" path="res://practices/L2.P1.pop_the_ball/needle.tscn" id="3_dg04k"]
+[ext_resource type="Script" path="res://practices/L2.P1.pop_the_ball/needle.gd" id="4_o5tyk"]
+[ext_resource type="PackedScene" path="res://practices/L2.P1.pop_the_ball/background.tscn" id="5_a75gs"]
 
 [node name="PopTheBall" type="Node2D"]
 position = Vector2(960, 540)
 
-[node name="Ball" type="Area2D" parent="." instance=ExtResource("1_83p6u")]
+[node name="Ball" type="Area2D" parent="." instance=ExtResource("1_yoejl")]
 position = Vector2(-136, 38)
-script = ExtResource("2_ypn3c")
+script = ExtResource("2_ea8w7")
 
-[node name="Ball2" type="Area2D" parent="." instance=ExtResource("1_83p6u")]
+[node name="Ball2" type="Area2D" parent="." instance=ExtResource("1_yoejl")]
 position = Vector2(69, 38)
-script = ExtResource("2_ypn3c")
+script = ExtResource("2_ea8w7")
 
-[node name="Ball3" type="Area2D" parent="." instance=ExtResource("1_83p6u")]
+[node name="Ball3" type="Area2D" parent="." instance=ExtResource("1_yoejl")]
 position = Vector2(278, 38)
-script = ExtResource("2_ypn3c")
+script = ExtResource("2_ea8w7")
 
-[node name="Needle" type="Area2D" parent="." instance=ExtResource("3_54wb5")]
+[node name="Needle" type="Area2D" parent="." instance=ExtResource("3_dg04k")]
 position = Vector2(-399, 38)
-script = ExtResource("4_h5f3b")
+script = ExtResource("4_o5tyk")
 
-[node name="Background" type="Node" parent="." instance=ExtResource("5_egyrv")]
+[node name="Background" type="Node" parent="." instance=ExtResource("5_a75gs")]

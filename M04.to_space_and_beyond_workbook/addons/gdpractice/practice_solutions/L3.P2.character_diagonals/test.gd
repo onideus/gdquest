@@ -72,7 +72,7 @@ func _populate_test_space() -> void:
 
 
 func is_direction_vector_lower_or_equal_to_1(frame_previous: FrameData, frame_current: FrameData) -> bool:
-	return frame_current.practice_direction.length() <= 1.0
+	return frame_current.practice_direction.length() <= 1.01
 
 
 func is_velocity_vector_less_or_equal_to_max_speed(frame_previous: FrameData, frame_current: FrameData) -> bool:

@@ -69,7 +69,7 @@ var dialogue_items: Array[Dictionary] = [
 ## The character
 @onready var body: TextureRect = %Body
 ## The Expression
-@onready var expression_texture_rect: TextureRect = %Expression
+@onready var expression: TextureRect = %Expression
 ## The container for buttons
 #ANCHOR:010_the_container_box
 @onready var action_buttons_v_box_container: VBoxContainer = %ActionButtonsVBoxContainer
@@ -94,7 +94,7 @@ func show_text(current_item_index: int) -> void:
 	# And we set the appropriate expression texture
 #ANCHOR:110_new_set_properties
 	rich_text_label.text = current_item["text"]
-	expression_texture_rect.texture = current_item["expression"]
+	expression.texture = current_item["expression"]
 	body.texture = current_item["character"]
 #END:025_rest_of_function
 #ANCHOR:100_call_create_buttons

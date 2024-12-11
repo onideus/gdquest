@@ -80,7 +80,7 @@ func part_010_updating_health_bar() -> void:
 	bubble_add_text([
 		gtr("Next to the [b]Inspector[/b] dock on the right lives the [b]Node dock[/b]. The node dock lists the selected node's signals."),
 		gtr("The node dock is located in its own tab next to the tab of the [b]Inspector[/b] dock."),
-		gtr("Click on the [b]Node[/b] tab in the top-right to select the Node dock."),
+		gtr("Click on the Node tab in the top-right to select the Node dock."),
 	])
 	bubble_add_task_set_tab_by_control(interface.node_dock)
 	complete_step()
@@ -183,7 +183,7 @@ func part_010_updating_health_bar() -> void:
 	bubble_add_task_press_button(interface.run_bar_play_current_button, gtr("Play Current Scene"))
 	complete_step()
 
-	
+
 	bubble_set_title(gtr("In summary"))
 	queue_command(func set_avatar_happy() -> void:
 		bubble.avatar.set_expression(Gobot.Expressions.HAPPY)

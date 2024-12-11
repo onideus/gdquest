@@ -8,7 +8,7 @@ var steering_factor := 10.0
 var target_position := Vector2(0, 0)
 
 var coins := 0
-var energy := 20
+var energy := 20.0
 
 
 func _ready() -> void:

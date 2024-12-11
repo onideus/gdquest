@@ -64,7 +64,7 @@ var dialogue_items: Array[Dictionary] = [
 ## The character
 @onready var body: TextureRect = %Body
 ## The Expression
-@onready var expression_texture_rect: TextureRect = %Expression
+@onready var expression: TextureRect = %Expression
 
 
 func _ready() -> void:
@@ -81,7 +81,7 @@ func show_text(current_item_index: int) -> void:
 	# And we set the appropriate expression texture
 #ANCHOR:bracket_accessor
 	rich_text_label.text = current_item["text"]
-	expression_texture_rect.texture = current_item["expression"]
+	expression.texture = current_item["expression"]
 	body.texture = current_item["character"]
 #END:bracket_accessor
 	# We set the initial visible ratio to the text to 0, so we can change it in the tween

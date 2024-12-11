@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3]
 
-[ext_resource type="Texture2D" path="res://assets/practice_assets/ellipse_yellow.png" id="1_6tde4"]
+[ext_resource type="Texture2D" path="res://assets/practice_assets/ellipse_yellow.png" id="1_spx85"]
 
 [node name="Background" type="Node"]
 
@@ -20,7 +20,7 @@ color = Color(0.364706, 0.12549, 0.776471, 1)
 top_level = true
 z_index = -1
 position = Vector2(960, 540)
-texture = ExtResource("1_6tde4")
+texture = ExtResource("1_spx85")
 
 [node name="Camera2D" type="Camera2D" parent="CanvasLayer"]
 position = Vector2(960, 540)

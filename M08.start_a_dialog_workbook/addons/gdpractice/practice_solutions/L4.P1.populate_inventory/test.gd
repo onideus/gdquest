@@ -46,7 +46,7 @@ func _build_checks() -> void:
 	var items_list := _practice.items_list as Dictionary
 	
 	var check_buttons_are_created := Check.new()
-	check_buttons_are_created.description = tr("There should be as buttons children")
+	check_buttons_are_created.description = tr("The grid should have buttons as children")
 	
 	check_buttons_are_created.checker = func() -> String:
 		if child_count == 0:

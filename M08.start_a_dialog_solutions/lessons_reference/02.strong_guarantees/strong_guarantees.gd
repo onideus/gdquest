@@ -18,7 +18,7 @@ var current_item_index := 0
 ## The character
 @onready var body: TextureRect = %Body
 ## The Expression
-@onready var expression_texture_rect: TextureRect = %Expression
+@onready var expression: TextureRect = %Expression
 
 
 func _ready() -> void:
@@ -34,7 +34,7 @@ func show_text() -> void:
 	# And we set the appropriate expression texture
 #ANCHOR:020_assigning_the_values
 	rich_text_label.text = current_item.text
-	expression_texture_rect.texture = current_item.expression
+	expression.texture = current_item.expression
 	body.texture = current_item.character
 #END:020_assigning_the_values
 	# We set the initial visible ratio to the text to 0, so we can change it in the tween

@@ -21,16 +21,38 @@ func _build_requirements() -> void:
 
 	_add_callable_requirement(
 		"There should be an 'ExternalWallsStaticBody2D' node",
-		func() -> String: 
+		func() -> String:
 			if not _external_walls:
 				return tr("There is no 'ExternalWallsStaticBody2D' node. Did you remove it? It's required for the practice to work")
 			return ""
 	)
 	_add_callable_requirement(
 		"There should be a collision polygon called 'CollisionPolygon2D' as a child of 'ExternalWallsStaticBody2D'",
-		func() -> String: 
+		func() -> String:
 			if not _collision_polygon_node:
 				return tr("There is no 'CollisionPolygon2D' node. Did you remove it? It's required for the practice to work")
+			return ""
+	)
+	_add_callable_requirement(
+		"The nodes should not be offset, rotated, or scaled",
+		func() -> String:
+			if not _collision_polygon_node or not _external_walls:
+				return ""
+
+			if not _external_walls.position.is_zero_approx():
+				return tr("The ExternalWallsStaticBody2D node is offset from its original position. Please reset its position")
+			if not is_zero_approx(_external_walls.rotation):
+				return tr("The ExternalWallsStaticBody2D node is rotated. Please reset its rotation to 0")
+			if not _external_walls.scale.is_equal_approx(Vector2.ONE):
+				return tr("The ExternalWallsStaticBody2D node is scaled. Please reset its scale to (1, 1)")
+
+			if not _collision_polygon_node.position.is_zero_approx():
+				return tr("The CollisionPolygon2D node is offset from its original position. Please reset its position")
+			if not is_zero_approx(_collision_polygon_node.rotation):
+				return tr("The CollisionPolygon2D node is rotated. Please reset its rotation to 0")
+			if not _collision_polygon_node.scale.is_equal_approx(Vector2.ONE):
+				return tr("The CollisionPolygon2D node is scaled. Please reset its scale to (1, 1)")
+
 			return ""
 	)
 

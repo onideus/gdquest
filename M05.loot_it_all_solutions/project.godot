@@ -2,7 +2,7 @@ config_version=5
 
 [application]
 
-config/name="M5. Loot it All (Solutions)"
+config/name="M05. Loot it All (Solutions)"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.png"
 config/tags=PackedStringArray("solutions")

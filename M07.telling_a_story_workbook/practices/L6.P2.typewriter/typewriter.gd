@@ -11,7 +11,7 @@ of reading documentation
 
 If you try to automate
 for 10 days
-a task needs 10 minutes
+a task that needs 10 minutes
 
 If you think, once again
 that you can finish in 1 hour

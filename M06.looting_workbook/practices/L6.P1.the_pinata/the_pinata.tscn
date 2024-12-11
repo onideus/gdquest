@@ -1,20 +1,20 @@
 [gd_scene load_steps=7 format=3]
 
-[ext_resource type="PackedScene" path="res://practices/L6.P1.the_pinata/balloon_pinata.tscn" id="1_hnryx"]
-[ext_resource type="Script" path="res://practices/L6.P1.the_pinata/balloon_pinata.gd" id="2_cyd6n"]
-[ext_resource type="PackedScene" path="res://practices/L6.P1.the_pinata/candy/candy_blue.tscn" id="3_wl70b"]
-[ext_resource type="PackedScene" path="res://practices/L6.P1.the_pinata/candy/candy_green.tscn" id="4_memhv"]
-[ext_resource type="PackedScene" path="res://practices/L6.P1.the_pinata/candy/candy_red.tscn" id="5_istcb"]
-[ext_resource type="PackedScene" path="res://practices/L6.P1.the_pinata/background.tscn" id="6_d2l56"]
+[ext_resource type="PackedScene" path="res://practices/L6.P1.the_pinata/balloon_pinata.tscn" id="1_fme1w"]
+[ext_resource type="Script" path="res://practices/L6.P1.the_pinata/balloon_pinata.gd" id="2_vimcb"]
+[ext_resource type="PackedScene" path="res://practices/L6.P1.the_pinata/candy/candy_blue.tscn" id="3_mf3ik"]
+[ext_resource type="PackedScene" path="res://practices/L6.P1.the_pinata/candy/candy_green.tscn" id="4_tsowk"]
+[ext_resource type="PackedScene" path="res://practices/L6.P1.the_pinata/candy/candy_red.tscn" id="5_b38ma"]
+[ext_resource type="PackedScene" path="res://practices/L6.P1.the_pinata/background.tscn" id="6_2ccm2"]
 
 [node name="ThePiñata" type="Node2D"]
 metadata/_edit_horizontal_guides_ = []
 
-[node name="BalloonPinata" type="Area2D" parent="." instance=ExtResource("1_hnryx")]
+[node name="BalloonPinata" type="Area2D" parent="." instance=ExtResource("1_fme1w")]
 position = Vector2(960, 540)
 collision_layer = 2
 collision_mask = 0
-script = ExtResource("2_cyd6n")
-possible_candies = Array[PackedScene]([ExtResource("3_wl70b"), ExtResource("4_memhv"), ExtResource("5_istcb")])
+script = ExtResource("2_vimcb")
+possible_candies = Array[PackedScene]([ExtResource("3_mf3ik"), ExtResource("4_tsowk"), ExtResource("5_b38ma")])
 
-[node name="Background" type="Node" parent="." instance=ExtResource("6_d2l56")]
+[node name="Background" type="Node" parent="." instance=ExtResource("6_2ccm2")]

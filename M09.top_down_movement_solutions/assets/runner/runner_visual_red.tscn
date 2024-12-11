@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://bm8s1oaoxngwq"]
 
-[ext_resource type="PackedScene" uid="uid://hjn4sr1lgmmx" path="res://assets/runner/runner_visual_blue.tscn" id="1_i8e4b"]
+[ext_resource type="PackedScene" uid="uid://hjn4sr1lgmmx" path="res://assets/runner/runner_visual_purple.tscn" id="1_i8e4b"]
 [ext_resource type="Texture2D" uid="uid://pgwdkcat1x2m" path="res://assets/runner/red_parts/foot.png" id="2_pbjpl"]
 [ext_resource type="Texture2D" uid="uid://cc28lc47urejl" path="res://assets/runner/red_parts/body.png" id="3_c2s05"]
 [ext_resource type="Texture2D" uid="uid://c4ftdxyamufn" path="res://assets/runner/red_parts/head.png" id="4_jlvl7"]

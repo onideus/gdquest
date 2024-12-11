@@ -1,20 +1,12 @@
-; Engine configuration file.
-; It's best edited using the editor UI and not directly,
-; since the parameters that go here are not all obvious.
-;
-; Format:
-;   [section] ; section goes between []
-;   param=value ; assign values to parameters
-
 config_version=5
 
 [application]
 
-config/name="M5. Loot it All (Workbook)"
-config/tags=PackedStringArray("workbook")
+config/name="M05. Loot it All (Workbook)"
 run/main_scene="res://lessons/space_level.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.png"
+config/tags=PackedStringArray("workbook")
 
 [display]
 

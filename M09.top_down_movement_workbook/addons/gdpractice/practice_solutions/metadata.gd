@@ -17,5 +17,10 @@ func _init() -> void:
 			"09_top_down_movement_030_smooth_game",
 			"Smooth Game",
 			preload("L5.P1.smooth_game/smooth_game.tscn")
+		),
+		PracticeMetadata.new(
+			"09_top_down_movement_040_move_to_mouse",
+			"Move to Mouse",
+			preload("L8.P1.move_to_mouse/move_to_mouse.tscn")
 		)
 	]

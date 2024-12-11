@@ -1,17 +1,17 @@
 [gd_scene load_steps=4 format=3]
 
-[ext_resource type="Material" path="res://practices/L10.P2.party_members/assets/practice_background_material.tres" id="1_c8dhd"]
-[ext_resource type="Theme" path="res://practices/L10.P2.party_members/assets/practice_exercises_theme.tres" id="2_8c3o6"]
-[ext_resource type="Script" path="res://practices/L10.P2.party_members/party_members.gd" id="3_jvxot"]
+[ext_resource type="Material" path="res://practices/L10.P2.party_members/assets/practice_background_material.tres" id="1_dh7c1"]
+[ext_resource type="Theme" path="res://practices/L10.P2.party_members/assets/practice_exercises_theme.tres" id="2_21h7n"]
+[ext_resource type="Script" path="res://practices/L10.P2.party_members/party_members.gd" id="3_hhwyv"]
 
 [node name="PartyMembers" type="ColorRect"]
-material = ExtResource("1_c8dhd")
+material = ExtResource("1_dh7c1")
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("2_8c3o6")
-script = ExtResource("3_jvxot")
+theme = ExtResource("2_21h7n")
+script = ExtResource("3_hhwyv")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -31,7 +31,7 @@ alignment = 1
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
-theme = ExtResource("2_8c3o6")
+theme = ExtResource("2_21h7n")
 expand_mode = 1
 stretch_mode = 5
 
@@ -45,7 +45,7 @@ layout_mode = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
-theme = ExtResource("2_8c3o6")
+theme = ExtResource("2_21h7n")
 alignment = 1
 
 [node name="ButtonPrevious" type="Button" parent="VBoxContainer/HBoxContainer"]

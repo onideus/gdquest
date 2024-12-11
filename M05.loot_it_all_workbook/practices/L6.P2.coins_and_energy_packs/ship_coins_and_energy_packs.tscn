@@ -1,9 +1,9 @@
 [gd_scene load_steps=11 format=3]
 
-[ext_resource type="Script" path="res://practices/L6.P2.coins_and_energy_packs/ship_coins_and_energy_packs.gd" id="1_qaii1"]
-[ext_resource type="Texture2D" path="res://assets/practice_assets/ellipse_white.png" id="2_q1iie"]
-[ext_resource type="Texture2D" path="res://assets/practice_assets/shape_ship.png" id="3_bpsek"]
-[ext_resource type="Texture2D" path="res://assets/practice_assets/coin.png" id="4_eodmm"]
+[ext_resource type="Script" path="res://practices/L6.P2.coins_and_energy_packs/ship_coins_and_energy_packs.gd" id="1_heags"]
+[ext_resource type="Texture2D" path="res://assets/practice_assets/ellipse_white.png" id="2_qqup3"]
+[ext_resource type="Texture2D" path="res://assets/practice_assets/shape_ship.png" id="3_xd5jf"]
+[ext_resource type="Texture2D" path="res://assets/practice_assets/coin.png" id="4_u72ot"]
 
 [sub_resource type="Curve" id="Curve_f7g5y"]
 _data = [Vector2(0, 0.663194), 0.0, 0.0, 0, 0, Vector2(1, 0), -0.0319997, 0.0, 0, 0]
@@ -34,21 +34,21 @@ corner_radius_bottom_right = 8
 corner_radius_bottom_left = 8
 
 [node name="Ship" type="Area2D"]
-script = ExtResource("1_qaii1")
+script = ExtResource("1_heags")
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
 modulate = Color(0.584314, 0.380392, 0.933333, 1)
 show_behind_parent = true
 z_index = -2
 process_material = SubResource("ParticleProcessMaterial_8umco")
-texture = ExtResource("2_q1iie")
+texture = ExtResource("2_qqup3")
 visibility_rect = Rect2(-4000, -4000, 4000, 4000)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_cwkdh")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("3_bpsek")
+texture = ExtResource("3_xd5jf")
 
 [node name="UI" type="Control" parent="."]
 layout_mode = 3
@@ -60,7 +60,7 @@ metadata/_edit_use_anchors_ = true
 [node name="Sprite2D" type="Sprite2D" parent="UI"]
 position = Vector2(-39, -138)
 scale = Vector2(0.382609, 0.382609)
-texture = ExtResource("4_eodmm")
+texture = ExtResource("4_u72ot")
 
 [node name="CoinsCount" type="Label" parent="UI"]
 layout_mode = 1

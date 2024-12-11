@@ -80,7 +80,7 @@ var current_item_index := 0
 @onready var next_button: Button = %NextButton
 @onready var audio_stream_player: AudioStreamPlayer = %AudioStreamPlayer
 @onready var body: TextureRect = %Body
-@onready var expression_texture_rect: TextureRect = %Expression
+@onready var expression: TextureRect = %Expression
 
 
 func _ready() -> void:
@@ -96,7 +96,7 @@ func show_text() -> void:
 	var current_item := dialogue_items[current_item_index]
 #ANCHOR:040_previous
 	rich_text_label.text = current_item["text"]
-	expression_texture_rect.texture = current_item["expression"]
+	expression.texture = current_item["expression"]
 #END:040_previous
 #ANCHOR:050_get_body_texture
 	body.texture = current_item["character"]

@@ -2,7 +2,7 @@ config_version=5
 
 [application]
 
-config/name="M6. Looting (Workbook)"
+config/name="M06. Looting (Workbook)"
 run/main_scene="res://lessons/mini_dungeon.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon_looting.png"

@@ -15,7 +15,7 @@ void vertex() {
 void fragment() {
     vec2 uv = SCREEN_UV;
     vec2 size = (SCREEN_PIXEL_SIZE * line_thickness) * viewport_scale;
-    
+
 
     float outline = texture(screen_texture, uv + vec2(-size.x, 0)).a;
     outline += texture(screen_texture, uv + vec2(0, size.y)).a;
@@ -33,5 +33,5 @@ void fragment() {
 
 	vec4 screen_color = texture(screen_texture, SCREEN_UV);
 	COLOR = mix(screen_color, line_color, outline - screen_color.a);
- 
+
 }

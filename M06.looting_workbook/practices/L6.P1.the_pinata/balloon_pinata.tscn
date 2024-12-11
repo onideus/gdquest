@@ -1,40 +1,38 @@
 [gd_scene load_steps=9 format=3]
 
-[ext_resource type="Script" path="res://practices/L6.P1.the_pinata/balloon_pinata.gd" id="1_p2sam"]
-[ext_resource type="PackedScene" path="res://practices/L6.P1.the_pinata/candy/candy_blue.tscn" id="2_wgpgt"]
-[ext_resource type="PackedScene" path="res://practices/L6.P1.the_pinata/candy/candy_green.tscn" id="3_pwp8i"]
-[ext_resource type="PackedScene" path="res://practices/L6.P1.the_pinata/candy/candy_red.tscn" id="4_56he7"]
-[ext_resource type="Material" path="res://practices/L6.P1.the_pinata/material.tres" id="5_sp21y"]
+[ext_resource type="Script" path="res://practices/L6.P1.the_pinata/balloon_pinata.gd" id="1_8cqrk"]
+[ext_resource type="PackedScene" path="res://practices/L6.P1.the_pinata/candy/candy_blue.tscn" id="2_gj2xj"]
+[ext_resource type="PackedScene" path="res://practices/L6.P1.the_pinata/candy/candy_green.tscn" id="3_omj4x"]
+[ext_resource type="PackedScene" path="res://practices/L6.P1.the_pinata/candy/candy_red.tscn" id="4_1fbj3"]
+[ext_resource type="Material" path="res://practices/L6.P1.the_pinata/material.tres" id="5_ilyqy"]
+[ext_resource type="Texture2D" path="res://practices/L6.P1.the_pinata/balloon_tail.png" id="6_s2xq4"]
+[ext_resource type="Texture2D" path="res://practices/L6.P1.the_pinata/balloon_top.png" id="7_p1yr0"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xb8xq"]
 radius = 47.0
 height = 166.0
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dpdv6"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_e6jan"]
-
 [node name="BalloonPinata" type="Area2D"]
 position = Vector2(960, 540)
 collision_layer = 2
 collision_mask = 0
-script = ExtResource("1_p2sam")
-possible_candies = Array[PackedScene]([ExtResource("2_wgpgt"), ExtResource("3_pwp8i"), ExtResource("4_56he7")])
+script = ExtResource("1_8cqrk")
+possible_candies = Array[PackedScene]([ExtResource("2_gj2xj"), ExtResource("3_omj4x"), ExtResource("4_1fbj3")])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -16)
 shape = SubResource("CapsuleShape2D_xb8xq")
 
 [node name="CanvasGroup" type="CanvasGroup" parent="."]
-material = ExtResource("5_sp21y")
+material = ExtResource("5_ilyqy")
 position = Vector2(0, 33)
 
 [node name="Bottom" type="Sprite2D" parent="CanvasGroup"]
 position = Vector2(0, -37)
-texture = SubResource("CompressedTexture2D_dpdv6")
+texture = ExtResource("6_s2xq4")
 offset = Vector2(0, 34)
 
 [node name="Top" type="Sprite2D" parent="CanvasGroup"]
 position = Vector2(0, -79)
-texture = SubResource("CompressedTexture2D_e6jan")
+texture = ExtResource("7_p1yr0")
 offset = Vector2(0, 5)

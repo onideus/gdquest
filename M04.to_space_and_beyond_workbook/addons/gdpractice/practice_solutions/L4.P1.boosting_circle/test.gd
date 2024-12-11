@@ -28,7 +28,12 @@ func _setup_state() -> void:
 func _setup_populate_test_space() -> void:
 	# Test the scene and gather information
 	# First with the timer node
-	var timer: Timer = _practice.get_node_or_null("Timer")
+	var timer: Timer = (func find_timer_child() -> Timer:
+		for node in _practice.find_children("*", "Timer"):
+			if node is Timer:
+				return node
+		return null
+	).call()
 	if timer != null:
 		is_on_timer_timeout_defined = _practice.has_method("_on_timer_timeout")
 		is_timer_one_shot = timer.one_shot

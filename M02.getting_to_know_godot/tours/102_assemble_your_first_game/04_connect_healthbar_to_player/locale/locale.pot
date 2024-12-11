@@ -118,7 +118,7 @@ msgid "The node dock is located in its own tab next to the tab of the [b]Inspect
 msgstr ""
 
 #: tours/102_assemble_your_first_game/04_connect_healthbar_to_player/04_connect_healthbar_to_player.gd
-msgid "Click on the [b]Node[/b] tab in the top-right to select the Node dock."
+msgid "Click on the Node tab in the top-right to select the Node dock."
 msgstr ""
 
 #: tours/102_assemble_your_first_game/04_connect_healthbar_to_player/04_connect_healthbar_to_player.gd

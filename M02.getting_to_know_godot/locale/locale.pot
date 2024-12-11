@@ -195,7 +195,7 @@ msgid "[b]Left Click and drag[/b] on the map to draw bridges between rooms."
 msgstr ""
 
 #: tours/102_assemble_your_first_game/02_add_bridges/02_add_bridges.gd
-msgid "Try to connect the openings in the rooms. The openings are located where there are red crosses around the perimeter of the room."
+msgid "Try to connect the openings in the rooms. The openings are located where there are gaps in the red crosses around the perimeter of the room."
 msgstr ""
 
 #: tours/102_assemble_your_first_game/02_add_bridges/02_add_bridges.gd

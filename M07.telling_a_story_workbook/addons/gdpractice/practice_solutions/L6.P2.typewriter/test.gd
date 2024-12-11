@@ -28,8 +28,8 @@ func _build_requirements() -> void:
 	)
 
 var _initial_visible_ratio := 0.0
-var _final_received_visible_ratio := 0.0
-var _final_expected_visible_ratio := 0.0
+var _measured_visible_ratio := 0.0
+var _expected_visible_ratio := 0.0
 
 func _setup_populate_test_space() -> void:
 	# Normalize the strings to remove any leading/trailing whitespace to any line
@@ -42,9 +42,12 @@ func _setup_populate_test_space() -> void:
 	_initial_visible_ratio = (_practice.rich_text_label as RichTextLabel).visible_ratio
 	var time_ratio := 10.0
 	var duration: float = _practice.appearance_time / time_ratio
-	await get_tree().create_timer(duration).timeout
-	_final_received_visible_ratio = (_practice.rich_text_label as RichTextLabel).visible_ratio * time_ratio
-	_final_expected_visible_ratio = (_solution.rich_text_label as RichTextLabel).visible_ratio * time_ratio
+	# We need to wait a little longer than the appearance time divided by a
+	# ratio; there is an edge case where students can get the animation to go at
+	# the right pace but end early.
+	await get_tree().create_timer(duration + 0.25).timeout
+	_measured_visible_ratio = (_practice.rich_text_label as RichTextLabel).visible_ratio
+	_expected_visible_ratio = (_solution.rich_text_label as RichTextLabel).visible_ratio
 
 func _build_checks() -> void:
 	var visible_ratio_is_set_to_zero := Check.new()
@@ -67,7 +70,7 @@ func _build_checks() -> void:
 				valid_tweens.append(tween)
 		if valid_tweens.size() < 2:
 			return "There are no tweens running in the scene, or the tween isn't tweening anything? Did you create a tween and made it tween a property?"
-		if not is_equal_approx(_final_received_visible_ratio, _final_expected_visible_ratio):
+		if not is_equal_approx(_measured_visible_ratio, _expected_visible_ratio):
 			return "It doesn't look like the visible ratio is tweened to its final value. Did you tween it to 1?"
 		return ""
 

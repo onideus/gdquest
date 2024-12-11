@@ -3,12 +3,21 @@ extends Area2D
 @export var possible_items: Array[PackedScene] = []
 
 @onready var canvas_group: CanvasGroup = $CanvasGroup
+@onready var animation_player: AnimationPlayer = $AnimationPlayer
 
-
+#ANCHOR:ready_definition
 func _ready() -> void:
+#END:ready_definition
+	#ANCHOR:mouse_connections
 	mouse_entered.connect(_on_mouse_entered)
 	mouse_exited.connect(_on_mouse_exited)
+	#END:mouse_connections
 	canvas_group.material.set_shader_parameter("line_thickness", 3.0)
+
+	#ANCHOR:physics_object_picking
+	get_viewport().physics_object_picking_sort = true
+	get_viewport().physics_object_picking_first_only = true
+	#END:physics_object_picking
 
 
 func _input_event(viewport: Node, event: InputEvent, shape_index: int):
@@ -26,6 +35,7 @@ func set_outline_thickness(new_thickness: float) -> void:
 	canvas_group.material.set_shader_parameter("line_thickness", new_thickness)
 
 
+#ANCHOR:on_mouse_entered_exited
 func _on_mouse_entered() -> void:
 	var tween := create_tween()
 	tween.tween_method(set_outline_thickness, 3.0, 6.0, 0.08)
@@ -34,12 +44,13 @@ func _on_mouse_entered() -> void:
 func _on_mouse_exited() -> void:
 	var tween := create_tween()
 	tween.tween_method(set_outline_thickness, 6.0, 3.0, 0.08)
+#END:on_mouse_entered_exited
 
 
 func open() -> void:
 	input_pickable = false
 
-	get_node("AnimationPlayer").play("open", 0.1)
+	animation_player.play("open", 0.1)
 
 	if possible_items.is_empty():
 		return
@@ -48,9 +59,11 @@ func open() -> void:
 		_spawn_random_item()
 
 
+#ANCHOR:M10_L06_example
 func _spawn_random_item() -> void:
 	var loot_item: Area2D = possible_items.pick_random().instantiate()
 	add_child(loot_item)
+	#END:M10_L06_example
 
 	var random_angle := randf_range(0.0, 2.0 * PI)
 	var random_direction := Vector2(1.0, 0.0).rotated(random_angle)
