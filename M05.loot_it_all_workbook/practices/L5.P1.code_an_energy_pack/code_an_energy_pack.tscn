@@ -1,28 +1,22 @@
-[gd_scene load_steps=6 format=3]
+[gd_scene load_steps=4 format=3 uid="uid://b73e1gv74i3nr"]
 
 [ext_resource type="PackedScene" path="res://practices/L5.P1.code_an_energy_pack/ship_energy_pack.tscn" id="1_cu5rl"]
-[ext_resource type="Script" path="res://practices/L5.P1.code_an_energy_pack/ship_energy_pack.gd" id="2_2amqt"]
 [ext_resource type="PackedScene" path="res://practices/L5.P1.code_an_energy_pack/energy_pack.tscn" id="3_5fi4m"]
-[ext_resource type="Script" path="res://practices/L5.P1.code_an_energy_pack/energy_pack.gd" id="4_bb5d2"]
 [ext_resource type="PackedScene" path="res://practices/L5.P1.code_an_energy_pack/background.tscn" id="5_mwprn"]
 
 [node name="CodeAnEnergyPack" type="Node2D"]
 position = Vector2(960, 540)
 
-[node name="ShipEnergyPack" type="Area2D" parent="." instance=ExtResource("1_cu5rl")]
+[node name="ShipEnergyPack" parent="." instance=ExtResource("1_cu5rl")]
 position = Vector2(-556, 0)
-script = ExtResource("2_2amqt")
 
-[node name="EnergyPack" type="Area2D" parent="." instance=ExtResource("3_5fi4m")]
+[node name="EnergyPack" parent="." instance=ExtResource("3_5fi4m")]
 position = Vector2(-221, -1)
-script = ExtResource("4_bb5d2")
 
-[node name="EnergyPack2" type="Area2D" parent="." instance=ExtResource("3_5fi4m")]
+[node name="EnergyPack2" parent="." instance=ExtResource("3_5fi4m")]
 position = Vector2(2, -1)
-script = ExtResource("4_bb5d2")
 
-[node name="EnergyPack3" type="Area2D" parent="." instance=ExtResource("3_5fi4m")]
+[node name="EnergyPack3" parent="." instance=ExtResource("3_5fi4m")]
 position = Vector2(197, -1)
-script = ExtResource("4_bb5d2")
 
-[node name="Background" type="Node" parent="." instance=ExtResource("5_mwprn")]
+[node name="Background" parent="." instance=ExtResource("5_mwprn")]
