@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://b73e1gv74i3nr"]
 
-[ext_resource type="PackedScene" path="res://practices/L5.P1.code_an_energy_pack/ship_energy_pack.tscn" id="1_cu5rl"]
+[ext_resource type="PackedScene" uid="uid://d1wwwg76x2n4s" path="res://practices/L5.P1.code_an_energy_pack/ship_energy_pack.tscn" id="1_cu5rl"]
 [ext_resource type="PackedScene" path="res://practices/L5.P1.code_an_energy_pack/energy_pack.tscn" id="3_5fi4m"]
 [ext_resource type="PackedScene" path="res://practices/L5.P1.code_an_energy_pack/background.tscn" id="5_mwprn"]
 

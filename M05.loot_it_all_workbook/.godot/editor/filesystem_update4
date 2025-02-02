@@ -1,6 +1,11 @@
-res://lessons/ship.tscn
+res://practices/L5.P1.code_an_energy_pack/code_an_energy_pack.tscn
 res://addons/gdpractice/assets/theme.tres
 res://assets/ship_visual_effects/main_thruster/thruster_material.tres
 res://assets/background/space_material.tres
-res://lessons/ship.gd
+res://practices/L5.P1.code_an_energy_pack/energy_pack.gd
+res://lessons/energy_pack.tscn
+res://lessons/health_pack.tscn
 res://lessons/space_level.tscn
+res://lessons/ship.tscn
+res://practices/L5.P1.code_an_energy_pack/ship_energy_pack.tscn
+res://practices/L5.P1.code_an_energy_pack/ship_energy_pack.gd

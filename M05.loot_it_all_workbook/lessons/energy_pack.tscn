@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://bspy3epq8y5q5"]
+
+[ext_resource type="Script" path="res://lessons/energy_pack.gd" id="1_c16vg"]
+[ext_resource type="Texture2D" uid="uid://baux8wnujuj2l" path="res://assets/spark.png" id="1_ln7lr"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wo302"]
+radius = 14.0
+
+[node name="EnergyPack" type="Area2D"]
+script = ExtResource("1_c16vg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_wo302")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ln7lr")

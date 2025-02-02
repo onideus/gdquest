@@ -4,6 +4,8 @@ extends Area2D
 var max_speed := 1200.0
 var velocity := Vector2(0, 0)
 var steering_factor := 3.0
+var health := 10
+var energy := 20
 
 
 func _process(delta: float) -> void:
@@ -21,3 +23,27 @@ func _process(delta: float) -> void:
 
 	if velocity.length() > 0.0:
 		get_node("Sprite2D").rotation = velocity.angle()
+
+
+func set_health(new_health: int) -> void:
+	health = new_health
+	get_node("UI/HealthBar").value = health
+
+
+func set_energy(new_energy: int) -> void:
+	energy = new_energy
+	get_node("UI/EnergyBar").value = energy
+
+
+func _ready() -> void:
+	area_entered.connect(_on_area_entered)
+	set_health(50)
+	set_energy(50)
+
+
+func _on_area_entered(area_that_entered: Area2D) -> void:
+	if area_that_entered.name.contains("Health"):
+		set_health(health + 10)
+	if area_that_entered.name.contains("Energy"):
+		set_energy(energy + 20)
+		
