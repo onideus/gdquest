@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://btkjymc78ap8d"]
+[gd_scene load_steps=6 format=3 uid="uid://btkjymc78ap8d"]
 
 [ext_resource type="PackedScene" uid="uid://dmv50krf4bo5r" path="res://lessons/ship.tscn" id="2_2j1u5"]
 [ext_resource type="PackedScene" uid="uid://bvadihwwelh7c" path="res://lessons/health_pack.tscn" id="3_d7pdb"]
 [ext_resource type="PackedScene" uid="uid://bxfevggvxo634" path="res://assets/background/space_background.tscn" id="3_e6xy1"]
-[ext_resource type="PackedScene" uid="uid://bspy3epq8y5q5" path="res://lessons/energy_pack.tscn" id="4_fluot"]
+[ext_resource type="PackedScene" uid="uid://dxlbyewvfld0t" path="res://lessons/gem.tscn" id="4_x8tlc"]
+[ext_resource type="PackedScene" uid="uid://bspy3epq8y5q5" path="res://lessons/energy_pack.tscn" id="5_hdapv"]
 
 [node name="Level" type="Node2D"]
 
@@ -21,11 +22,20 @@ position = Vector2(1224, 909)
 [node name="HealthPack3" parent="." instance=ExtResource("3_d7pdb")]
 position = Vector2(1388, 301)
 
-[node name="EnergyPack" parent="." instance=ExtResource("4_fluot")]
-position = Vector2(564, 805)
+[node name="Gem" parent="." instance=ExtResource("4_x8tlc")]
+position = Vector2(616, 235)
 
-[node name="EnergyPack2" parent="." instance=ExtResource("4_fluot")]
-position = Vector2(1344, 549)
+[node name="Gem2" parent="." instance=ExtResource("4_x8tlc")]
+position = Vector2(630, 790)
 
-[node name="EnergyPack3" parent="." instance=ExtResource("4_fluot")]
-position = Vector2(577, 335)
+[node name="Gem3" parent="." instance=ExtResource("4_x8tlc")]
+position = Vector2(1314, 572)
+
+[node name="EnergyPack" parent="." instance=ExtResource("5_hdapv")]
+position = Vector2(609, 503)
+
+[node name="EnergyPack2" parent="." instance=ExtResource("5_hdapv")]
+position = Vector2(938, 719)
+
+[node name="EnergyPack3" parent="." instance=ExtResource("5_hdapv")]
+position = Vector2(1276, 182)
