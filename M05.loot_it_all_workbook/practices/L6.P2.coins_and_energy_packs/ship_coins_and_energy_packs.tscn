@@ -1,9 +1,9 @@
-[gd_scene load_steps=11 format=3]
+[gd_scene load_steps=11 format=3 uid="uid://cwaqgmwu57xea"]
 
 [ext_resource type="Script" path="res://practices/L6.P2.coins_and_energy_packs/ship_coins_and_energy_packs.gd" id="1_heags"]
-[ext_resource type="Texture2D" path="res://assets/practice_assets/ellipse_white.png" id="2_qqup3"]
-[ext_resource type="Texture2D" path="res://assets/practice_assets/shape_ship.png" id="3_xd5jf"]
-[ext_resource type="Texture2D" path="res://assets/practice_assets/coin.png" id="4_u72ot"]
+[ext_resource type="Texture2D" uid="uid://bkueifls7csiy" path="res://assets/practice_assets/ellipse_white.png" id="2_qqup3"]
+[ext_resource type="Texture2D" uid="uid://d1xp2mgpkkc42" path="res://assets/practice_assets/shape_ship.png" id="3_xd5jf"]
+[ext_resource type="Texture2D" uid="uid://b5n8ybmtouhk0" path="res://assets/practice_assets/coin.png" id="4_u72ot"]
 
 [sub_resource type="Curve" id="Curve_f7g5y"]
 _data = [Vector2(0, 0.663194), 0.0, 0.0, 0, 0, Vector2(1, 0), -0.0319997, 0.0, 0, 0]
@@ -84,6 +84,7 @@ offset_left = -66.0
 offset_top = -99.0
 offset_right = 58.0
 offset_bottom = -81.0
+scale = Vector2(1.07576, 1.59633)
 theme_override_styles/fill = SubResource("StyleBoxFlat_iv1v0")
 step = 1.0
 value = 10.0
