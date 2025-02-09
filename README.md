@@ -16,7 +16,7 @@ The goal of this repository is to serve both as a personal learning journal and 
   Contains code examples, projects, or snippets corresponding to each module in the course.
 
 - **`/notes/`**  
-  Detailed notes, reflections, and lessons learned from each part of the course.
+  Detailed notes, reflections, and lessons learned from each part of the course. *Note*: Given that I'm adding this tracking after completing through Module 5 Lesson 9, I'll only have notes from Module 5 Lesson 10 and on. 
 
 - **`README.md`**  
   This file, which provides an overview of my progress and outlines the structure of the repository.
@@ -31,19 +31,19 @@ Below is an indicative list of modules based on the course outline. I will updat
   - Overview of Godot 4 and 2D game development
   - Installing and configuring Godot 4
 
-- [ ] **Scenes and Nodes**
+- [x] **Scenes and Nodes**
   - Understanding the scene system
   - Working with various node types
 
-- [ ] **Basic Scripting with GDScript**
+- [x] **Basic Scripting with GDScript**
   - Introduction to GDScript fundamentals
   - Implementing simple game logic
 
-- [ ] **2D Physics and Collisions**
+- [x] **2D Physics and Collisions**
   - Using physics bodies and collision shapes
   - Handling collision events
 
-- [ ] **User Input and Controls**
+- [x] **User Input and Controls**
   - Capturing and processing player input
   - Implementing movement and interaction mechanics
 
