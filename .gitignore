@@ -1,0 +1,21 @@
+# Godot-specific cache and build files
+.godotoo/
+.import/
+export/
+build/
+
+# (Optional) Godot Mono / C# build files (if applicable)
+mono/
+*.csproj
+*.sln
+
+# IDE-specific files (e.g., from JetBrains IDEs)
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# (Optional) Log files
+*.log
+
