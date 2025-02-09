@@ -1,5 +1,5 @@
 # Godot-specific cache and build files
-.godotoo/
+.godot/
 .import/
 export/
 build/
