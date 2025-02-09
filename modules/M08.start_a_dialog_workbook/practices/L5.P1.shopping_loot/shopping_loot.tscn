@@ -1,18 +1,18 @@
 [gd_scene load_steps=5 format=3]
 
-[ext_resource type="Material" path="res://assets/practice_background_material.tres" id="1_xuv1f"]
-[ext_resource type="Script" path="res://practices/L5.P1.shopping_loot/shopping_loot.gd" id="2_fd86y"]
-[ext_resource type="Script" path="res://practices/L5.P1.shopping_loot/shopping_entry.gd" id="3_hwjuf"]
-[ext_resource type="Theme" path="res://assets/practices/practices_theme.tres" id="4_svp78"]
+[ext_resource type="Material" path="res://assets/practice_background_material.tres" id="1_5xde7"]
+[ext_resource type="Script" path="res://practices/L5.P1.shopping_loot/shopping_loot.gd" id="2_hsf7k"]
+[ext_resource type="Script" path="res://practices/L5.P1.shopping_loot/shopping_entry.gd" id="3_n37lr"]
+[ext_resource type="Theme" path="res://assets/practices/practices_theme.tres" id="4_ku67g"]
 
 [node name="ShoppingLoot" type="ColorRect"]
-material = ExtResource("1_xuv1f")
+material = ExtResource("1_5xde7")
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("2_fd86y")
-items_list = Array[ExtResource("3_hwjuf")]([])
+script = ExtResource("2_hsf7k")
+items_list = Array[ExtResource("3_n37lr")]([])
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 1
@@ -21,7 +21,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("4_svp78")
+theme = ExtResource("4_ku67g")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
 layout_mode = 2

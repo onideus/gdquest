@@ -4,10 +4,8 @@ extends CharacterBody2D
 @export var max_speed := 600.0
 ## How much speed is added per second when the player presses a movement key
 @export var acceleration := 1200.0
-## How much speed is lost per second when the player releases all movement keys
-@export var deceleration := 1080.0
 #ANCHOR:avoidance_strength
-@export var avoidance_strength := 350.0
+@export var avoidance_strength := 21000.0
 #END:avoidance_strength
 
 @onready var _dust: GPUParticles2D = %Dust
@@ -40,7 +38,7 @@ func _physics_process(delta: float) -> void:
 	var desired_velocity := direction * speed
 	#END:desired_velocity
 	#ANCHOR:avoid_velocity
-	desired_velocity += calculate_avoidance_force()
+	desired_velocity += calculate_avoidance_force() * delta
 	#END:avoid_velocity
 
 	velocity = velocity.move_toward(desired_velocity, acceleration * delta)

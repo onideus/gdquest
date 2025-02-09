@@ -5,12 +5,12 @@ extends CharacterBody2D
 @export var max_speed := 600.0
 ## How much speed is added per second when the player presses a movement key
 @export var acceleration := 1200.0
-## How much speed is lost per second when the player releases all movement keys
-@export var deceleration := 1080.0
+#END:header
 
+#ANCHOR:nodes
 @onready var _dust: GPUParticles2D = %Dust
 @onready var _runner_visual: RunnerVisual = %RunnerVisualPurple
-#END:header
+#END:nodes
 
 #ANCHOR:physics_process_signature
 func _physics_process(delta: float) -> void:
@@ -29,7 +29,9 @@ func _physics_process(delta: float) -> void:
 	var desired_velocity := direction * speed
 	#END:desired_velocity
 
+	#ANCHOR:velocity
 	velocity = velocity.move_toward(desired_velocity, acceleration * delta)
+	#END:velocity
 	move_and_slide()
 
 	#ANCHOR:velocity_check

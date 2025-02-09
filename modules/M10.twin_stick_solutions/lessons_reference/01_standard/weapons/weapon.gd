@@ -15,11 +15,6 @@ class_name Weapon extends Node2D
 
 
 #ANCHOR:l6_02
-func _ready() -> void:
-	if Engine.is_editor_hint():
-		set_physics_process(false)
-
-
 func _physics_process(_delta: float) -> void:
 	if Input.is_action_just_pressed("shoot"):
 		shoot()

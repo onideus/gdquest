@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3]
 
-[ext_resource type="Script" path="res://practices/L5.P2.pop_the_balloon/balloon_pop.gd" id="1_7x7mn"]
-[ext_resource type="Material" path="res://practices/L5.P2.pop_the_balloon/material.tres" id="2_oxdcp"]
-[ext_resource type="Texture2D" path="res://practices/L5.P2.pop_the_balloon/balloon_tail.png" id="3_dlkvu"]
-[ext_resource type="Texture2D" path="res://practices/L5.P2.pop_the_balloon/balloon_top.png" id="4_bykqh"]
+[ext_resource type="Script" path="res://practices/L5.P2.pop_the_balloon/balloon_pop.gd" id="1_vkjkw"]
+[ext_resource type="Material" path="res://practices/L5.P2.pop_the_balloon/material.tres" id="2_wj27y"]
+[ext_resource type="Texture2D" path="res://practices/L5.P2.pop_the_balloon/balloon_tail.png" id="3_4f7s6"]
+[ext_resource type="Texture2D" path="res://practices/L5.P2.pop_the_balloon/balloon_top.png" id="4_5c7ld"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6fgqy"]
 radius = 47.0
@@ -13,22 +13,22 @@ height = 166.0
 position = Vector2(960, 540)
 collision_layer = 2
 collision_mask = 0
-script = ExtResource("1_7x7mn")
+script = ExtResource("1_vkjkw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -16)
 shape = SubResource("CapsuleShape2D_6fgqy")
 
 [node name="CanvasGroup" type="CanvasGroup" parent="."]
-material = ExtResource("2_oxdcp")
+material = ExtResource("2_wj27y")
 position = Vector2(0, 33)
 
 [node name="Tail" type="Sprite2D" parent="CanvasGroup"]
 position = Vector2(0, -37)
-texture = ExtResource("3_dlkvu")
+texture = ExtResource("3_4f7s6")
 offset = Vector2(0, 34)
 
 [node name="Top" type="Sprite2D" parent="CanvasGroup"]
 position = Vector2(0, -79)
-texture = ExtResource("4_bykqh")
+texture = ExtResource("4_5c7ld")
 offset = Vector2(0, 5)

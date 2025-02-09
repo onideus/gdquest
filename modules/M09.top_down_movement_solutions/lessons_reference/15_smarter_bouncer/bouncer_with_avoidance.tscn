@@ -36,7 +36,6 @@ shader = ExtResource("5_neyj4")
 shader_parameter/viewport_scale = Vector2(1, 1)
 shader_parameter/line_color = Color(0, 0, 0, 1)
 shader_parameter/line_thickness = 4.0
-shader_parameter/waves_height = 0.0
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_plh15"]
 viewport_path = NodePath("SubViewport")

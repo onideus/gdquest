@@ -20,9 +20,11 @@ func _ready() -> void:
 	)
 
 
+#ANCHOR:_unhandled_input
 func _unhandled_input(event: InputEvent) -> void:
 	if player != null and event.is_action_pressed("interact"):
 		play_dialogue(dialogue)
+		#END:_unhandled_input
 
 	if event.is_action_pressed("move_up"):
 		play_dialogue(dialogue)

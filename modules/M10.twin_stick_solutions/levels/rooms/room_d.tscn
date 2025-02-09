@@ -8,7 +8,6 @@
 [node name="RoomD" type="Node2D"]
 y_sort_enabled = true
 position = Vector2(0, 2048)
-rotation = -0.00114604
 script = ExtResource("1_2c4qj")
 
 [node name="Floor" type="TileMapLayer" parent="."]

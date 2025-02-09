@@ -121,7 +121,7 @@ func show_text(current_item_index: int) -> void:
 	audio_stream_player.play(sound_start_position)
 	# We make sure the sound stops when the text finishes displaying
 	tween.finished.connect(audio_stream_player.stop)
-	
+
 	# We animate the character sliding in.
 	slide_in()
 
@@ -142,7 +142,7 @@ func show_text(current_item_index: int) -> void:
 #END:120_disable_buttons
 #END:130_new_show_text
 
-#NCHOR:090_create_buttons
+#ANCHOR:090_create_buttons
 ## Adds buttons to the buttons container
 ## [param choices_data] A dictionary of [String] keys where each key represents
 ##                      a sentence that the player can select, and each [int] value

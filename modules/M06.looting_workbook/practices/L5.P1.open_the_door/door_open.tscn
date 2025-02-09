@@ -1,9 +1,9 @@
 [gd_scene load_steps=9 format=3]
 
-[ext_resource type="Script" path="res://practices/L5.P1.open_the_door/door.gd" id="1_3stts"]
-[ext_resource type="Material" path="res://practices/L5.P1.open_the_door/material.tres" id="2_m4lc4"]
-[ext_resource type="Texture2D" path="res://practices/L5.P1.open_the_door/door_hinge.png" id="3_at2ww"]
-[ext_resource type="Texture2D" path="res://practices/L5.P1.open_the_door/door_body.png" id="4_2knnn"]
+[ext_resource type="Script" path="res://practices/L5.P1.open_the_door/door.gd" id="1_uuy2i"]
+[ext_resource type="Material" path="res://practices/L5.P1.open_the_door/material.tres" id="2_ww7dd"]
+[ext_resource type="Texture2D" path="res://practices/L5.P1.open_the_door/door_hinge.png" id="3_6qrsk"]
+[ext_resource type="Texture2D" path="res://practices/L5.P1.open_the_door/door_body.png" id="4_pksum"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_h3xna"]
 radius = 31.0
@@ -48,22 +48,22 @@ _data = {
 [node name="DoorOpen" type="Area2D"]
 collision_layer = 2
 collision_mask = 0
-script = ExtResource("1_3stts")
+script = ExtResource("1_uuy2i")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 115)
 shape = SubResource("CapsuleShape2D_h3xna")
 
 [node name="CanvasGroup" type="CanvasGroup" parent="."]
-material = ExtResource("2_m4lc4")
+material = ExtResource("2_ww7dd")
 
 [node name="DoorHinge" type="Sprite2D" parent="CanvasGroup"]
 position = Vector2(0, -35)
-texture = ExtResource("3_at2ww")
+texture = ExtResource("3_6qrsk")
 offset = Vector2(0, 34)
 
 [node name="DoorBody" type="Sprite2D" parent="CanvasGroup"]
-texture = ExtResource("4_2knnn")
+texture = ExtResource("4_pksum")
 offset = Vector2(0, 117)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

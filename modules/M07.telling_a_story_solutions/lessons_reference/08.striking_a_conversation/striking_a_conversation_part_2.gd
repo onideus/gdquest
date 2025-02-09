@@ -13,7 +13,6 @@ var bodies := {
 }
 #END:010_bodies_resources
 
-#ANCHOR:010_the_dialog_array
 ## Data to display in the dialogue. Each dictionary in this array has three properties:
 ##
 ## - expression: a [code]Texture[/code] containing an expression
@@ -70,7 +69,6 @@ var dialogue_items: Array[Dictionary] = [
 		"character": bodies["sophia"],
 	},
 ]
-#END:030_the_dialog_array
 var current_item_index := 0
 
 @onready var rich_text_label: RichTextLabel = %RichTextLabel

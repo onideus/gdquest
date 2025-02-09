@@ -47,10 +47,12 @@ func _ready() -> void:
 	#END:l10_02
 
 
-#ANCHOR:l09_04
+#ANCHOR:set_health_definition
 func set_health(new_health: int) -> void:
+	#END:set_health_definition
 	var previous_health := health
 
+	#ANCHOR:l09_04
 	health = new_health
 	if health <= 0:
 		die()

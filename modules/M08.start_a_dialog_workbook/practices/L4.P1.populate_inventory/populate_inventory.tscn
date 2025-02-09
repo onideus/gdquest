@@ -1,16 +1,16 @@
 [gd_scene load_steps=4 format=3]
 
-[ext_resource type="Material" path="res://assets/practice_background_material.tres" id="1_olffr"]
-[ext_resource type="Script" path="res://practices/L4.P1.populate_inventory/populate_inventory.gd" id="2_ks2g3"]
-[ext_resource type="Theme" path="res://assets/practices/practices_theme.tres" id="3_khl8v"]
+[ext_resource type="Material" path="res://assets/practice_background_material.tres" id="1_p8aok"]
+[ext_resource type="Script" path="res://practices/L4.P1.populate_inventory/populate_inventory.gd" id="2_jfh1j"]
+[ext_resource type="Theme" path="res://assets/practices/practices_theme.tres" id="3_52edp"]
 
 [node name="PopulateInventory" type="ColorRect"]
-material = ExtResource("1_olffr")
+material = ExtResource("1_p8aok")
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("2_ks2g3")
+script = ExtResource("2_jfh1j")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 1
@@ -19,7 +19,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("3_khl8v")
+theme = ExtResource("3_52edp")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
 layout_mode = 2

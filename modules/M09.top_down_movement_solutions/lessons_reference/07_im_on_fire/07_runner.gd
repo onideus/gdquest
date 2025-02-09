@@ -11,10 +11,16 @@ func _physics_process(delta: float) -> void:
 	var direction := Input.get_vector("move_left", "move_right", "move_up", "move_down")
 	#END:direction_calculation
 	#ANCHOR:desired_velocity
-	var desired_velocity := direction * max_speed
+	var has_input_direction := direction.length() > 0.0
+	if has_input_direction:
+		#ANCHOR:desired_velocity_var_only
+		var desired_velocity := direction * max_speed
+		#END:desired_velocity_var_only
+		velocity = velocity.move_toward(desired_velocity, acceleration * delta)
+	else:
+		velocity = velocity.move_toward(Vector2.ZERO, deceleration * delta)
 	#END:desired_velocity
 
-	velocity = velocity.move_toward(desired_velocity, acceleration * delta)
 	move_and_slide()
 
 	#ANCHOR:animation_condition

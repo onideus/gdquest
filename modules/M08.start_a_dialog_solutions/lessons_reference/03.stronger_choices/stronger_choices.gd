@@ -76,10 +76,10 @@ func show_text(current_item_index: int) -> void:
 
 
 ## Adds buttons to the buttons container
-## [param buttons_data] An array of [DialogChoice]
+## [param choices_data] An array of [DialogChoice]
 #END:part_2
 #ANCHOR:create_buttons_signature
-func create_buttons(buttons_data: Array[DialogueChoice_step_1]) -> void:
+func create_buttons(choices_data: Array[DialogueChoice_step_1]) -> void:
 #ANCHOR:part_3
 #ANCHOR:create_button_body
 #END:create_buttons_signature
@@ -88,7 +88,7 @@ func create_buttons(buttons_data: Array[DialogueChoice_step_1]) -> void:
 		button.queue_free()
 #END:remove_previous_nodes
 #ANCHOR:loop_start
-	for choice in buttons_data:
+	for choice in choices_data:
 #END:loop_start
 #ANCHOR:create_button
 		var button := Button.new()
@@ -99,8 +99,8 @@ func create_buttons(buttons_data: Array[DialogueChoice_step_1]) -> void:
 		if choice.is_quit == true:
 			button.pressed.connect(get_tree().quit)
 		else:
-			var target_line_id := choice.target_line_idx
-			button.pressed.connect(show_text.bind(target_line_id))
+			var target_line_idx := choice.target_line_idx
+			button.pressed.connect(show_text.bind(target_line_idx))
 #END:extract_choice_destination
 #END:create_button_body
 

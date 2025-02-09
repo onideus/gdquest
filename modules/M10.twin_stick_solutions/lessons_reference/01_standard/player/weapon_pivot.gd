@@ -2,8 +2,6 @@ extends Node2D
 
 var is_using_gamepad := false
 
-@onready var _weapon_anchor: Marker2D = %WeaponAnchor
-
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion or event is InputEventKey:

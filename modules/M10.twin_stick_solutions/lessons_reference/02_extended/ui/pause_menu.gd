@@ -1,11 +1,13 @@
-extends Control
+class_name PauseMenu extends Control
 
 @export_range(0, 1.0) var menu_opened_amount := 0.0:
 	set = set_menu_opened_amount
 
 var _tween: Tween
 
-@onready var _resume_button: Button = %ResumeButton
+@onready var settings_button: Button = %SettingsButton
+@onready var resume_button: Button = %ResumeButton
+
 @onready var _quit_button: Button = %QuitButton
 
 @onready var _color_rect: ColorRect = %ColorRect
@@ -15,16 +17,7 @@ var _tween: Tween
 func _ready() -> void:
 	menu_opened_amount = 0.0
 
-	_resume_button.pressed.connect(toggle.bind(false))
 	_quit_button.pressed.connect(get_tree().quit)
-
-
-func _input(event: InputEvent) -> void:
-	if event.is_action_pressed("toggle_pause"):
-		if menu_opened_amount < 0.5:
-			toggle(true)
-		else:
-			toggle(false)
 
 
 func set_menu_opened_amount(amount: float) -> void:
@@ -35,7 +28,6 @@ func set_menu_opened_amount(amount: float) -> void:
 		return
 
 	_panel_container.modulate.a = amount
-	get_tree().paused = amount > 0.3
 
 
 func toggle(is_toggled: bool) -> void:

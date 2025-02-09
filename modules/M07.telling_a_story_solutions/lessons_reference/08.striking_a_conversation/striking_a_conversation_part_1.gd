@@ -145,7 +145,7 @@ func advance() -> void:
 func slide_in() -> void:
 	var slide_tween := create_tween()
 	slide_tween.set_ease(Tween.EASE_OUT)
-	body.position.x = get_viewport_rect().size.x / 7
+	body.position.x = 200
 	slide_tween.tween_property(body, "position:x", 0, 0.3)
 	body.modulate.a = 0
 	slide_tween.parallel().tween_property(body, "modulate:a", 1, 0.2)

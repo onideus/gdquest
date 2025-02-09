@@ -28,4 +28,4 @@ func advance() -> void:
 	if item_index >= items.size():
 		item_index = 0
 	# Don't forget to call the show_image function
-	show_image()
+	show_image() #

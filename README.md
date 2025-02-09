@@ -10,6 +10,14 @@ The goal of this repository is to serve both as a personal learning journal and 
 
 ---
 
+## Course Version Number
+
+As this course is currently a work in progress, there are constant updates being made to further improve it. As such, I wanted to be sure and provide the version number of the material I'm working from.
+
+Current coursework version - **4.0.28**
+
+---
+
 ## Repository Structure
 
 - **`/modules/`**  
@@ -61,10 +69,10 @@ Below is an indicative list of modules based on the course outline. I will updat
   - [x] L7. Spawn Items Randomly
   - [x] L8. Filter Items From Detecting Each Other
   - [x] L9. Keep The Ship On Screen
-  - [ ] L10. Make The Items Float
+  - [x] L10. Make The Items Float
 
 - [ ] **M6. Looting**
-  - [ ] L1. Looting! Module overview
+  - [x] L1. Looting! Module overview
   - [ ] L2. Create the chest
   - [ ] L3. The outline thickens
   - [ ] L4. The chest open animation

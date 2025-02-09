@@ -1,17 +1,17 @@
 [gd_scene load_steps=4 format=3]
 
-[ext_resource type="Material" path="res://practices/L8.P1.pick_your_character/assets/practice_background_material.tres" id="1_j6fv7"]
-[ext_resource type="Theme" path="res://practices/L8.P1.pick_your_character/assets/practice_exercises_theme.tres" id="2_xhvty"]
-[ext_resource type="Script" path="res://practices/L8.P1.pick_your_character/pick_your_character.gd" id="3_ugw6l"]
+[ext_resource type="Material" path="res://practices/L8.P1.pick_your_character/assets/practice_background_material.tres" id="1_urjb3"]
+[ext_resource type="Theme" path="res://practices/L8.P1.pick_your_character/assets/practice_exercises_theme.tres" id="2_613gc"]
+[ext_resource type="Script" path="res://practices/L8.P1.pick_your_character/pick_your_character.gd" id="3_emuxq"]
 
 [node name="PickYourPlayer" type="ColorRect"]
-material = ExtResource("1_j6fv7")
+material = ExtResource("1_urjb3")
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("2_xhvty")
-script = ExtResource("3_ugw6l")
+theme = ExtResource("2_613gc")
+script = ExtResource("3_emuxq")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1

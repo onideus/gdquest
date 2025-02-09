@@ -9,7 +9,7 @@ class_name Player extends CharacterBody2D
 #ANCHOR:l10_01
 @export var max_health := 5
 
-var health := max_health: set = set_health
+@onready var health := max_health: set = set_health
 
 @onready var _health_bar: ProgressBar = %HealthBar
 @onready var _collision_shape_2d: CollisionShape2D = %CollisionShape2D

@@ -7,7 +7,6 @@
 
 [node name="RoomA" type="Node2D"]
 y_sort_enabled = true
-rotation = -0.00114604
 script = ExtResource("1_8d3jl")
 
 [node name="Floor" type="TileMapLayer" parent="."]

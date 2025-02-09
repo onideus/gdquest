@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://lessons_reference/01_standard/player/player.gd" id="1_8cq21"]
 [ext_resource type="Texture2D" uid="uid://bw03btxpkxde4" path="res://player/godot_bottom.png" id="3_0kuyu"]
 [ext_resource type="Script" path="res://lessons_reference/01_standard/player/godot_armor.gd" id="4_gergj"]
-[ext_resource type="PackedScene" uid="uid://u2e0ge3w0mb5" path="res://lessons_reference/01_standard/weapons/basic_fire.tscn" id="5_u1hvy"]
+[ext_resource type="PackedScene" uid="uid://u2e0ge3w0mb5" path="res://lessons_reference/01_standard/weapons/basic_fire.tscn" id="5_87u7t"]
 [ext_resource type="Script" path="res://lessons_reference/01_standard/player/weapon_pivot.gd" id="5_xb1o6"]
 [ext_resource type="Texture2D" uid="uid://dekkcmj408pvt" path="res://player/hand_fire.png" id="6_bivqd"]
 [ext_resource type="PackedScene" path="res://common/shadow.tscn" id="7_w0lmv"]
@@ -81,7 +81,7 @@ script = ExtResource("5_xb1o6")
 unique_name_in_owner = true
 position = Vector2(66, 0)
 
-[node name="BasicFire" parent="WeaponPivot/WeaponAnchor" instance=ExtResource("5_u1hvy")]
+[node name="BasicFire" parent="WeaponPivot/WeaponAnchor" instance=ExtResource("5_87u7t")]
 
 [node name="HandLeft" type="Sprite2D" parent="WeaponPivot/WeaponAnchor"]
 unique_name_in_owner = true
