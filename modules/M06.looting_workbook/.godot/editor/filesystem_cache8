@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1739411026
+::res://::1739679790
 icon_looting.png::CompressedTexture2D::3606997955046021701::1739110733::1739140951::1::::<><>::
 ::res://addons/::1739110733
 ::res://addons/gdpractice/::1739110733
@@ -165,11 +165,12 @@ torch.tscn::PackedScene::322838020226007229::1739110733::0::1::::<><>::uid://d3u
 torch_body.png::CompressedTexture2D::9166663288643889627::1739110733::1739140951::1::::<><>::
 ::res://lessons/::1739141112
 mini_dungeon.tscn::PackedScene::5375529650740549615::1739141112::0::1::::<><>::uid://114x1a0rmx4l::::res://assets/dungeon/smooth_dungeon_tileset.png<>uid://cae527caaj50v::::res://assets/dungeon/shadow_map.png<>uid://dpym64uaptlhb::::res://assets/dungeon/grass_tileset.png<>uid://c1rgncfgjxefj::::res://assets/dungeon/pillar.png<>uid://l0y1k1obencd::::res://assets/dungeon/spider_web.png<>uid://eundh35r605v::::res://assets/torch/torch.tscn
-::res://lessons/chest/::1739140951
+::res://lessons/chest/::1739678866
 bottom.png::CompressedTexture2D::6753948229202366610::1739110733::1739140951::1::::<><>::
+chest.gd::GDScript::-1::1739678866::0::1::::<>Area2D<>::
+chest.tscn::PackedScene::6423024285545263779::1739678866::0::1::::<><>::res://lessons/chest/group_outline.gdshader<>res://lessons/chest/chest.gd<>uid://c3hwsm5ugp8qw::::res://lessons/chest/bottom.png<>uid://bnem1cahhoxdk::::res://lessons/chest/top.png<>uid://bu2jin246nel5::::res://lessons/chest/lock.png
 group_outline.gdshader::Shader::-1::1739110733::0::1::::<><>::
 lock.png::CompressedTexture2D::3846497220972340828::1739110733::1739140951::1::::<><>::
-mini_dungeon.tscn::PackedScene::6423024285545263779::1739411774::0::1::::<><>::uid://c3hwsm5ugp8qw::::res://lessons/chest/bottom.png<>uid://bnem1cahhoxdk::::res://lessons/chest/top.png<>uid://bu2jin246nel5::::res://lessons/chest/lock.png
 top.png::CompressedTexture2D::3307908301933165580::1739110733::1739140951::1::::<><>::
 ::res://lessons/items/::1739140951
 apple.png::CompressedTexture2D::2436381631234575184::1739110733::1739140951::1::::<><>::
