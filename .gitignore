@@ -1,5 +1,5 @@
 # Godot-specific cache and build files
-.godot/
+**/zs.godot/
 .import/
 export/
 build/
