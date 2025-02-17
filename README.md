@@ -74,7 +74,7 @@ Below is an indicative list of modules based on the course outline. I will updat
 - [ ] **M6. Looting**
   - [x] L1. Looting! Module overview
   - [x] L2. Create the chest
-  - [ ] L3. The outline thickens
+  - [x] L3. The outline thickens
   - [ ] L4. The chest open animation
   - [ ] L5. Open the chest
   - [ ] L6. Spawn random loot
