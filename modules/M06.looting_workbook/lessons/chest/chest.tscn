@@ -10,6 +10,7 @@
 size = Vector2(96, 79)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_3kqio"]
+resource_local_to_scene = true
 shader = ExtResource("1_n0rs7")
 shader_parameter/line_color = Color(0, 0, 0, 1)
 shader_parameter/line_thickness = 14.05
@@ -37,5 +38,3 @@ texture = ExtResource("3_aj8x2")
 [node name="Lock" type="Sprite2D" parent="CanvasGroup"]
 position = Vector2(0, -16)
 texture = ExtResource("4_0ihpn")
-
-[node name="Camera2D" type="Camera2D" parent="."]
