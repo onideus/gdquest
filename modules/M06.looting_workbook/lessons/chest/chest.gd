@@ -2,6 +2,7 @@ extends Area2D
 
 @onready var canvas_group: CanvasGroup = $CanvasGroup
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
+var is_open := false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -16,6 +17,10 @@ func _process(delta: float) -> void:
 
 
 func open() -> void:
+	if is_open:
+		return
+	
+	is_open = true
 	animation_player.play("open")
 
 
