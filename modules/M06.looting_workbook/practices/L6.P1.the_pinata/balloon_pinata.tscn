@@ -1,12 +1,12 @@
-[gd_scene load_steps=9 format=3]
+[gd_scene load_steps=9 format=3 uid="uid://biva7b3f0sbr4"]
 
-[ext_resource type="Script" path="res://practices/L6.P1.the_pinata/balloon_pinata.gd" id="1_nwiej"]
-[ext_resource type="PackedScene" path="res://practices/L6.P1.the_pinata/candy/candy_blue.tscn" id="2_7mfct"]
-[ext_resource type="PackedScene" path="res://practices/L6.P1.the_pinata/candy/candy_green.tscn" id="3_dppca"]
-[ext_resource type="PackedScene" path="res://practices/L6.P1.the_pinata/candy/candy_red.tscn" id="4_6k318"]
-[ext_resource type="Material" path="res://practices/L6.P1.the_pinata/material.tres" id="5_qyd3v"]
-[ext_resource type="Texture2D" path="res://practices/L6.P1.the_pinata/balloon_tail.png" id="6_bcje6"]
-[ext_resource type="Texture2D" path="res://practices/L6.P1.the_pinata/balloon_top.png" id="7_lyy5i"]
+[ext_resource type="Script" uid="uid://c3ipibju4tnii" path="res://practices/L6.P1.the_pinata/balloon_pinata.gd" id="1_nwiej"]
+[ext_resource type="PackedScene" uid="uid://c3rrsldbtppgy" path="res://practices/L6.P1.the_pinata/candy/candy_blue.tscn" id="2_7mfct"]
+[ext_resource type="PackedScene" uid="uid://dds87t0s1jbqp" path="res://practices/L6.P1.the_pinata/candy/candy_green.tscn" id="3_dppca"]
+[ext_resource type="PackedScene" uid="uid://2qdjgwl28o6v" path="res://practices/L6.P1.the_pinata/candy/candy_red.tscn" id="4_6k318"]
+[ext_resource type="Material" uid="uid://dwoekm186ke5c" path="res://practices/L6.P1.the_pinata/material.tres" id="5_qyd3v"]
+[ext_resource type="Texture2D" uid="uid://ypt6hxuqpeen" path="res://practices/L6.P1.the_pinata/balloon_tail.png" id="6_bcje6"]
+[ext_resource type="Texture2D" uid="uid://c5wl76sq80jjm" path="res://practices/L6.P1.the_pinata/balloon_top.png" id="7_lyy5i"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xb8xq"]
 radius = 47.0

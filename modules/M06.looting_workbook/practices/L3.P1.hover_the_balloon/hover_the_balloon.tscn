@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://byjws5ijlbqo1"]
 
 [ext_resource type="PackedScene" uid="uid://dwpj4qfjn1i8y" path="res://practices/L3.P1.hover_the_balloon/balloon_hover.tscn" id="1_rbyt2"]
-[ext_resource type="PackedScene" path="res://practices/L3.P1.hover_the_balloon/background.tscn" id="3_yqu1b"]
+[ext_resource type="PackedScene" uid="uid://g616mjbkdooy" path="res://practices/L3.P1.hover_the_balloon/background.tscn" id="3_yqu1b"]
 
 [node name="HoverTheBalloon" type="Node2D"]
 metadata/_edit_horizontal_guides_ = []

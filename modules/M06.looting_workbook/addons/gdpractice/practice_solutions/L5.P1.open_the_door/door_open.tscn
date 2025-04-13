@@ -1,28 +1,13 @@
 [gd_scene load_steps=9 format=3 uid="uid://7yshiiggo05s"]
 
-[ext_resource type="Script" path="res://addons/gdpractice/practice_solutions/L5.P1.open_the_door/door.gd" id="1_vset4"]
-[ext_resource type="Material" uid="uid://bea3lj1m2qape" path="res://addons/gdpractice/practice_solutions/L5.P1.open_the_door/material.tres" id="2_jc8jq"]
-[ext_resource type="Texture2D" uid="uid://1t3pjx2jmrtp" path="res://addons/gdpractice/practice_solutions/L5.P1.open_the_door/door_hinge.png" id="3_x1n33"]
-[ext_resource type="Texture2D" uid="uid://r0f5ky2kx4qc" path="res://addons/gdpractice/practice_solutions/L5.P1.open_the_door/door_body.png" id="4_b8gvu"]
+[ext_resource type="Script" uid="uid://bp1urnismca3r" path="res://addons/gdpractice/practice_solutions/L5.P1.open_the_door/door.gd" id="1_vset4"]
+[ext_resource type="Material" uid="uid://bea3lj1m2qape" path="res://practices/L5.P1.open_the_door/material.tres" id="2_jc8jq"]
+[ext_resource type="Texture2D" uid="uid://1t3pjx2jmrtp" path="res://practices/L5.P1.open_the_door/door_hinge.png" id="3_x1n33"]
+[ext_resource type="Texture2D" uid="uid://r0f5ky2kx4qc" path="res://practices/L5.P1.open_the_door/door_body.png" id="4_b8gvu"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_h3xna"]
 radius = 31.0
 height = 200.0
-
-[sub_resource type="Animation" id="Animation_8rlc8"]
-resource_name = "open"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("CanvasGroup/DoorBody:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.6),
-"transitions": PackedFloat32Array(0.241484, 1),
-"update": 0,
-"values": [0.0, -1.5708]
-}
 
 [sub_resource type="Animation" id="Animation_q4rt8"]
 length = 0.001
@@ -39,10 +24,25 @@ tracks/0/keys = {
 "values": [0.0]
 }
 
+[sub_resource type="Animation" id="Animation_8rlc8"]
+resource_name = "open"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasGroup/DoorBody:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(0.241484, 1),
+"update": 0,
+"values": [0.0, -1.5708]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3ic78"]
 _data = {
-"RESET": SubResource("Animation_q4rt8"),
-"open": SubResource("Animation_8rlc8")
+&"RESET": SubResource("Animation_q4rt8"),
+&"open": SubResource("Animation_8rlc8")
 }
 
 [node name="DoorOpen" type="Area2D"]

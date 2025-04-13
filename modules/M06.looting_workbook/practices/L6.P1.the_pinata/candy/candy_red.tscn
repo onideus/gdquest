@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene load_steps=3 format=3 uid="uid://2qdjgwl28o6v"]
 
-[ext_resource type="Script" path="res://practices/L6.P1.the_pinata/candy/candy.gd" id="1_5v5b8"]
-[ext_resource type="Texture2D" path="res://practices/L6.P1.the_pinata/candy/candy_red.png" id="2_5rhv2"]
+[ext_resource type="Script" uid="uid://cm2l7dv5agauf" path="res://practices/L6.P1.the_pinata/candy/candy.gd" id="1_5v5b8"]
+[ext_resource type="Texture2D" uid="uid://b2rhorpbfx1kt" path="res://practices/L6.P1.the_pinata/candy/candy_red.png" id="2_5rhv2"]
 
 [node name="Candy" type="Node2D" groups=["candy"]]
 script = ExtResource("1_5v5b8")

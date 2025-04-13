@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://cxrmjh6xhfe0j"]
 
-[ext_resource type="Shader" path="res://lessons/chest/group_outline.gdshader" id="1_n0rs7"]
-[ext_resource type="Script" path="res://lessons/chest/chest.gd" id="1_n32cf"]
+[ext_resource type="Shader" uid="uid://b001pbktu160a" path="res://lessons/chest/group_outline.gdshader" id="1_n0rs7"]
+[ext_resource type="Script" uid="uid://c8wa3ilxtabyq" path="res://lessons/chest/chest.gd" id="1_n32cf"]
 [ext_resource type="Texture2D" uid="uid://c3hwsm5ugp8qw" path="res://lessons/chest/bottom.png" id="2_d6crq"]
 [ext_resource type="Texture2D" uid="uid://bnem1cahhoxdk" path="res://lessons/chest/top.png" id="3_aj8x2"]
 [ext_resource type="Texture2D" uid="uid://bu2jin246nel5" path="res://lessons/chest/lock.png" id="4_0ihpn"]
@@ -15,21 +15,6 @@ shader = ExtResource("1_n0rs7")
 shader_parameter/line_color = Color(0, 0, 0, 1)
 shader_parameter/line_thickness = 14.05
 shader_parameter/viewport_scale = Vector2(1, 1)
-
-[sub_resource type="Animation" id="Animation_tilpj"]
-resource_name = "open"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("CanvasGroup/Top:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(0, -40), Vector2(51, -93), Vector2(106, 39)]
-}
 
 [sub_resource type="Animation" id="Animation_phanw"]
 length = 0.001
@@ -46,10 +31,25 @@ tracks/0/keys = {
 "values": [Vector2(0, -40)]
 }
 
+[sub_resource type="Animation" id="Animation_tilpj"]
+resource_name = "open"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasGroup/Top:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, -40), Vector2(51, -93), Vector2(106, 39)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_heeme"]
 _data = {
-"RESET": SubResource("Animation_phanw"),
-"open": SubResource("Animation_tilpj")
+&"RESET": SubResource("Animation_phanw"),
+&"open": SubResource("Animation_tilpj")
 }
 
 [node name="Chest" type="Area2D"]
@@ -77,5 +77,5 @@ texture = ExtResource("4_0ihpn")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_heeme")
+&"": SubResource("AnimationLibrary_heeme")
 }

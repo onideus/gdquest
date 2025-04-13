@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1740184507
+::res://::1741446043
 icon_looting.png::CompressedTexture2D::3606997955046021701::1739110733::1739140951::1::::<><>::
 ::res://addons/::1739110733
 ::res://addons/gdpractice/::1739110733
@@ -10,7 +10,7 @@ gdpractice.gd::GDScript::-1::1739110733::0::1::::<>EditorPlugin<>::
 metadata.gd::GDScript::-1::1739110733::0::1::::<>Node<>::
 paths.gd::GDScript::-1::1739110733::0::1::::<>RefCounted<>::
 plugin.cfg::TextFile::-1::1739110733::0::1::::<><>::
-::res://addons/gdpractice/assets/::1739759134
+::res://addons/gdpractice/assets/::1740281761
 checkbox_empty.svg::CompressedTexture2D::159996384623349208::1739110733::1739140951::1::::<><>::
 checkbox_ticked.svg::CompressedTexture2D::4681739381960142151::1739110733::1739140951::1::::<><>::
 dash_border.png::CompressedTexture2D::5174105164185721961::1739110733::1739140951::1::::<><>::
@@ -19,7 +19,7 @@ input_arrow.svg::CompressedTexture2D::4441352498702649159::1739110733::173914095
 input_mouse_base.svg::CompressedTexture2D::7057538906146452317::1739110733::1739140951::1::::<><>::
 input_mouse_left_click.svg::CompressedTexture2D::3923731288610382921::1739110733::1739140951::1::::<><>::
 new_style_box_flat.tres::StyleBoxFlat::2828730235135847896::1739110733::0::1::::<><>::
-theme.tres::Theme::3147173487228338806::1739759134::0::1::::<><>::uid://d3u2nhkuevn1l::::res://addons/gdpractice/assets/fonts/Inter-Bold.ttf<>uid://deeixt6cs64ak::::res://addons/gdpractice/assets/fonts/Inter-SemiBold.ttf<>uid://b4dj3x16cr0vk::::res://addons/gdpractice/assets/fonts/Inter-ExtraBoldItalic.otf<>uid://btiybsu6acuy7::::res://addons/gdpractice/assets/fonts/Montserrat-Bold.ttf<>uid://h13sewj2ined::::res://addons/gdpractice/assets/fonts/Inter-BoldItalic.otf<>uid://c5j5yg0bc1jec::::res://addons/gdpractice/assets/fonts/Inter-Italic.otf<>uid://bhubmlwupfvt5::::res://addons/gdpractice/assets/fonts/Inter-Medium.ttf
+theme.tres::Theme::3147173487228338806::1740281761::0::1::::<><>::uid://d3u2nhkuevn1l::::res://addons/gdpractice/assets/fonts/Inter-Bold.ttf<>uid://deeixt6cs64ak::::res://addons/gdpractice/assets/fonts/Inter-SemiBold.ttf<>uid://b4dj3x16cr0vk::::res://addons/gdpractice/assets/fonts/Inter-ExtraBoldItalic.otf<>uid://btiybsu6acuy7::::res://addons/gdpractice/assets/fonts/Montserrat-Bold.ttf<>uid://h13sewj2ined::::res://addons/gdpractice/assets/fonts/Inter-BoldItalic.otf<>uid://c5j5yg0bc1jec::::res://addons/gdpractice/assets/fonts/Inter-Italic.otf<>uid://bhubmlwupfvt5::::res://addons/gdpractice/assets/fonts/Inter-Medium.ttf
 ::res://addons/gdpractice/assets/fonts/::1739140951
 Inter-Bold.ttf::FontFile::9167500186177253915::1739110733::1739140951::1::::<><>::
 Inter-BoldItalic.otf::FontFile::546728191683957199::1739110733::1739140951::1::::<><>::

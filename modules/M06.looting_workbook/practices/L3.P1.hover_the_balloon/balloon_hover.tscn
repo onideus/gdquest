@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://dwpj4qfjn1i8y"]
 
-[ext_resource type="Script" path="res://practices/L3.P1.hover_the_balloon/balloon_hover.gd" id="1_8xwbg"]
+[ext_resource type="Script" uid="uid://dwxsdcym0jwkt" path="res://practices/L3.P1.hover_the_balloon/balloon_hover.gd" id="1_8xwbg"]
 [ext_resource type="Texture2D" uid="uid://cf487car4l5gm" path="res://practices/L3.P1.hover_the_balloon/balloon_tail.png" id="2_1hoqi"]
-[ext_resource type="Shader" path="res://practices/L3.P1.hover_the_balloon/group_outline.gdshader" id="2_torlh"]
+[ext_resource type="Shader" uid="uid://odl3j4sutcjt" path="res://practices/L3.P1.hover_the_balloon/group_outline.gdshader" id="2_torlh"]
 [ext_resource type="Texture2D" uid="uid://b1adpk1vpdh7r" path="res://practices/L3.P1.hover_the_balloon/balloon_top.png" id="3_0gp8y"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cs4t6"]

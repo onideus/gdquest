@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://dnetm54guji21"]
 
-[ext_resource type="Shader" path="res://assets/bird/shadow.gdshader" id="1_n65kd"]
+[ext_resource type="Shader" uid="uid://bxaexg37j7s4y" path="res://assets/bird/shadow.gdshader" id="1_n65kd"]
 [ext_resource type="Texture2D" uid="uid://b01mnp8qxfbh7" path="res://assets/small_circle.png" id="2_2mb0d"]
 
 [sub_resource type="Gradient" id="Gradient_1pcbm"]
