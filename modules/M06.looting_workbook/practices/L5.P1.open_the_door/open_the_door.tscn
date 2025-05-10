@@ -1,18 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://hj7t2qedecu5"]
+[gd_scene load_steps=4 format=3 uid="uid://hj7t2qedecu5"]
 
 [ext_resource type="PackedScene" uid="uid://bldl7nfiras5l" path="res://practices/L5.P1.open_the_door/door_open.tscn" id="1_h8nbm"]
-[ext_resource type="Script" uid="uid://c3ru1y3m3nbqt" path="res://practices/L5.P1.open_the_door/door.gd" id="2_l5ftp"]
 [ext_resource type="Texture2D" uid="uid://dwbwn5t4dfiib" path="res://practices/L5.P1.open_the_door/wall.png" id="3_00nd1"]
 [ext_resource type="PackedScene" uid="uid://8ptl3bia7adl" path="res://practices/L5.P1.open_the_door/background.tscn" id="4_gb3p7"]
 
 [node name="OpenTheDoor" type="Node2D"]
 metadata/_edit_horizontal_guides_ = []
 
-[node name="DoorOpen" type="Area2D" parent="." instance=ExtResource("1_h8nbm")]
+[node name="DoorOpen" parent="." instance=ExtResource("1_h8nbm")]
 position = Vector2(960, 446.5)
-collision_layer = 2
-collision_mask = 0
-script = ExtResource("2_l5ftp")
 
 [node name="Wall" type="Sprite2D" parent="."]
 position = Vector2(959, 929.5)
@@ -23,4 +19,4 @@ position = Vector2(959, 155.5)
 rotation = 3.14159
 texture = ExtResource("3_00nd1")
 
-[node name="Background" type="Node" parent="." instance=ExtResource("4_gb3p7")]
+[node name="Background" parent="." instance=ExtResource("4_gb3p7")]
