@@ -1,10 +1,13 @@
-[gd_scene load_steps=11 format=3 uid="uid://cxrmjh6xhfe0j"]
+[gd_scene load_steps=14 format=3 uid="uid://cxrmjh6xhfe0j"]
 
 [ext_resource type="Shader" uid="uid://b001pbktu160a" path="res://lessons/chest/group_outline.gdshader" id="1_n0rs7"]
 [ext_resource type="Script" uid="uid://c8wa3ilxtabyq" path="res://lessons/chest/chest.gd" id="1_n32cf"]
+[ext_resource type="PackedScene" uid="uid://0i1g0cunmseb" path="res://lessons/items/apple.tscn" id="2_2au7y"]
 [ext_resource type="Texture2D" uid="uid://c3hwsm5ugp8qw" path="res://lessons/chest/bottom.png" id="2_d6crq"]
 [ext_resource type="Texture2D" uid="uid://bnem1cahhoxdk" path="res://lessons/chest/top.png" id="3_aj8x2"]
+[ext_resource type="PackedScene" uid="uid://ctqyr0ufyoktk" path="res://lessons/items/key.tscn" id="3_relj8"]
 [ext_resource type="Texture2D" uid="uid://bu2jin246nel5" path="res://lessons/chest/lock.png" id="4_0ihpn"]
+[ext_resource type="PackedScene" uid="uid://hdxqgspfcaur" path="res://lessons/items/potion.tscn" id="4_hb7wy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oosq7"]
 size = Vector2(96, 79)
@@ -54,6 +57,7 @@ _data = {
 
 [node name="Chest" type="Area2D"]
 script = ExtResource("1_n32cf")
+possible_itmes = Array[PackedScene]([ExtResource("2_2au7y"), ExtResource("3_relj8"), ExtResource("4_hb7wy")])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
