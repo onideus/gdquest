@@ -78,7 +78,7 @@ Below is an indicative list of modules based on the course outline. I will updat
   - [x] L4. The chest open animation
   - [x] L5. Open the chest
   - [x] L6. Spawn random loot
-  - [ ] L7. Animate the collectibles
+  - [x] L7. Animate the collectibles
   - [ ] L8. The programmer's dictionary
   - [ ] L9. Let's experiment
 
