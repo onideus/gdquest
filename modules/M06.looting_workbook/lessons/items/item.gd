@@ -2,6 +2,7 @@
 extends Area2D
 
 
+
 func _ready() -> void:
 	play_floating_animation()
 
@@ -18,4 +19,32 @@ func play_floating_animation() -> void:
 	tween.tween_property(sprite_2d, "position", position_offset, duration)
 	tween.tween_property(sprite_2d, "position",  -1.0 * position_offset, duration)
 
+#func _input(event: InputEvent) -> void:
+	#var event_is_mouse_click: bool = (
+		#event is InputEventMouseButton
+		#and event.button_index == MOUSE_BUTTON_LEFT
+		#and event.is_pressed()
+	#)
+	#
+	#if event_is_mouse_click:
+		#_collect()
 
+func _input_event(viewport: Viewport, event: InputEvent, shape_idx: int) -> void:
+	var event_is_mouse_click: bool = (
+		event is InputEventMouseButton
+		and event.button_index == MOUSE_BUTTON_LEFT
+		and event.is_pressed()
+	)
+	
+	if event_is_mouse_click:
+		_collect()
+
+func _collect() -> void:
+	const COLLECTION_TIME = .75
+	
+	var tween := create_tween()
+	
+	var sprite_2d := get_node("Sprite2D")
+	tween.tween_property(sprite_2d, "scale", Vector2(0.0, 0.0), COLLECTION_TIME)
+	tween.finished.connect(queue_free)
+	
