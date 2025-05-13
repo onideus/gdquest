@@ -10,6 +10,8 @@ func _ready() -> void:
 	mouse_entered.connect(_on_mouse_entered)
 	mouse_exited.connect(_on_mouse_exited)
 	canvas_group.material.set_shader_parameter("line_thickness", 3.0)
+	get_viewport().physics_object_picking_sort = true
+	get_viewport().physics_object_picking_first_only = true
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
