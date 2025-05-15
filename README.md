@@ -71,7 +71,7 @@ Below is an indicative list of modules based on the course outline. I will updat
   - [x] L9. Keep The Ship On Screen
   - [x] L10. Make The Items Float
 
-- [ ] **M6. Looting**
+- [x] **M6. Looting**
   - [x] L1. Looting! Module overview
   - [x] L2. Create the chest
   - [x] L3. The outline thickens
@@ -79,8 +79,8 @@ Below is an indicative list of modules based on the course outline. I will updat
   - [x] L5. Open the chest
   - [x] L6. Spawn random loot
   - [x] L7. Animate the collectibles
-  - [ ] L8. The programmer's dictionary
-  - [ ] L9. Let's experiment
+  - [x] L8. The programmer's dictionary
+  - [x] L9. Let's experiment
 
 - [ ] **M7. Telling a Story**
   - [ ] L1. Telling a Story - Module overview
