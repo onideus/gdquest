@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://didp646i88cuy"]
 
-[ext_resource type="Shader" path="res://assets/sliding_background.gdshader" id="3_ko5dk"]
+[ext_resource type="Shader" uid="uid://cs15e2hgd2lan" path="res://assets/sliding_background.gdshader" id="3_ko5dk"]
 [ext_resource type="Texture2D" uid="uid://bnly1gkbxw6b5" path="res://assets/bubble_pattern.png" id="4_7sa0f"]
 [ext_resource type="AudioStream" uid="uid://bafjgt7eu3x5a" path="res://assets/talking_synth.ogg" id="5_djbh6"]
 [ext_resource type="Texture2D" uid="uid://copkt78vgp37i" path="res://assets/sophia.png" id="5_yusgq"]
@@ -8,10 +8,10 @@
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_efgpg"]
 shader = ExtResource("3_ko5dk")
+shader_parameter/pattern_sampler = ExtResource("4_7sa0f")
 shader_parameter/bg_color = Color(0.980392, 0.94902, 0.72549, 1)
 shader_parameter/pattern_color = Color(0.996078, 0.878431, 0.564706, 1)
 shader_parameter/pattern_size = 256.0
-shader_parameter/pattern_sampler = ExtResource("4_7sa0f")
 
 [sub_resource type="InputEventAction" id="InputEventAction_wt2qg"]
 action = &"ui_accept"

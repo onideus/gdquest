@@ -1,8 +1,8 @@
 [gd_scene load_steps=11 format=3 uid="uid://chprvwfixox2y"]
 
 [ext_resource type="Theme" uid="uid://bbmml6r7gt31l" path="res://lessons_reference/08.striking_a_conversation/assets/main.theme" id="1_frglg"]
-[ext_resource type="Script" path="res://lessons_reference/08.striking_a_conversation/striking_a_conversation_part_2.gd" id="2_n1q1t"]
-[ext_resource type="Shader" path="res://assets/sliding_background.gdshader" id="3_3nfwl"]
+[ext_resource type="Script" uid="uid://cnath05gwn4bx" path="res://lessons_reference/08.striking_a_conversation/striking_a_conversation_part_2.gd" id="2_n1q1t"]
+[ext_resource type="Shader" uid="uid://cs15e2hgd2lan" path="res://assets/sliding_background.gdshader" id="3_3nfwl"]
 [ext_resource type="Texture2D" uid="uid://bnly1gkbxw6b5" path="res://assets/bubble_pattern.png" id="4_xuy0d"]
 [ext_resource type="Texture2D" uid="uid://copkt78vgp37i" path="res://assets/sophia.png" id="5_g5y1a"]
 [ext_resource type="Texture2D" uid="uid://d000xjtr4iqtk" path="res://assets/emotion_regular.png" id="6_bayqr"]
@@ -10,10 +10,10 @@
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_efgpg"]
 shader = ExtResource("3_3nfwl")
+shader_parameter/pattern_sampler = ExtResource("4_xuy0d")
 shader_parameter/bg_color = Color(0.980392, 0.94902, 0.72549, 1)
 shader_parameter/pattern_color = Color(0.996078, 0.878431, 0.564706, 1)
 shader_parameter/pattern_size = 256.0
-shader_parameter/pattern_sampler = ExtResource("4_xuy0d")
 
 [sub_resource type="InputEventAction" id="InputEventAction_3rk3v"]
 action = &"advance_text"

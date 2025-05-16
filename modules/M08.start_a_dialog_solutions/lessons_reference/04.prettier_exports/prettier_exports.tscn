@@ -1,12 +1,12 @@
 [gd_scene load_steps=19 format=3 uid="uid://cb3op7jhkds3v"]
 
 [ext_resource type="Theme" uid="uid://cshg3sgf0xxq" path="res://assets/main_theme.tres" id="1_wrlj7"]
-[ext_resource type="Script" path="res://lessons_reference/04.prettier_exports/prettier_exports.gd" id="2_rdphc"]
+[ext_resource type="Script" uid="uid://db2snjf4yooq0" path="res://lessons_reference/04.prettier_exports/prettier_exports.gd" id="2_rdphc"]
 [ext_resource type="Texture2D" uid="uid://copkt78vgp37i" path="res://assets/sophia.png" id="3_3mjru"]
-[ext_resource type="Script" path="res://lessons_reference/04.prettier_exports/dialogue_item_2.gd" id="5_5f0ig"]
+[ext_resource type="Script" uid="uid://cvsljmi8obmia" path="res://lessons_reference/04.prettier_exports/dialogue_item_2.gd" id="5_5f0ig"]
 [ext_resource type="Texture2D" uid="uid://d000xjtr4iqtk" path="res://assets/emotion_regular.png" id="5_i3oq3"]
-[ext_resource type="Script" path="res://lessons_reference/04.prettier_exports/dialogue_choice_2.gd" id="6_c8vc1"]
-[ext_resource type="Shader" path="res://assets/sliding_background.gdshader" id="9_itslq"]
+[ext_resource type="Script" uid="uid://bjqn4o2jys1vf" path="res://lessons_reference/04.prettier_exports/dialogue_choice_2.gd" id="6_c8vc1"]
+[ext_resource type="Shader" uid="uid://dm7717xxg836f" path="res://assets/sliding_background.gdshader" id="9_itslq"]
 [ext_resource type="Texture2D" uid="uid://bnly1gkbxw6b5" path="res://assets/bubble_pattern.png" id="10_iwm64"]
 [ext_resource type="AudioStream" uid="uid://chgko4hmxwxu5" path="res://assets/talking_synth.ogg" id="11_wj2jm"]
 
@@ -63,10 +63,10 @@ text = "And now your properties are all well-typed! Well done!"
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_efgpg"]
 shader = ExtResource("9_itslq")
+shader_parameter/pattern_sampler = ExtResource("10_iwm64")
 shader_parameter/bg_color = Color(0.980392, 0.94902, 0.72549, 1)
 shader_parameter/pattern_color = Color(0.996078, 0.878431, 0.564706, 1)
 shader_parameter/pattern_size = 256.0
-shader_parameter/pattern_sampler = ExtResource("10_iwm64")
 
 [node name="Dialog" type="Control"]
 layout_mode = 3

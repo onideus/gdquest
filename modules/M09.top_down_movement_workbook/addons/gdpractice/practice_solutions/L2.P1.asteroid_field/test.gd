@@ -36,7 +36,14 @@ func _setup_populate_test_space() -> void:
 	for action_list in INPUTS_TO_TEST:
 		for action in action_list:
 			Input.action_press(action)
-		await _connect_timed(0.3, get_tree().process_frame, _populate_test_space)
+		await _connect_timed(0.3, get_tree().physics_frame, func _populate_test_space() -> void:
+			var data := FrameData.new()
+			practice_max_speed = practice_ship.max_speed
+			data.practice_direction = practice_ship.direction
+			data.practice_position = practice_ship.position
+			data.practice_velocity = practice_ship.velocity
+			data.correct_input_direction = solution_ship.direction
+			_test_space.append(data))
 		for action in action_list:
 			Input.action_release(action)
 
@@ -54,6 +61,7 @@ func _build_requirements() -> void:
 			return ""
 	)
 
+
 func _build_checks() -> void:
 	_add_simple_check(tr("Direction vector matches simulated inputs"), _test_direction_vector_matches_simulated_inputs)
 	_add_simple_check(tr("Ship moves with pressed direction keys"), _test_ship_moves_with_pressed_direction_keys)
@@ -61,22 +69,12 @@ func _build_checks() -> void:
 	_add_simple_check(tr("The script uses move_and_slide()"), _test_ship_is_using_move_and_slide)
 
 
-func _populate_test_space() -> void:
-	var data := FrameData.new()
-	practice_max_speed = practice_ship.max_speed
-	data.practice_direction = practice_ship.direction
-	data.practice_position = practice_ship.position
-	data.practice_velocity = practice_ship.velocity
-	data.correct_input_direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
-	_test_space.append(data)
-
-
 func is_practice_direction_similar_to_expected_direction(frame_previous: FrameData, frame_current: FrameData) -> bool:
 	var practice_direction_sign := frame_current.practice_direction.sign()
 	# Just to be sure there's no race condition, we check the ship direction against both the previous and current frame expected direction. The first line should be the correct check.
 	return (
-		practice_direction_sign == frame_previous.correct_input_direction.sign() or
-		practice_direction_sign == frame_current.correct_input_direction.sign()
+		practice_direction_sign.is_equal_approx(frame_previous.correct_input_direction.sign()) or
+		practice_direction_sign.is_equal_approx(frame_current.correct_input_direction.sign())
 	)
 
 
@@ -88,7 +86,7 @@ func is_position_change_aligned_with_direction(frame_previous: FrameData, frame_
 	if practice_direction.is_equal_approx(Vector2.ZERO):
 		return true
 
-	var dot_product := frame_current.correct_input_direction.normalized().dot(practice_direction)
+	var dot_product := frame_current.correct_input_direction.dot(practice_direction)
 	var is_aligned: bool = abs(dot_product - 1.0) < 0.1
 	return is_aligned
 
@@ -129,7 +127,9 @@ func _test_ship_moves_according_to_max_speed_and_direction() -> String:
 		var speed := frame_data.practice_velocity.length()
 		if speed < expected_velocity.length() - 0.1:
 			return tr("The ship is not moving as fast as expected given its max_speed property. Did you multiply the direction by the max_speed variable?")
-		if frame_data.practice_velocity.dot(expected_velocity) < 0.9:
+
+		var can_calculate_dot := frame_data.practice_velocity.length() > 0.0 and expected_velocity.length() > 0.0
+		if can_calculate_dot and frame_data.practice_velocity.dot(expected_velocity) < 0.9:
 			return tr("The ship is not moving in the correct direction. Did you use the direction variable to set the velocity of the ship?")
 		if frame_data.practice_velocity.distance_to(expected_velocity) > 0.1:
 			return tr("The ship is not moving according to its max speed and direction. Please make sure that you are setting the velocity of the ship correctly.")

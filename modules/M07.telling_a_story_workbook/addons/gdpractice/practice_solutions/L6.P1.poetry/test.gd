@@ -6,10 +6,19 @@ func _build_requirements() -> void:
 		func() -> String:
 			if not "lines" in _practice:
 				return tr("There is no 'lines' variable. Did you remove it? It's required for the practice to work")
-			var lines_in_practice := (_practice.lines as String).strip_edges()
-			var lines_in_solution := (_solution.lines as String).strip_edges()
-			if lines_in_practice.length() != lines_in_solution.length():
-				return tr("It looks like the 'lines' variable string has been modified. Please make sure you use the original string!")
+			var practice_lines := (_practice.lines as String).strip_edges().split("\n")
+			var solution_lines := (_solution.lines as String).strip_edges().split("\n")
+
+			if practice_lines.size() != solution_lines.size():
+				return tr("It looks like the number of lines in 'lines' variable has been modified. Please make sure you use the original string!")
+
+			# There can be issues across platforms like lines in the generated
+			# practice solution having CRLF line endings and the student system
+			# producing LF line endings in their script, causing comparison
+			# issues. That's why we compare linewise and strip the line endings.
+			for i in range(practice_lines.size()):
+				if practice_lines[i].strip_edges().length() != solution_lines[i].strip_edges().length():
+					return tr("Line %d of the 'lines' variable seems to have been modified. Please make sure you use the original string!" % (i + 1))
 			return ""
 	)
 	_add_callable_requirement(

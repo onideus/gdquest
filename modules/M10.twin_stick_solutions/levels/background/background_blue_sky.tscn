@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://wdey00p3syru"]
 
 [ext_resource type="Texture2D" uid="uid://dbwguhyctscrg" path="res://levels/background/far_island_1.png" id="1"]
-[ext_resource type="Shader" path="res://levels/background/background_blue_sky.gdshader" id="1_e0ril"]
+[ext_resource type="Shader" uid="uid://de72xdcds3c10" path="res://levels/background/background_blue_sky.gdshader" id="1_e0ril"]
 [ext_resource type="Texture2D" uid="uid://m6jil4hanvyn" path="res://levels/background/island_3.png" id="2"]
 [ext_resource type="Texture2D" uid="uid://bv1grb303mt6o" path="res://levels/background/cloud_c.png" id="4"]
 [ext_resource type="PackedScene" path="res://levels/background/loop_clouds.tscn" id="5"]
@@ -10,7 +10,7 @@
 
 [sub_resource type="ShaderMaterial" id="31"]
 shader = ExtResource("1_e0ril")
-shader_parameter/color = null
+shader_parameter/color = Color(0, 0, 0, 1)
 
 [sub_resource type="Animation" id="36"]
 length = 0.001
@@ -46,8 +46,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_erbys"]
 _data = {
-"RESET": SubResource("36"),
-"loop": SubResource("37")
+&"RESET": SubResource("36"),
+&"loop": SubResource("37")
 }
 
 [node name="BackgroundBlueSky" type="ParallaxBackground"]

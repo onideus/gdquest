@@ -68,8 +68,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4heoy"]
 _data = {
-"RESET": SubResource("Animation_p0o6j"),
-"idle": SubResource("Animation_i2j16")
+&"RESET": SubResource("Animation_p0o6j"),
+&"idle": SubResource("Animation_i2j16")
 }
 
 [node name="Teleporter" type="Area2D"]

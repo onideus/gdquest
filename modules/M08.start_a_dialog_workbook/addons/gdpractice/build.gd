@@ -228,9 +228,24 @@ func build_project(suffix: String, output_path: String, exclude_patterns: Array[
 	var cfg = ConfigFile.new()
 	cfg.load(project_file_path)
 	cfg.set_value(APP_SECTION, APP_NAME_KEY, "%s (%s)" % [ProjectSettings.get_setting(APP_SECTION.path_join(APP_NAME_KEY)), suffix.capitalize()])
-	for section in [PLUGINS_SECTION, AUTOLOAD_SECTION]:
-		if cfg.has_section(section):
-			cfg.erase_section(section)
+	# Here, we selectively remove GDPractice and its autoloads in both workbooks and solution projects
+	# This code makes sure that other autoloads and plugins used by projects are preserved.
+	# NOTE: since Godot 4.4 plugins are meant to load without errors even on first import,
+	# so we could remove that from workbooks and ship with pre-activated tours and practices
+	# in workbook projects.
+	if cfg.has_section(AUTOLOAD_SECTION):
+		const AUTOLOADS_TO_REMOVE: Array[String] = ["UITestPanel", "Metadata"]
+		for autoload in AUTOLOADS_TO_REMOVE:
+			if cfg.has_section_key(AUTOLOAD_SECTION, autoload):
+				cfg.erase_section_key(AUTOLOAD_SECTION, autoload)
+
+	if cfg.has_section(PLUGINS_SECTION) and cfg.has_section_key(PLUGINS_SECTION, "enabled"):
+		var enabled_plugins := cfg.get_value(PLUGINS_SECTION, "enabled") as PackedStringArray
+		var filtered_plugins := Array(enabled_plugins).filter(
+			func(plugin_path): return "gdpractice" not in plugin_path
+		)
+		if filtered_plugins.size() != enabled_plugins.size():
+			cfg.set_value(PLUGINS_SECTION, "enabled", PackedStringArray(filtered_plugins))
 	cfg.save(project_file_path)
 
 	# If generating the workbook project, ensure lessons directory is present and generate practice files from solutions.
@@ -317,8 +332,15 @@ func build_practice(dir_name: StringName, is_forced := false) -> ReturnCode:
 	if FileAccess.file_exists(solution_diff_path):
 		solution_diff = load(solution_diff_path)
 
+	# We track relevant files that students may have to modify in practices to
+	# generate an MD5 checksum for them. We use that to know when a student
+	# modified a practice.
+	var practice_file_paths: Array[String] = []
 	for solution_file_path: String in solution_file_paths:
 		var extension := solution_file_path.get_extension()
+		if extension == "uid":
+			continue
+
 		var practice_file_path: String = solution_file_path.replace(
 			Paths.SOLUTIONS_PATH, Paths.PRACTICES_PATH
 		)
@@ -332,6 +354,7 @@ func build_practice(dir_name: StringName, is_forced := false) -> ReturnCode:
 			and not is_forced
 		):
 			print_rich(LOG_MESSAGE % [practice_file_path, "[color=orange]SKIP[/color]"])
+			practice_file_paths.append(practice_file_path)
 			continue
 
 		DirAccess.make_dir_recursive_absolute(practice_file_path.get_base_dir())
@@ -365,7 +388,39 @@ func build_practice(dir_name: StringName, is_forced := false) -> ReturnCode:
 			contents = Paths.to_practice(contents)
 			FileAccess.open(practice_file_path, FileAccess.WRITE).store_string(contents)
 			print_rich(LOG_MESSAGE % [practice_file_path, "[color=yellow]PROCESS[/color]"])
+
+		practice_file_paths.append(practice_file_path)
+
+	_store_file_modification_metadata(dir_name, practice_file_paths)
 	return ReturnCode.OK
+
+
+## Creates a file with MD5 checksums for practice files
+## This is used to check if a student has modified the practice files
+func _store_file_modification_metadata(dir_name: String, practice_file_paths: Array[String]) -> void:
+	var practice_dir_path := Paths.PRACTICES_PATH.path_join(dir_name)
+	var metadata_path := practice_dir_path.path_join(".file_checksums.json")
+
+	DirAccess.make_dir_recursive_absolute(practice_dir_path)
+
+	var file_data = {}
+	for file_path: String in practice_file_paths:
+		if FileAccess.file_exists(file_path):
+			var rel_path := file_path
+			if file_path.begins_with(practice_dir_path):
+				rel_path = file_path.substr(practice_dir_path.length() + 1)
+			else:
+				rel_path = file_path.get_file()
+
+			# Store only MD5 checksums
+			file_data[rel_path] = FileAccess.get_md5(file_path)
+
+	var json_string = JSON.stringify(file_data, "  ")
+	var file = FileAccess.open(metadata_path, FileAccess.WRITE)
+	file.store_string(json_string)
+	file.close()
+
+	print_rich("[color=green]Saved file checksums for practice '%s'[/color]" % dir_name)
 
 
 func _process_gd(contents: String) -> String:

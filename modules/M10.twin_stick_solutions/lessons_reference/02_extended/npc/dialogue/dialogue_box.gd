@@ -38,8 +38,8 @@ func show_text() -> void:
 	text_tween = create_tween()
 	var text_appearing_duration := (current_item["text"] as String).length() / 30.0
 	text_tween.tween_property(rich_text_label, "visible_ratio", 1.0, text_appearing_duration)
-	var sound_max_length := audio_stream_player.stream.get_length() - text_appearing_duration
-	var sound_start_position := randf() * sound_max_length
+	var sound_max_offset := audio_stream_player.stream.get_length() - text_appearing_duration
+	var sound_start_position := randf() * sound_max_offset
 	audio_stream_player.play(sound_start_position)
 	text_tween.finished.connect(audio_stream_player.stop)
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=30 format=4 uid="uid://dofqeppj2idyc"]
 
-[ext_resource type="Script" path="res://lessons_reference/01_standard/game.gd" id="1_6lg7g"]
+[ext_resource type="Script" uid="uid://doak6w25dibca" path="res://lessons_reference/01_standard/game.gd" id="1_6lg7g"]
 [ext_resource type="PackedScene" uid="uid://kg6lb726rgpa" path="res://lessons_reference/01_standard/player/player.tscn" id="2_k0srx"]
 [ext_resource type="PackedScene" uid="uid://cu2rb5dl4ljte" path="res://levels/rooms/room_a.tscn" id="3_sig6m"]
 [ext_resource type="PackedScene" uid="uid://dk5pncq4jw6d7" path="res://lessons_reference/01_standard/pickups/pickup.tscn" id="4_qyjgl"]
@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bl7fmqsn8uu8h" path="res://levels/props/books_3.png" id="8_08u18"]
 [ext_resource type="Texture2D" uid="uid://cemsu0d7gpb1d" path="res://levels/props/statue_hammer.png" id="9_b8bfk"]
 [ext_resource type="PackedScene" uid="uid://brrtwsx13dhqv" path="res://lessons_reference/01_standard/pickups/chest.tscn" id="10_71uyv"]
-[ext_resource type="Script" path="res://lessons_reference/01_standard/items/item.gd" id="11_uacvq"]
+[ext_resource type="Script" uid="uid://bcwfpukatf0fb" path="res://lessons_reference/01_standard/items/item.gd" id="11_uacvq"]
 [ext_resource type="PackedScene" uid="uid://cq0mmphkbrvmm" path="res://levels/rooms/room_c.tscn" id="12_4hg1v"]
 [ext_resource type="PackedScene" uid="uid://bpn27at7povsj" path="res://lessons_reference/02_extended/mobs/mob_flying_turret.tscn" id="12_an1a5"]
 [ext_resource type="PackedScene" uid="uid://c78c3an1eibvf" path="res://lessons_reference/01_standard/teleporter/teleporter.tscn" id="13_i3ql3"]
@@ -24,7 +24,7 @@
 [ext_resource type="AudioStream" uid="uid://cgkhr5s5txcxx" path="res://common/music/EZDNB2 (CC-BY Of Far Different Nature).ogg" id="19_188y7"]
 [ext_resource type="PackedScene" uid="uid://bchl7sgkqsmjr" path="res://lessons_reference/01_standard/ui/end_menu.tscn" id="20_m0lh6"]
 [ext_resource type="PackedScene" uid="uid://cjtrjw4el5gxg" path="res://lessons_reference/02_extended/ui/pause_menu.tscn" id="23_tk25x"]
-[ext_resource type="Script" path="res://lessons_reference/02_extended/ui/menus_controller.gd" id="24_dii16"]
+[ext_resource type="Script" uid="uid://ckvatijx6ptuq" path="res://lessons_reference/02_extended/ui/menus_controller.gd" id="24_dii16"]
 [ext_resource type="PackedScene" uid="uid://dvb0hknpapvid" path="res://lessons_reference/02_extended/ui/settings_menu.tscn" id="26_tg5oc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wxoa0"]

@@ -1,9 +1,9 @@
 [gd_scene load_steps=14 format=3 uid="uid://ddg6vh7kkodyx"]
 
-[ext_resource type="Script" path="res://lessons_reference/05_inertia/05_runner_step_2.gd" id="1_thcvv"]
+[ext_resource type="Script" uid="uid://qbw4hqgcvp3v" path="res://lessons_reference/05_inertia/05_runner_step_2.gd" id="1_thcvv"]
 [ext_resource type="Texture2D" uid="uid://dbcmxo51msi8m" path="res://assets/runner/shadow.png" id="2_qr6ln"]
 [ext_resource type="PackedScene" uid="uid://bm8s1oaoxngwq" path="res://assets/runner/runner_visual_red.tscn" id="2_u216a"]
-[ext_resource type="Shader" path="res://assets/character_contour.gdshader" id="3_3kovx"]
+[ext_resource type="Shader" uid="uid://bwhexggpo0snf" path="res://assets/character_contour.gdshader" id="3_3kovx"]
 [ext_resource type="Texture2D" uid="uid://bkq3gfbp5fwqx" path="res://assets/circle_64x64.png" id="3_ewtix"]
 
 [sub_resource type="Curve" id="Curve_a1o1w"]

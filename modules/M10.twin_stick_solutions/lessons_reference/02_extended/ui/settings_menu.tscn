@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://dvb0hknpapvid"]
 
 [ext_resource type="FontFile" uid="uid://djfuvgrnv54kr" path="res://common/title_font.tres" id="1_otqmh"]
-[ext_resource type="Script" path="res://lessons_reference/02_extended/ui/settings_menu.gd" id="2_vbs7p"]
+[ext_resource type="Script" uid="uid://bev5m2gnmi462" path="res://lessons_reference/02_extended/ui/settings_menu.gd" id="2_vbs7p"]
 [ext_resource type="AudioStream" uid="uid://cgkhr5s5txcxx" path="res://common/music/EZDNB2 (CC-BY Of Far Different Nature).ogg" id="3_mn206"]
 
 [sub_resource type="Theme" id="1"]

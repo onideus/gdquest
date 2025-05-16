@@ -1,12 +1,12 @@
 [gd_scene load_steps=8 format=3 uid="uid://dmpgys2lovoe0"]
 
-[ext_resource type="Script" path="res://lessons_reference/09_countdown/09_count_down.gd" id="1_gtcjk"]
+[ext_resource type="Script" uid="uid://ddc5y3bkctp0s" path="res://lessons_reference/09_countdown/09_count_down.gd" id="1_gtcjk"]
 [ext_resource type="PackedScene" uid="uid://dvtdgo0n3gkyq" path="res://lessons_reference/08_finish_line/08_runner.tscn" id="2_poy3f"]
 [ext_resource type="PackedScene" uid="uid://xl56q8amb611" path="res://assets/finish_line/finish_line.tscn" id="3_8ylq2"]
 [ext_resource type="Texture2D" uid="uid://5vl7p0xb7nd8" path="res://assets/circuit_background.png" id="4_nl521"]
 [ext_resource type="PackedScene" uid="uid://cwk136csprv66" path="res://lessons_reference/04_obstacles/04_circuit_obstacle.tscn" id="5_34vcd"]
 [ext_resource type="Theme" uid="uid://cdcyvsn1fp8wa" path="res://assets/countdown/count_down_theme.tres" id="6_b1jiw"]
-[ext_resource type="Script" path="res://assets/countdown/count_down.gd" id="7_ag1gf"]
+[ext_resource type="Script" uid="uid://57e8080cpukf" path="res://assets/countdown/count_down.gd" id="7_ag1gf"]
 
 [node name="WithGameStates" type="Node2D"]
 y_sort_enabled = true

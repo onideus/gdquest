@@ -1,12 +1,12 @@
 [gd_scene load_steps=10 format=3 uid="uid://dusrtd8ws7n3s"]
 
-[ext_resource type="Script" path="res://lessons_reference/13_playing_cop/13_playing_cop.gd" id="1_y7gny"]
+[ext_resource type="Script" uid="uid://bnu47op1plhiq" path="res://lessons_reference/13_playing_cop/13_playing_cop.gd" id="1_y7gny"]
 [ext_resource type="Texture2D" uid="uid://5vl7p0xb7nd8" path="res://assets/circuit_background.png" id="2_oye55"]
 [ext_resource type="PackedScene" uid="uid://xl56q8amb611" path="res://assets/finish_line/finish_line.tscn" id="3_lfc0m"]
 [ext_resource type="PackedScene" uid="uid://dvtdgo0n3gkyq" path="res://lessons_reference/08_finish_line/08_runner.tscn" id="4_05aod"]
 [ext_resource type="PackedScene" uid="uid://cwk136csprv66" path="res://lessons_reference/04_obstacles/04_circuit_obstacle.tscn" id="5_cj0nr"]
 [ext_resource type="Theme" uid="uid://cdcyvsn1fp8wa" path="res://assets/countdown/count_down_theme.tres" id="6_gkbnm"]
-[ext_resource type="Script" path="res://assets/countdown/count_down.gd" id="7_3gkv5"]
+[ext_resource type="Script" uid="uid://57e8080cpukf" path="res://assets/countdown/count_down.gd" id="7_3gkv5"]
 [ext_resource type="PackedScene" uid="uid://ciegbyfrx5lf3" path="res://lessons_reference/10_pause_screen/pause_screen.tscn" id="8_pk1i5"]
 [ext_resource type="PackedScene" uid="uid://clwrrqoy35n3u" path="res://lessons_reference/13_playing_cop/bouncer_following_player.tscn" id="9_bwj68"]
 

@@ -1,10 +1,10 @@
 [gd_scene load_steps=24 format=4 uid="uid://n26rbp6k1u3n"]
 
-[ext_resource type="Script" path="res://lessons_reference/01_standard/game.gd" id="1_md17k"]
+[ext_resource type="Script" uid="uid://doak6w25dibca" path="res://lessons_reference/01_standard/game.gd" id="1_md17k"]
 [ext_resource type="PackedScene" uid="uid://brrtwsx13dhqv" path="res://lessons_reference/01_standard/pickups/chest.tscn" id="3_l82p0"]
 [ext_resource type="PackedScene" uid="uid://cu2rb5dl4ljte" path="res://levels/rooms/room_a.tscn" id="10_cgn5f"]
 [ext_resource type="PackedScene" uid="uid://dk5pncq4jw6d7" path="res://lessons_reference/01_standard/pickups/pickup.tscn" id="11_op1bu"]
-[ext_resource type="Script" path="res://lessons_reference/01_standard/items/item.gd" id="12_8us00"]
+[ext_resource type="Script" uid="uid://bcwfpukatf0fb" path="res://lessons_reference/01_standard/items/item.gd" id="12_8us00"]
 [ext_resource type="Resource" uid="uid://c7fv4hglw2o6a" path="res://lessons_reference/01_standard/items/green_heart.tres" id="12_rgwuj"]
 [ext_resource type="PackedScene" uid="uid://c78c3an1eibvf" path="res://lessons_reference/01_standard/teleporter/teleporter.tscn" id="12_ugdr1"]
 [ext_resource type="PackedScene" uid="uid://dg3p8oikrnmhw" path="res://lessons_reference/01_standard/mobs/mob_follow.tscn" id="14_tpye3"]

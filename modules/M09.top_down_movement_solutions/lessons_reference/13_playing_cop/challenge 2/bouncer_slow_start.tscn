@@ -1,10 +1,10 @@
 [gd_scene load_steps=15 format=3 uid="uid://b34raq3r103er"]
 
-[ext_resource type="Script" path="res://lessons_reference/13_playing_cop/challenge 2/bouncer_slow_start.gd" id="1_7tic1"]
+[ext_resource type="Script" uid="uid://d2idokph5fdvb" path="res://lessons_reference/13_playing_cop/challenge 2/bouncer_slow_start.gd" id="1_7tic1"]
 [ext_resource type="Texture2D" uid="uid://dbcmxo51msi8m" path="res://assets/runner/shadow.png" id="2_2glm8"]
 [ext_resource type="Texture2D" uid="uid://bkq3gfbp5fwqx" path="res://assets/circle_64x64.png" id="3_v4re1"]
 [ext_resource type="PackedScene" uid="uid://hjn4sr1lgmmx" path="res://assets/runner/runner_visual_purple.tscn" id="4_f8r3i"]
-[ext_resource type="Shader" path="res://assets/character_contour.gdshader" id="5_yl0e4"]
+[ext_resource type="Shader" uid="uid://bwhexggpo0snf" path="res://assets/character_contour.gdshader" id="5_yl0e4"]
 
 [sub_resource type="Curve" id="Curve_a1o1w"]
 _data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.8, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
@@ -36,7 +36,6 @@ shader = ExtResource("5_yl0e4")
 shader_parameter/viewport_scale = Vector2(1, 1)
 shader_parameter/line_color = Color(0, 0, 0, 1)
 shader_parameter/line_thickness = 4.0
-shader_parameter/waves_height = 0.0
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_vn4p6"]
 viewport_path = NodePath("SubViewport")

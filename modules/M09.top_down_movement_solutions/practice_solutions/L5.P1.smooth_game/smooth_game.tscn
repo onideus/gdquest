@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cx23hq0mpf60i"]
 
 [ext_resource type="PackedScene" uid="uid://dog4gm50k5cuu" path="res://assets/practice_assets/practice_stage_2.tscn" id="1_2lats"]
-[ext_resource type="Script" path="res://practice_solutions/L5.P1.smooth_game/smooth_ship.gd" id="2_d11as"]
+[ext_resource type="Script" uid="uid://d3ndepqxngx81" path="res://practice_solutions/L5.P1.smooth_game/smooth_ship.gd" id="2_d11as"]
 [ext_resource type="Texture2D" uid="uid://d1xp2mgpkkc42" path="res://assets/practice_assets/shape_ship.png" id="3_pchpx"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4hqje"]

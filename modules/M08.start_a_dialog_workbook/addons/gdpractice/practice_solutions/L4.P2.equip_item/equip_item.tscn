@@ -2,7 +2,7 @@
 
 [ext_resource type="Material" uid="uid://dxrtaju87p2an" path="res://assets/practice_background_material.tres" id="1_sot0p"]
 [ext_resource type="Theme" uid="uid://qk3rjf73qo8w" path="res://assets/practices/practices_theme.tres" id="1_wsrgi"]
-[ext_resource type="Script" path="res://addons/gdpractice/practice_solutions/L4.P2.equip_item/equip_item.gd" id="2_mhvo0"]
+[ext_resource type="Script" uid="uid://c4sn4etlucewc" path="res://addons/gdpractice/practice_solutions/L4.P2.equip_item/equip_item.gd" id="2_mhvo0"]
 
 [node name="EquipItems" type="ColorRect"]
 material = ExtResource("1_sot0p")

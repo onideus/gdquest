@@ -2,7 +2,7 @@
 
 [ext_resource type="Material" uid="uid://dvpewvoevfv4i" path="res://practice_solutions/L10.P2.party_members/assets/practice_background_material.tres" id="1_sjf5w"]
 [ext_resource type="Theme" uid="uid://cikdnop5etmcl" path="res://practice_solutions/L10.P2.party_members/assets/practice_exercises_theme.tres" id="4_nc7qh"]
-[ext_resource type="Script" path="res://practice_solutions/L10.P2.party_members/party_members.gd" id="4_u45ut"]
+[ext_resource type="Script" uid="uid://gwl2c6n83gov" path="res://practice_solutions/L10.P2.party_members/party_members.gd" id="4_u45ut"]
 
 [node name="PartyMembers" type="ColorRect"]
 material = ExtResource("1_sjf5w")

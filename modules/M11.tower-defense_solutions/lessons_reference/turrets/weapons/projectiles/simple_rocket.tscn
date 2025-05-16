@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://qttsoyhahirb"]
 
-[ext_resource type="Script" path="res://lessons_reference/turrets/weapons/projectiles/simple_rocket.gd" id="1_w03jc"]
+[ext_resource type="Script" uid="uid://nhy7lobi8jxh" path="res://lessons_reference/turrets/weapons/projectiles/simple_rocket.gd" id="1_w03jc"]
 [ext_resource type="Texture2D" uid="uid://dmpm4tf4uk7yn" path="res://turrets/weapons/projectiles/rocket.png" id="2_fpupq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_03cig"]

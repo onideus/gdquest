@@ -128,8 +128,8 @@ tracks/4/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_s7mbn"]
 _data = {
-"RESET": SubResource("Animation_5grb3"),
-"bounce": SubResource("Animation_2ayb0")
+&"RESET": SubResource("Animation_5grb3"),
+&"bounce": SubResource("Animation_2ayb0")
 }
 
 [node name="AnimatedButtons" type="HBoxContainer"]

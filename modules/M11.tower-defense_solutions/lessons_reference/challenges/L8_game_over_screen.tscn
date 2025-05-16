@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://q8rv4xtkxasn"]
 
 [ext_resource type="FontFile" uid="uid://btiybsu6acuy7" path="res://addons/gdpractice/assets/fonts/Montserrat-Bold.ttf" id="1_q1qe3"]
-[ext_resource type="Script" path="res://lessons_reference/challenges/L8_game_over_screen.gd" id="1_t5uvn"]
+[ext_resource type="Script" uid="uid://6aj2gwftpate" path="res://lessons_reference/challenges/L8_game_over_screen.gd" id="1_t5uvn"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_788du"]
 bg_color = Color(0.152653, 0.177452, 0.18125, 1)

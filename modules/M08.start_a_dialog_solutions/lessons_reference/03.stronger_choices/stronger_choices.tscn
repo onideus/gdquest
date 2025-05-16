@@ -1,12 +1,12 @@
 [gd_scene load_steps=21 format=3 uid="uid://57s6ndepfpq0"]
 
 [ext_resource type="Theme" uid="uid://cshg3sgf0xxq" path="res://assets/main_theme.tres" id="1_fm42g"]
-[ext_resource type="Script" path="res://lessons_reference/03.stronger_choices/stronger_choices.gd" id="2_5hgot"]
-[ext_resource type="Shader" path="res://assets/sliding_background.gdshader" id="3_yc8u3"]
-[ext_resource type="Script" path="res://lessons_reference/03.stronger_choices/dialogue_choice.gd" id="4_6a4jy"]
+[ext_resource type="Script" uid="uid://cf4tvui6rcsle" path="res://lessons_reference/03.stronger_choices/stronger_choices.gd" id="2_5hgot"]
+[ext_resource type="Shader" uid="uid://dm7717xxg836f" path="res://assets/sliding_background.gdshader" id="3_yc8u3"]
+[ext_resource type="Script" uid="uid://b0iov4laftyk" path="res://lessons_reference/03.stronger_choices/dialogue_choice.gd" id="4_6a4jy"]
 [ext_resource type="Texture2D" uid="uid://bnly1gkbxw6b5" path="res://assets/bubble_pattern.png" id="4_moqml"]
 [ext_resource type="Texture2D" uid="uid://copkt78vgp37i" path="res://assets/sophia.png" id="5_qitxl"]
-[ext_resource type="Script" path="res://lessons_reference/03.stronger_choices/dialogue_item.gd" id="6_ntokw"]
+[ext_resource type="Script" uid="uid://dervsqiyayaqa" path="res://lessons_reference/03.stronger_choices/dialogue_item.gd" id="6_ntokw"]
 [ext_resource type="Texture2D" uid="uid://d000xjtr4iqtk" path="res://assets/emotion_regular.png" id="6_yiyel"]
 [ext_resource type="Texture2D" uid="uid://bhinvhx75etr2" path="res://assets/emotion_sad.png" id="7_xud56"]
 [ext_resource type="Texture2D" uid="uid://dchimpdsnda13" path="res://assets/emotion_happy.png" id="8_7m6bh"]
@@ -65,10 +65,10 @@ text = "And now your properties are all well-typed! Well done!"
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_efgpg"]
 shader = ExtResource("3_yc8u3")
+shader_parameter/pattern_sampler = ExtResource("4_moqml")
 shader_parameter/bg_color = Color(0.980392, 0.94902, 0.72549, 1)
 shader_parameter/pattern_color = Color(0.996078, 0.878431, 0.564706, 1)
 shader_parameter/pattern_size = 256.0
-shader_parameter/pattern_sampler = ExtResource("4_moqml")
 
 [node name="Dialog" type="Control"]
 layout_mode = 3

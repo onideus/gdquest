@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cjtrjw4el5gxg"]
 
 [ext_resource type="FontFile" uid="uid://djfuvgrnv54kr" path="res://common/title_font.tres" id="1_0dn8u"]
-[ext_resource type="Script" path="res://lessons_reference/02_extended/ui/pause_menu.gd" id="2_mayrr"]
+[ext_resource type="Script" uid="uid://0ltjn4sgo33n" path="res://lessons_reference/02_extended/ui/pause_menu.gd" id="2_mayrr"]
 
 [sub_resource type="Theme" id="1"]
 default_font = ExtResource("1_0dn8u")

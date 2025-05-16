@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=4 uid="uid://40e1vmk3qww0"]
 
-[ext_resource type="Script" path="res://lessons_reference/tower_defense.gd" id="1_5303e"]
+[ext_resource type="Script" uid="uid://b34l3rx484vf1" path="res://lessons_reference/tower_defense.gd" id="1_5303e"]
 [ext_resource type="TileSet" uid="uid://buxud23yyccyi" path="res://map/tileset.tres" id="2_mnbyj"]
-[ext_resource type="Script" path="res://lessons_reference/mobs/mob_spawner.gd" id="4_5ik0o"]
+[ext_resource type="Script" uid="uid://mfdv3fmedo8e" path="res://lessons_reference/mobs/mob_spawner.gd" id="4_5ik0o"]
 [ext_resource type="Texture2D" uid="uid://bqar8f6v77rel" path="res://icon.png" id="4_ad5we"]
 
 [sub_resource type="Curve2D" id="Curve2D_xctqv"]

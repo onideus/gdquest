@@ -1,9 +1,9 @@
 [gd_scene load_steps=14 format=3 uid="uid://dvtdgo0n3gkyq"]
 
-[ext_resource type="Script" path="res://lessons_reference/08_finish_line/08_runner.gd" id="1_hqrqu"]
+[ext_resource type="Script" uid="uid://crhnrd7doojgh" path="res://lessons_reference/08_finish_line/08_runner.gd" id="1_hqrqu"]
 [ext_resource type="Texture2D" uid="uid://dbcmxo51msi8m" path="res://assets/runner/shadow.png" id="2_ksaa3"]
 [ext_resource type="Texture2D" uid="uid://bkq3gfbp5fwqx" path="res://assets/circle_64x64.png" id="3_5y0ob"]
-[ext_resource type="Shader" path="res://assets/character_contour.gdshader" id="4_wh7aa"]
+[ext_resource type="Shader" uid="uid://bwhexggpo0snf" path="res://assets/character_contour.gdshader" id="4_wh7aa"]
 [ext_resource type="PackedScene" uid="uid://bm8s1oaoxngwq" path="res://assets/runner/runner_visual_red.tscn" id="5_l1pr4"]
 
 [sub_resource type="Curve" id="Curve_a1o1w"]
@@ -36,7 +36,6 @@ shader = ExtResource("4_wh7aa")
 shader_parameter/viewport_scale = Vector2(1, 1)
 shader_parameter/line_color = Color(0, 0, 0, 1)
 shader_parameter/line_thickness = 4.0
-shader_parameter/waves_height = 0.0
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_70vh5"]
 viewport_path = NodePath("SubViewport")

@@ -112,8 +112,8 @@ func show_text() -> void:
 
 	# We randomize the audio playback's start time to make it sound different
 	# every time and play the sound until the text finishes displaying.
-	var sound_max_length := audio_stream_player.stream.get_length() - text_appearing_duration
-	var sound_start_position := randf() * sound_max_length
+	var sound_max_offset := audio_stream_player.stream.get_length() - text_appearing_duration
+	var sound_start_position := randf() * sound_max_offset
 	audio_stream_player.play(sound_start_position)
 	tween.finished.connect(audio_stream_player.stop)
 

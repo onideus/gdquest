@@ -1,6 +1,6 @@
 [gd_scene load_steps=28 format=3 uid="uid://hjn4sr1lgmmx"]
 
-[ext_resource type="Script" path="res://assets/runner/runner_visual.gd" id="1_d11tw"]
+[ext_resource type="Script" uid="uid://blqnjcqc4mr6e" path="res://assets/runner/runner_visual.gd" id="1_d11tw"]
 [ext_resource type="Texture2D" uid="uid://bvitrnb3tfw0k" path="res://assets/runner/base_parts/foot.png" id="2_ay0ik"]
 [ext_resource type="Texture2D" uid="uid://bhnuxmhbdtai3" path="res://assets/runner/base_parts/body.png" id="3_ekfnj"]
 [ext_resource type="Texture2D" uid="uid://ba6ahww3ia6k8" path="res://assets/runner/base_parts/head.png" id="4_v3uea"]
@@ -487,10 +487,10 @@ tracks/7/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_cx3nc"]
 _data = {
-"RESET": SubResource("Animation_37rlr"),
-"idle": SubResource("Animation_13v33"),
-"run": SubResource("Animation_fpplh"),
-"walk": SubResource("Animation_jdqcd")
+&"RESET": SubResource("Animation_37rlr"),
+&"idle": SubResource("Animation_13v33"),
+&"run": SubResource("Animation_fpplh"),
+&"walk": SubResource("Animation_jdqcd")
 }
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ynm1x"]

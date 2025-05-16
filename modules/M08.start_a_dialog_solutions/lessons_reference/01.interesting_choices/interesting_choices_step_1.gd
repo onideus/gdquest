@@ -97,9 +97,9 @@ func show_text(current_item_index: int) -> void:
 	# We randomize the audio playback's start time to make it sound different
 	# every time.
 	# We obtain the last possible offset in the sound that we can start from
-	var sound_max_length := audio_stream_player.stream.get_length() - text_appearing_duration
+	var sound_max_offset := audio_stream_player.stream.get_length() - text_appearing_duration
 	# We pick a random position on that length
-	var sound_start_position := randf() * sound_max_length
+	var sound_start_position := randf() * sound_max_offset
 	# We start playing the sound
 	audio_stream_player.play(sound_start_position)
 	# We make sure the sound stops when the text finishes displaying

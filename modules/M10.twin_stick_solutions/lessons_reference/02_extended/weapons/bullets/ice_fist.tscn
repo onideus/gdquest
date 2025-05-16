@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://byeiutbbmq633"]
 
-[ext_resource type="Script" path="res://lessons_reference/02_extended/weapons/bullets/bullet.gd" id="1_bol65"]
+[ext_resource type="Script" uid="uid://ynpcgponrkd4" path="res://lessons_reference/02_extended/weapons/bullets/bullet.gd" id="1_bol65"]
 [ext_resource type="Texture2D" uid="uid://ckoa50clntt4t" path="res://weapons/bullets/ice.png" id="2"]
 [ext_resource type="Texture2D" uid="uid://bnylevqfafff1" path="res://common/particles/ice_1.png" id="2_i04rf"]
 [ext_resource type="AudioStream" uid="uid://byur8a6v8a7y" path="res://weapons/bullets/hit_ice.wav" id="4_2bth7"]

@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://826iha1ol5y4"]
 
-[ext_resource type="Material" path="res://practice_solutions/L6.P1.poetry/assets/practice_background_material.tres" id="1_5xskb"]
-[ext_resource type="Theme" path="res://practice_solutions/L6.P1.poetry/assets/practice_exercises_theme.tres" id="2_5k8fu"]
-[ext_resource type="Script" path="res://practice_solutions/L6.P1.poetry/poetry.gd" id="3_ciyto"]
+[ext_resource type="Material" uid="uid://blciib2n6bpvf" path="res://practice_solutions/L6.P1.poetry/assets/practice_background_material.tres" id="1_5xskb"]
+[ext_resource type="Theme" uid="uid://dt2geayaiwfiv" path="res://practice_solutions/L6.P1.poetry/assets/practice_exercises_theme.tres" id="2_5k8fu"]
+[ext_resource type="Script" uid="uid://bocxkc4u1bndw" path="res://practice_solutions/L6.P1.poetry/poetry.gd" id="3_ciyto"]
 
 [node name="Poetry" type="ColorRect"]
 material = ExtResource("1_5xskb")

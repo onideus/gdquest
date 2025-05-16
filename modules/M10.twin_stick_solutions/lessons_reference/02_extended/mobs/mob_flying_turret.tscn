@@ -1,11 +1,11 @@
 [gd_scene load_steps=14 format=3 uid="uid://bpn27at7povsj"]
 
-[ext_resource type="Script" path="res://lessons_reference/02_extended/mobs/mob_flying_turret.gd" id="1_e7pha"]
+[ext_resource type="Script" uid="uid://bjvihijr01vr1" path="res://lessons_reference/02_extended/mobs/mob_flying_turret.gd" id="1_e7pha"]
 [ext_resource type="AudioStream" uid="uid://dfc5tcrthtntk" path="res://mobs/hurt.wav" id="2_l3hlg"]
 [ext_resource type="PackedScene" uid="uid://bdw6md1eatbe" path="res://lessons_reference/02_extended/mobs/weapons/fire_shot.tscn" id="2_qe41m"]
 [ext_resource type="AudioStream" uid="uid://cte8ddxd7o4de" path="res://mobs/kill.wav" id="3_u4sad"]
 [ext_resource type="Texture2D" uid="uid://cjch4itgn8lir" path="res://mobs/shield_inactive.png" id="4_3n8uy"]
-[ext_resource type="PackedScene" path="res://common/shadow.tscn" id="5_6g3vl"]
+[ext_resource type="PackedScene" uid="uid://5ays6kuo0xio" path="res://common/shadow.tscn" id="5_6g3vl"]
 
 [sub_resource type="CircleShape2D" id="1"]
 radius = 49.3555
@@ -161,9 +161,9 @@ tracks/4/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_vtas7"]
 _data = {
-"RESET": SubResource("Animation_7jquv"),
-"damage": SubResource("Animation_uwpp2"),
-"die": SubResource("Animation_us17o")
+&"RESET": SubResource("Animation_7jquv"),
+&"damage": SubResource("Animation_uwpp2"),
+&"die": SubResource("Animation_us17o")
 }
 
 [node name="MobFlyingTurret" type="CharacterBody2D"]

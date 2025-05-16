@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://7r00l26lw0ae"]
 
 [ext_resource type="Theme" uid="uid://dp1nmwxx5vbr5" path="res://lessons_reference/UI_samples/assets/ui_samples_theme.tres" id="1_kkgub"]
-[ext_resource type="Script" path="res://lessons_reference/UI_samples/mobile_animated_menu.gd" id="2_acx4r"]
+[ext_resource type="Script" uid="uid://ll118cft2653" path="res://lessons_reference/UI_samples/mobile_animated_menu.gd" id="2_acx4r"]
 
 [sub_resource type="InputEventAction" id="InputEventAction_i17ck"]
 action = &"ui_cancel"

@@ -2,7 +2,7 @@
 
 [ext_resource type="Material" uid="uid://dmef1amrv175m" path="res://practice_solutions/L6.P2.typewriter/assets/practice_background_material.tres" id="1_x6ybp"]
 [ext_resource type="Theme" uid="uid://v0dvpkkl7lel" path="res://practice_solutions/L6.P2.typewriter/assets/practice_exercises_theme.tres" id="2_ey2ki"]
-[ext_resource type="Script" path="res://practice_solutions/L6.P2.typewriter/typewriter.gd" id="4_yclwh"]
+[ext_resource type="Script" uid="uid://cibfswy51vvol" path="res://practice_solutions/L6.P2.typewriter/typewriter.gd" id="4_yclwh"]
 [ext_resource type="AudioStream" uid="uid://lediykc1phcl" path="res://practice_solutions/L6.P2.typewriter/assets/human_vel-002.wav" id="5_giixa"]
 
 [node name="Typewriter" type="ColorRect"]

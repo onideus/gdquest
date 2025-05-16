@@ -5,7 +5,7 @@ extends Node2D
 # As this is just a reference to help solve the challenge, I'm not registering
 # the win screen as an autoload in the project. This line of code allows me to
 # refer to the WinScreen class in this script without errors.
-const WinScreen = preload("L10_win_screen.gd")
+var WinScreen := preload("L10_win_screen.gd").new()
 
 @export var mob_packed_scene := preload("res://lessons_reference/mobs/mob.tscn")
 

@@ -9,8 +9,9 @@ class_name Mob extends CharacterBody2D
 #ANCHOR:l09_01
 @export var health := 3: set = set_health
 #END:l09_01
+#ANCHOR:damage_definition
 @export var damage := 1
-
+#END:damage_definition
 
 #ANCHOR:l07_02
 var _player: Player = null

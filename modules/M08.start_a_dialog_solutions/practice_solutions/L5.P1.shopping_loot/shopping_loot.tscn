@@ -2,8 +2,8 @@
 
 [ext_resource type="Material" uid="uid://dxrtaju87p2an" path="res://assets/practice_background_material.tres" id="1_cebdc"]
 [ext_resource type="Theme" uid="uid://qk3rjf73qo8w" path="res://assets/practices/practices_theme.tres" id="1_ptqdi"]
-[ext_resource type="Script" path="res://practice_solutions/L5.P1.shopping_loot/shopping_loot.gd" id="2_88m7i"]
-[ext_resource type="Script" path="res://practice_solutions/L5.P1.shopping_loot/shopping_entry.gd" id="3_246th"]
+[ext_resource type="Script" uid="uid://d1ldfmnlroi72" path="res://practice_solutions/L5.P1.shopping_loot/shopping_loot.gd" id="2_88m7i"]
+[ext_resource type="Script" uid="uid://dgbm6p85ndqg5" path="res://practice_solutions/L5.P1.shopping_loot/shopping_entry.gd" id="3_246th"]
 
 [sub_resource type="Resource" id="Resource_einw5"]
 script = ExtResource("3_246th")

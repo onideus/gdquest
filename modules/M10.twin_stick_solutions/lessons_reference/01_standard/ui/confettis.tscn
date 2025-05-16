@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://n7g8xtnt3qag"]
 
-[ext_resource type="Shader" path="res://common/particles/confettis/confettis.gdshader" id="1_jnr3f"]
+[ext_resource type="Shader" uid="uid://dw5wfmtgj8k2m" path="res://common/particles/confettis/confettis.gdshader" id="1_jnr3f"]
 [ext_resource type="Texture2D" uid="uid://c33mf20ohybyi" path="res://common/particles/white_circle.png" id="2_oy35b"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ef5pu"]

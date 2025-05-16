@@ -11,15 +11,14 @@
 class_name Weapon extends Sprite2D
 #END:class_name
 
-const PHYSICS_LAYER_MOBS = 2
-
 @export var mob_detection_range := 400.0
 @export var attack_rate := 1.0
 @export var max_rotation_speed := 2.0 * PI
 
 var _area_2d := _create_area_2d()
-var _collision_shape_2d := _create_collision_shape_2d()
-var _timer := _create_timer()
+
+@onready var _collision_shape_2d := _create_collision_shape_2d()
+@onready var _timer := _create_timer()
 
 
 func _ready() -> void:
@@ -51,10 +50,16 @@ func _create_area_2d() -> Area2D:
 
 
 func _create_collision_shape_2d() -> CollisionShape2D:
+	#ANCHOR:m12_l6_create_collision_start
 	var collision_shape := CollisionShape2D.new()
 	collision_shape.shape = CircleShape2D.new()
+	#END:m12_l6_create_collision_start
+	#ANCHOR:m12_l6_collision_shape_radius
 	collision_shape.shape.radius = mob_detection_range
+	#END:m12_l6_collision_shape_radius
+	#ANCHOR:m12_l6_collision_shape_return
 	return collision_shape
+	#END:m12_l6_collision_shape_return
 
 
 func _create_timer() -> Timer:

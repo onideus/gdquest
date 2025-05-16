@@ -1,10 +1,10 @@
 [gd_scene load_steps=15 format=3 uid="uid://bcckpkskixdfj"]
 
-[ext_resource type="Script" path="res://lessons_reference/15_smarter_bouncer/reversed_logic/bouncer_with_avoidance_reversed_logic.gd" id="1_ulcg6"]
+[ext_resource type="Script" uid="uid://biefvhma70v7s" path="res://lessons_reference/15_smarter_bouncer/reversed_logic/bouncer_with_avoidance_reversed_logic.gd" id="1_ulcg6"]
 [ext_resource type="Texture2D" uid="uid://dbcmxo51msi8m" path="res://assets/runner/shadow.png" id="2_qcux8"]
 [ext_resource type="Texture2D" uid="uid://bkq3gfbp5fwqx" path="res://assets/circle_64x64.png" id="3_jp2so"]
 [ext_resource type="PackedScene" uid="uid://hjn4sr1lgmmx" path="res://assets/runner/runner_visual_purple.tscn" id="4_ei5cm"]
-[ext_resource type="Shader" path="res://assets/character_contour.gdshader" id="5_00myo"]
+[ext_resource type="Shader" uid="uid://bwhexggpo0snf" path="res://assets/character_contour.gdshader" id="5_00myo"]
 
 [sub_resource type="Curve" id="Curve_a1o1w"]
 _data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.8, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]

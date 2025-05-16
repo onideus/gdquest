@@ -1,19 +1,19 @@
 [gd_scene load_steps=5 format=3]
 
-[ext_resource type="Material" path="res://practices/L6.P2.typewriter/assets/practice_background_material.tres" id="1_g8lmn"]
-[ext_resource type="Theme" path="res://practices/L6.P2.typewriter/assets/practice_exercises_theme.tres" id="2_wrsev"]
-[ext_resource type="Script" path="res://practices/L6.P2.typewriter/typewriter.gd" id="3_hnh3k"]
-[ext_resource type="AudioStream" path="res://practices/L6.P2.typewriter/assets/human_vel-002.wav" id="4_ryytt"]
+[ext_resource type="Material" path="res://practices/L6.P2.typewriter/assets/practice_background_material.tres" id="1_ia7p2"]
+[ext_resource type="Theme" path="res://practices/L6.P2.typewriter/assets/practice_exercises_theme.tres" id="2_ib24g"]
+[ext_resource type="Script" path="res://practices/L6.P2.typewriter/typewriter.gd" id="3_v80jw"]
+[ext_resource type="AudioStream" path="res://practices/L6.P2.typewriter/assets/human_vel-002.wav" id="4_ioh4f"]
 
 [node name="Typewriter" type="ColorRect"]
-material = ExtResource("1_g8lmn")
+material = ExtResource("1_ia7p2")
 custom_minimum_size = Vector2(960, 540)
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("2_wrsev")
-script = ExtResource("3_hnh3k")
+theme = ExtResource("2_ib24g")
+script = ExtResource("3_v80jw")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 unique_name_in_owner = true
@@ -31,4 +31,4 @@ scroll_following = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
-stream = ExtResource("4_ryytt")
+stream = ExtResource("4_ioh4f")

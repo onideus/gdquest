@@ -3,9 +3,13 @@ config_version=5
 [application]
 
 config/name="M11. Tower Defense (Solutions)"
-config/features=PackedStringArray("4.3")
+config/features=PackedStringArray("4.4")
 config/icon="res://icon.png"
 config/tags=PackedStringArray("solutions")
+
+[autoload]
+
+PlayerUI="*res://lessons_reference/autoload/player_ui.tscn"
 
 [debug]
 
@@ -16,10 +20,17 @@ gdscript/warnings/return_value_discarded=false
 window/size/viewport_width=1920
 window/size/viewport_height=1080
 window/size/mode=2
-window/stretch/mode="viewport"
-window/size/width=1920
-window/size/height=1080
-window/size/fullscreen=true
+window/size/window_width_override=1152
+window/size/window_height_override=648
+window/stretch/mode="canvas_items"
+
+[dotnet]
+
+project/assembly_name="M11. Tower Defense"
+
+[editor_plugins]
+
+enabled=PackedStringArray()
 
 [input]
 
@@ -34,10 +45,6 @@ left_mouse_click={
 2d_physics/layer_1="mobs"
 2d_physics/layer_2="player base"
 2d_physics/layer_4="coins"
-
-[physics]
-
-common/enable_pause_aware_picking=true
 
 [rendering]
 

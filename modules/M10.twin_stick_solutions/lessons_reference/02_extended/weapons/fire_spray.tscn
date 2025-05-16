@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b6yn36oe8fy86"]
 
-[ext_resource type="Script" path="res://lessons_reference/02_extended/weapons/fire_spray.gd" id="1_ae4mo"]
+[ext_resource type="Script" uid="uid://ddvy3uf0sfi1j" path="res://lessons_reference/02_extended/weapons/fire_spray.gd" id="1_ae4mo"]
 [ext_resource type="AudioStream" uid="uid://8k3b4dtgtm7h" path="res://weapons/shoot_fire.wav" id="2_ivd2h"]
 
 [node name="FireSpray" type="Node2D"]

@@ -37,7 +37,9 @@ func set_health(new_health: float) -> void:
 		_health_bar.value = health
 
 	if health <= 0.0:
+		#ANCHOR: m12_l3_set_health_die
 		_die()
+		#END: m12_l3_set_health_die
 
 
 func take_damage(amount: float) -> void:

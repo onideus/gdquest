@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://qj7s561ncr0v"]
 
 [ext_resource type="PackedScene" uid="uid://dog4gm50k5cuu" path="res://assets/practice_assets/practice_stage_2.tscn" id="1_hqhge"]
-[ext_resource type="Script" path="res://lessons_reference/08_finish_line/move_to_mouse_and_slide/move_to_mouse_and_slide.gd" id="2_jmurh"]
+[ext_resource type="Script" uid="uid://b68g5ql05cec6" path="res://lessons_reference/08_finish_line/move_to_mouse_and_slide/move_to_mouse_and_slide.gd" id="2_jmurh"]
 [ext_resource type="Texture2D" uid="uid://d1xp2mgpkkc42" path="res://assets/practice_assets/shape_ship.png" id="3_wnawm"]
 [ext_resource type="PackedScene" uid="uid://c3ksplmju7orn" path="res://assets/cursor/cursor.tscn" id="4_jys5k"]
 

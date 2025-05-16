@@ -6,6 +6,7 @@ var max_speed := 600.0
 # You can access and change the direction variable inside the _process() function as you did in the lesson.
 var direction := Vector2(0, 0)
 
+
 func _physics_process(_delta: float) -> void:
 	# Set the direction from keyboard inputs here.
 	direction = Input.get_vector("move_left", "move_right", "move_up", "move_down") # direction = direction

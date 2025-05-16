@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://b2ysm6smichrf"]
 
-[ext_resource type="Script" path="res://lessons_reference/mobs/damage_indicator.gd" id="1_7vkdo"]
+[ext_resource type="Script" uid="uid://xty4aoghiwsq" path="res://lessons_reference/mobs/damage_indicator.gd" id="1_7vkdo"]
 
 [sub_resource type="Animation" id="1"]
 resource_name = "Float"
@@ -134,8 +134,8 @@ tracks/4/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_7704j"]
 _data = {
-"Float": SubResource("1"),
-"RESET": SubResource("2")
+&"Float": SubResource("1"),
+&"RESET": SubResource("2")
 }
 
 [node name="DamageIndicator" type="Node2D"]

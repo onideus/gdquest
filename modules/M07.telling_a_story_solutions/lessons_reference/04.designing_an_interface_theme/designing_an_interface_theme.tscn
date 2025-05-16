@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://cjrdnwbfjwiyq"]
 
 [ext_resource type="Theme" uid="uid://doquwbvnaoajb" path="res://lessons_reference/04.designing_an_interface_theme/assets/main.theme" id="1_kt5yd"]
-[ext_resource type="Shader" path="res://assets/sliding_background.gdshader" id="3_lqxm2"]
+[ext_resource type="Shader" uid="uid://cs15e2hgd2lan" path="res://assets/sliding_background.gdshader" id="3_lqxm2"]
 [ext_resource type="Texture2D" uid="uid://bnly1gkbxw6b5" path="res://assets/bubble_pattern.png" id="4_s5vjr"]
 [ext_resource type="Texture2D" uid="uid://copkt78vgp37i" path="res://assets/sophia.png" id="5_hqbut"]
 [ext_resource type="Texture2D" uid="uid://d000xjtr4iqtk" path="res://assets/emotion_regular.png" id="6_s35yb"]
@@ -9,10 +9,10 @@
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_efgpg"]
 shader = ExtResource("3_lqxm2")
+shader_parameter/pattern_sampler = ExtResource("4_s5vjr")
 shader_parameter/bg_color = Color(0.980392, 0.94902, 0.72549, 1)
 shader_parameter/pattern_color = Color(0.996078, 0.878431, 0.564706, 1)
 shader_parameter/pattern_size = 256.0
-shader_parameter/pattern_sampler = ExtResource("4_s5vjr")
 
 [sub_resource type="InputEventAction" id="InputEventAction_wt2qg"]
 action = &"ui_accept"

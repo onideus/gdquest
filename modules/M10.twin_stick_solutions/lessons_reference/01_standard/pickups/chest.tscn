@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://brrtwsx13dhqv"]
 
-[ext_resource type="Script" path="res://lessons_reference/01_standard/pickups/chest.gd" id="1_oy7bh"]
+[ext_resource type="Script" uid="uid://ef3n2duks4yp" path="res://lessons_reference/01_standard/pickups/chest.gd" id="1_oy7bh"]
 [ext_resource type="Texture2D" uid="uid://dub7cda3qxho2" path="res://pickups/chest/chest_bottom.png" id="4_lh54u"]
 [ext_resource type="Texture2D" uid="uid://bfj2ayjhou4bv" path="res://pickups/chest/chest_top.png" id="5_grmjg"]
 
@@ -91,8 +91,8 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_xyhmo"]
 _data = {
-"RESET": SubResource("3"),
-"open": SubResource("2")
+&"RESET": SubResource("3"),
+&"open": SubResource("2")
 }
 
 [node name="Chest" type="Area2D"]

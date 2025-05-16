@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://i0urqcykw47f"]
 
-[ext_resource type="Script" path="res://lessons_reference/09_countdown/09_count_down.gd" id="1_mx0qv"]
+[ext_resource type="Script" uid="uid://ddc5y3bkctp0s" path="res://lessons_reference/09_countdown/09_count_down.gd" id="1_mx0qv"]
 [ext_resource type="Theme" uid="uid://cdcyvsn1fp8wa" path="res://assets/countdown/count_down_theme.tres" id="3_2nst0"]
-[ext_resource type="Script" path="res://assets/countdown/count_down.gd" id="3_s0wbt"]
+[ext_resource type="Script" uid="uid://57e8080cpukf" path="res://assets/countdown/count_down.gd" id="3_s0wbt"]
 [ext_resource type="PackedScene" uid="uid://xl56q8amb611" path="res://assets/finish_line/finish_line.tscn" id="4_bh66a"]
 [ext_resource type="Texture2D" uid="uid://5vl7p0xb7nd8" path="res://assets/circuit_background.png" id="5_e2lpk"]
 [ext_resource type="PackedScene" uid="uid://cwk136csprv66" path="res://lessons_reference/04_obstacles/04_circuit_obstacle.tscn" id="6_5bc8r"]

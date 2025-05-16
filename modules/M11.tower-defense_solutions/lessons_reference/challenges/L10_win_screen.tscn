@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://k01xjowjgod5"]
 
-[ext_resource type="Script" path="res://lessons_reference/challenges/L10_win_screen.gd" id="1_mjtn4"]
+[ext_resource type="Script" uid="uid://cor3py44hhjil" path="res://lessons_reference/challenges/L10_win_screen.gd" id="1_mjtn4"]
 [ext_resource type="FontFile" uid="uid://btiybsu6acuy7" path="res://addons/gdpractice/assets/fonts/Montserrat-Bold.ttf" id="2_sp0wc"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_788du"]

@@ -18,10 +18,5 @@ grow_vertical = 2
 color = Color(0.364706, 0.12549, 0.776471, 1)
 
 [node name="AsteroidSpawner" parent="." instance=ExtResource("2_6qbfy")]
-custom_minimum_size = Vector2(500, 600)
-offset_left = -684.0
-offset_top = -300.0
-offset_right = 684.0
-offset_bottom = 300.0
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_tsd3d")]
