@@ -159,6 +159,17 @@ Below is an indicative list of modules based on the course outline. I will updat
   - [ ] L5. The damage indicators
   - [ ] L6. Making the mobs walk
 
+- [ ] **M12. Tower Defense Upgrades**
+  - [ ] L1. Tower Defense Upgrades: Module overview
+  - [ ] L2. Find Your Way: Introduction to pathfinding with AStar
+  - [ ] L3. On the Road: Generating paths with AStar
+  - [ ] L4. Treasure Hunt: Spawning coins when killing mobs
+  - [ ] L5. Payday: Collecting coins
+  - [ ] L6. Power Up: Upgrading turrets
+  - [ ] L7. Power Up: Purchasing turrets and upgrades
+  - [ ] L8. Cleaning Duty: Coding a homing rocket
+  - [ ] L9. Final Form: Implementing the rocket launcher
+
 
 *I will update this list as I work through and complete each module.*
 
