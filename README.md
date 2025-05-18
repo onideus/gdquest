@@ -69,24 +69,24 @@ Below is an indicative list of modules based on the course outline. I will updat
   - [x] L7. Spawn Items Randomly
   - [x] L8. Filter Items From Detecting Each Other
   - [x] L9. Keep The Ship On Screen
-  - [x] L10. Make The Items Float
+  - [x] [L10. Make The Items Float](notes/M05/L10.md)
 
 - [x] **M6. Looting**
-  - [x] L1. Looting! Module overview
-  - [x] L2. Create the chest
-  - [x] L3. The outline thickens
-  - [x] L4. The chest open animation
-  - [x] L5. Open the chest
-  - [x] L6. Spawn random loot
-  - [x] L7. Animate the collectibles
-  - [x] L8. The programmer's dictionary
-  - [x] L9. Let's experiment
+  - [x] [L1. Looting! Module overview](notes/M06/L01.md)
+  - [x] [L2. Create the chest](notes/M06/L02.md)
+  - [x] [L3. The outline thickens](notes/M06/L03.md)
+  - [x] [L4. The chest open animation](notes/M06/L04.md)
+  - [x] [L5. Open the chest](notes/M06/L05.md)
+  - [x] [L6. Spawn random loot](notes/M06/L06.md)
+  - [x] [L7. Animate the collectibles](notes/M06/L07.md)
+  - [x] [L8. The programmer's dictionary](notes/M06/L08.md)
+  - [x] [L9. Let's experiment](notes/M06/L09.md)
 
 - [ ] **M7. Telling a Story**
   - [x] L1. Telling a Story - Module overview
-  - [x] L2. Exploring UI node anchors
-  - [x] L3. Your first UI scene
-  - [x] L4. Designing an interface theme
+  - [x] [L2. Exploring UI node anchors](notes/M07/L02.md)
+  - [x] [L3. Your first UI scene](notes/M07/L03.md)
+  - [x] [L4. Designing an interface theme](notes/M07/L04.md)
   - [ ] L5. Your first words
   - [ ] L6. Animating the text and playing sounds
   - [ ] L7. Changing expressions
