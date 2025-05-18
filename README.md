@@ -84,7 +84,7 @@ Below is an indicative list of modules based on the course outline. I will updat
 
 - [ ] **M7. Telling a Story**
   - [x] L1. Telling a Story - Module overview
-  - [ ] L2. Exploring UI node anchors
+  - [x] L2. Exploring UI node anchors
   - [ ] L3. Your first UI scene
   - [ ] L4. Designing an interface theme
   - [ ] L5. Your first words
