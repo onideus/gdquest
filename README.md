@@ -33,7 +33,7 @@ Current coursework version - **0.37.0**
 
 ## Course Modules Progress
 
-Below is an indicative list of modules based on the course outline. I will update these checkboxes as I complete each section. 
+Below is an indicative list of modules based on the course outline. I will update these checkboxes as I complete each section. Any lessons that are hyperlinked point to the corresponding notes for that lesson for quicker acces.
 
 - [x] **M1. Introduction**
   - [x] L1. Welcome to Learn 2D Gamedev From Zero!
