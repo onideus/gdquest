@@ -14,7 +14,7 @@ The goal of this repository is to serve both as a personal learning journal and 
 
 As this course is currently a work in progress, there are constant updates being made to further improve it. As such, I wanted to be sure and provide the version number of the material I'm working from.
 
-Current coursework version - **0.37.0**
+Current coursework version - **0.41.0**
 
 ---
 

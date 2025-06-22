@@ -5,7 +5,6 @@ config_version=5
 config/name="M11. Tower Defense (Solutions)"
 config/features=PackedStringArray("4.4")
 config/icon="res://icon.png"
-config/tags=PackedStringArray("solutions")
 
 [autoload]
 

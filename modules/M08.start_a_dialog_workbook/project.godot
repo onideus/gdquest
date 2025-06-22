@@ -5,7 +5,6 @@ config_version=5
 config/name="M08. Start a Dialogue (Workbook)"
 config/features=PackedStringArray("4.4")
 config/icon="res://icon_start_a_dialog.png"
-config/tags=PackedStringArray("workbook")
 
 [display]
 

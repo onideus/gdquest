@@ -20,6 +20,7 @@ func animate_to_ui() -> void:
 	if tween != null:
 		tween.kill()
 
+	set_deferred("monitorable", false)
 	var target_position := PlayerUI.get_coin_ui_position()
 
 	tween = create_tween()

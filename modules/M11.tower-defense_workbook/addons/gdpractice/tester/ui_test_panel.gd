@@ -64,6 +64,20 @@ func _ready() -> void:
 	tween.kill()
 	toggle_show_button.toggled.connect(_on_toggle_show_button_toggled)
 
+	# If the metadata did not initialize as expected, we try to get and initialize it again
+	if not metadata:
+		var metadata_node = get_window().get_node_or_null(Metadata.NAME)
+		if metadata_node != null and metadata_node is Metadata:
+			metadata = metadata_node
+			db = DB.new(metadata)
+		else:
+			push_error(
+				"Metadata node not found. This means that the practice list could not be loaded and the practice system may not work correctly.\n" +
+				"Please try restarting the Godot editor by going to Project -> Reload Current Project."
+			)
+			queue_free()
+			return
+
 	_prepare_practice_info()
 	_report_prep()
 
@@ -84,8 +98,12 @@ func _ready() -> void:
 	await test.run()
 
 	var completion := test.get_completion()
-	db.update({_practice_info.metadata.id: {completion = completion}})
-	db.save()
+	if db and _practice_info.has("metadata") and _practice_info.metadata:
+		db.update({_practice_info.metadata.id: {completion = completion}})
+		db.save()
+	else:
+		push_error("Could not save progress: missing db, metadata, or metadata.id")
+
 	_restore_from_test(completion)
 
 	_report_checks(test)
@@ -116,7 +134,13 @@ func _prepare_practice_info() -> void:
 	_practice_info.dir_name = Paths.get_dir_name(_practice_info.file_path, Paths.PRACTICES_PATH)
 	_practice_info.base_path = Paths.PRACTICES_PATH.path_join(_practice_info.dir_name)
 
+	# Guard against null metadata or list property, in case metadata fails to load
+	if metadata == null:
+		push_error("Metadata is null in UITestPanel._prepare_practice_info()")
+		return
+
 	for practice_metadata: PracticeMetadata in metadata.list:
+
 		var path := Paths.to_practice(practice_metadata.packed_scene_path)
 		if path == _practice_info.file_path:
 			_practice_info.metadata = practice_metadata

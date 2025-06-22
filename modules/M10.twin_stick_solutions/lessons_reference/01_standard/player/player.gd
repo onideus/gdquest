@@ -4,7 +4,7 @@ class_name Player extends CharacterBody2D
 
 #ANCHOR:l4_01
 @export var speed := 460.0
-@export var drag_factor := 10.0
+@export var ground_friction_factor := 10.0
 #END:l4_01
 #ANCHOR:l10_01
 @export var max_health := 5
@@ -30,7 +30,7 @@ func _physics_process(delta: float) -> void:
 	var move_direction := Input.get_vector("move_left", "move_right", "move_up", "move_down")
 	var desired_velocity := speed * move_direction
 	var steering := desired_velocity - velocity
-	velocity += steering * drag_factor * delta
+	velocity += steering * ground_friction_factor * delta
 	move_and_slide()
 #END:l4_02
 
